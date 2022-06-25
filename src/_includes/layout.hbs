@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>{{pageTitle }}</title>
-  <link rel="stylesheet" href="/css/{{pageId}}.critical.css">
+
+  <style>
+    {{ cssmin pageId }}
+  </style>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
