@@ -1,0 +1,16 @@
+{
+  "name": "lm-portfolio2022",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ThomasRutzer/lm2022.git",
+  "author": "Thomas Rutzer <hi@thomasrutzer.dev>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy --input=./src --output=_site",
+    "serve": "npx @11ty/eleventy --input=./src --output=_site --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
