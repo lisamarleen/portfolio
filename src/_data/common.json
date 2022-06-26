@@ -1,0 +1,16 @@
+{
+  "navigation": [
+    {
+      "label": "Projects",
+      "link": "/projects"
+    },
+    {
+      "label": "Visual Playground",
+      "link": "/playground"
+    },
+    {
+      "label": "About",
+      "link": "#about"
+    }
+  ]
+}

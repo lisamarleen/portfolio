@@ -3,4 +3,16 @@ layout: layout.hbs
 pageId: home
 pageTitle: "Lisa Marleen Portfolio 2022"
 ---
-<h1>{{home.title}}</h1>
+
+<section id="intro" class="intro">
+    <h1>{{{home.title}}}</h1>
+    <nav class="intro__nav">
+        <ul>
+            {{#each common.navigation}}
+                <li>
+                    <a href={{this.link}}>{{this.label}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </nav>
+</section>
