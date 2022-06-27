@@ -1,16 +1,31 @@
 #intro {
-    height: 100vh;
-    height: 100dvh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .intro__nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .intro__nav li {
-    display: block;
+  position: relative;
+  display: block;
+  padding: calc(var(--spacing-unit) * 2px) 0;
+  border-bottom: 2px solid red;
+  box-sizing: border-box;
+}
+
+.intro__nav li:last-child {
+  border-bottom: none;
+}
+
+.intro__title {
+  align-self: flex-end;
+  text-align: right;
+  margin: 0;
+  font-family: var(--font-headline-bold);
 }

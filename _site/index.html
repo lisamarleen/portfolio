@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta content="initial-scale=1, width=device-width" name="viewport">
   <title>Lisa Marleen Portfolio 2022</title>
 
   <style>
-    #intro{height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column}.intro__nav ul{margin:0;padding:0}.intro__nav li{display:block}
+    #intro{height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column}.intro__nav ul{margin:0;padding:0}.intro__nav li{position:relative;display:block;padding:calc(var(--spacing-unit) * 2px) 0;border-bottom:2px solid red;box-sizing:border-box}.intro__nav li:last-child{border-bottom:none}.intro__title{align-self:flex-end;text-align:right;margin:0;font-family:var(--font-headline-bold)}
   </style>
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -14,7 +15,7 @@
   <main>
     
 <section id="intro" class="intro">
-    <h1>Multi<br/> discipli<br/> nary art<br/> director</h1>
+    <h1 class="intro__title">Multi<br/> discipli<br/> nary art<br/> director</h1>
     <nav class="intro__nav">
         <ul>
                 <li>
@@ -28,6 +29,9 @@
                 </li>
         </ul>
     </nav>
+</section>
+<section>
+    some About
 </section>
 
   </main>
