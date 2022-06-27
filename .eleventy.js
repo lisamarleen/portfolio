@@ -3,6 +3,7 @@ const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   eleventyConfig.addFilter("cssmin", (pageId) => {
     const css = fs.readFileSync(`src/css/${pageId}.critical.css`, "utf8");
@@ -13,3 +14,4 @@ module.exports = function (eleventyConfig) {
     passthroughFileCopy: true,
   };
 };
+

@@ -1,8 +1,27 @@
 :root {
-    --color-white: #fff;
-    --color-black: #000;
+  --color-white: #fff;
+  --color-black: #000;
+  --spacing-unit: 8;
+  --font-headline-regular: "D-DIN Condensed Regular";
+  --font-headline-bold: "D-DIN Condensed DINCondensed-Bold";
+}
+
+@font-face {
+  font-family: "D-DIN Condensed Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("D-DIN Condensed Regular"),
+    url("./../assets/fonts/D-DINCondensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: "D-DIN Condensed DINCondensed-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("D-DIN Condensed DINCondensed-Bold"),
+    url("./../assets/fonts/D-DINCondensed-Bold.woff") format("woff");
 }
 
 body {
-    color: var(--color-white);
+  color: var(--color-white);
 }
