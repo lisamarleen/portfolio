@@ -6,7 +6,7 @@
   <title>Lisa Marleen Portfolio 2022</title>
 
   <style>
-    #intro{height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column}.intro__nav ul{margin:0;padding:0}.intro__nav li{position:relative;display:block;padding:calc(var(--spacing-unit) * 2px) 0;border-bottom:2px solid red;box-sizing:border-box}.intro__nav li:last-child{border-bottom:none}.intro__title{align-self:flex-end;text-align:right;margin:0;font-family:var(--font-headline-bold)}
+    .intro{height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;padding:calc(var(--spacing-unit) * 2px) 0;border-bottom:2px solid red;box-sizing:border-box}.intro-nav li:last-child{border-bottom:none}.intro-title{align-self:flex-end;text-align:right;margin:0;font-family:var(--font-headline-bold);font-size:clamp(2rem, -.875rem + 33.333vw, 7.5rem);max-width:17ch;text-transform:uppercase}.intro-title__line{display:block}@media (min-width:768px){.intro-nav li{border:none}.intro-title__line{display:inline}}
   </style>
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -15,8 +15,8 @@
   <main>
     
 <section id="intro" class="intro">
-    <h1 class="intro__title">Multi<br/> discipli<br/> nary art<br/> director</h1>
-    <nav class="intro__nav">
+    <h1 class="intro-title"><span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'>director</span></h1>
+    <nav class="intro-nav">
         <ul>
                 <li>
                     <a href=/projects>Projects</a>
@@ -30,7 +30,7 @@
         </ul>
     </nav>
 </section>
-<section>
+<section class="short-bio">
     some About
 </section>
 
