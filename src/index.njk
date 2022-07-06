@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+pageId: home
+pageTitle: "Lisa Marleen Portfolio 2022"
+---
+
+<section id="intro" class="intro">
+    <h1 class="intro-title">{{ home.title | safe }}</h1>
+    <nav class="intro-nav">
+        <ul>
+            {% for link, label in common.navigation %}
+                <li>
+                    <a href={{link}}>{{label}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>
+<section class="short-bio">
+    {{home.shortBioTitle}}
+    {%  imageWithDetail "./src/assets/images/test.jpg", "My pug, Bobby", "(min-width: 640px) 50vw, 100vw", "./src/assets/images/testDetail.jpg", "(max-width: 480px)", "100vw" %}
+</section>
