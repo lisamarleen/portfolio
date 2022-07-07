@@ -3,48 +3,56 @@ const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 
+function imageFileName({ src, width, format, imageSizes }) {
+  const extension = path.extname(src);
+  const name = path.basename(src, extension);
+
+  const size = imageSizes[width + ""];
+  return `${name}_${size}.${format}`;
+}
+
 async function imageWithDetailShortcode(
   src,
   alt,
   sizes,
   detailSrc,
   detailMedia,
-  detailSizes = "100vw"
+  detailSizes
 ) {
+  const imageFormats = ["avif", "webp", "jpeg"];
   const imageSizes = {
-    320: "small",
-    640: "medium",
+    768: "medium",
     1280: "large",
   };
 
   let metadata = await Image(src, {
     widths: Object.keys(imageSizes).map((k) => +k),
-    formats: ["avif", "webp", "jpeg"],
+    formats: imageFormats,
     urlPath: "./assets/images",
     outputDir: "./_site/assets/images",
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-
-      const size = imageSizes[width + ""];
-      return `${name}_${size}.${format}`;
-    },
+    filenameFormat: (id, src, width, format) =>
+      imageFileName({
+        src,
+        width,
+        format,
+        imageSizes,
+      }),
   });
 
   let detailMetadata =
     detailSrc && detailMedia
       ? await Image(detailSrc, {
           widths: Object.keys(imageSizes).map((k) => +k),
-          formats: ["avif", "webp", "jpeg"],
+          formats: imageFormats,
           urlPath: "./assets/images",
           outputDir: "./_site/assets/images",
-          filenameFormat: function (id, src, width, format, options) {
-            const extension = path.extname(src);
-            const name = path.basename(src, extension);
-
-            const size = imageSizes[width + ""];
-            return `${name}_${size}.${format}`;
-          },
+          filenameFormat: (id, src, width, format) =>
+            imageFileName({
+              src,
+              width,
+              format,
+              imageSizes,
+            }),
         })
       : null;
 
