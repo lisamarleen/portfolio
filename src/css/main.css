@@ -22,12 +22,16 @@
     url("./../assets/fonts/D-DINCondensed-Bold.woff") format("woff");
 }
 
+* {
+  margin: 0;
+}
+
 body {
   color: var(--color-white);
 }
 
-p {
-  margin: 0;
+ul {
+  padding: 0;
 }
 
 .content-wrapper {
@@ -65,6 +69,30 @@ p {
   grid-area: copy;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__title {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.listing-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.listing-item__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; 
+}
+
 @media (min-width: 768px) { 
   .short-bio {
     grid-template-columns: 1fr 1fr;
@@ -91,5 +119,22 @@ p {
     max-width: 80ch;
     min-height: 25vh;
     flex: 1;
+  }
+
+  .info {
+    flex-direction: row;
+    gap: calc(var(--spacing-unit) * 4px);
+  }
+
+  .info__title {
+    flex: 1;
+  }
+
+  .info__list {
+    flex: 2;
+  }
+
+  .info__block {
+    flex: 2;
   }
 }

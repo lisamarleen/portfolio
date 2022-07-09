@@ -27,3 +27,57 @@ pageTitle: "Lisa Marleen Portfolio 2022"
         {{home.shortBioCopy}}
     </p>
 </section>
+
+<section class="experience">
+    <div class="info content-wrapper">
+        <h2 class="info__title">{{home.experience.title | safe }}</h2>
+        <ul class="info__list">
+        {% for experienceItem in home.experience.items %}
+            <li class="listing-item">
+                <div class="listing-item__main-content">
+                    <h3>{{ experienceItem.label }}</h3>
+                    <h4>{{ experienceItem.subLabel }}</h4>
+                    <h5>{{ experienceItem.meta }}</h5>
+                </div>
+                <p>{{ experienceItem.time }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="teachings-talks">
+    <div class="info content-wrapper">
+        <h2 class="info__title">{{home.teachings.title | safe }}</h2>
+        <ul class="info__list">
+        {% for teachingItem in home.teachings.items %}
+            <li class="listing-item">
+                <a class="listing-item__link-wrapper" href="https://thomasrutzer.medium.com/84c52df4621c" rel="noopener noreferrer" target="_blank">
+                    <div class="listing-item__main-content">
+                        <h3>{{ teachingItem.label }}</h3>
+                        <h4>{{ teachingItem.subLabel }}</h4>
+                        <h5>{{ teachingItem.meta }}</h5>
+                    </div>
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="awards">
+    <div class="info content-wrapper">
+        <h2 class="info__title">{{home.awards.title }}</h2>
+        <p class="info__block">
+        {% for awardsItem in home.awards.items %}
+            <span>
+                {{ awardsItem.label }}
+                {% if awardsItem.count > 1 %}
+                    <sup>{{ awardsItem.count }}</sup>
+                {% endif %}
+            </span>
+        {% endfor %}
+        </p>
+    </div>
+</section>

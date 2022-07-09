@@ -1,5 +1,40 @@
 {
   "title": "<span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'>director</span>",
   "shortBioTitle": "some About Title whaaat shall I say",
-  "shortBioCopy": "Some copy"
+  "shortBioCopy": "Some copy",
+  "experience": {
+    "title": "exp<br />erience",
+    "items": [
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text",
+        "time": "4 years"
+      }
+    ]
+  },
+  "teachings": {
+    "title": "teaching<br />& talks",
+    "items": [
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text",
+        "link": "https://thomasrutzer.dev"
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards",
+    "items": [
+      {
+        "label": "FWA",
+        "count": 12
+      },
+      {
+        "label": "ADC Bronze",
+        "count": 1
+      }
+    ]
+  }
 }
