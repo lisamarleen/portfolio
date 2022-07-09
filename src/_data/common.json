@@ -12,5 +12,22 @@
       "label": "About",
       "link": "#about"
     }
-  ]
+  ],
+
+  "social": {
+    "title": "Say hi!",
+    "items": [
+      {
+        "label": "hi@lisamarleen.de",
+        "link": "mailto:ho@lisamarleen.de"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "2002 C lisamarleen",
+    "imprint": {
+      "label": "Imprint",
+      "link": "/test"
+    }
+  }
 }

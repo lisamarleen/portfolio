@@ -14,6 +14,28 @@
 <body style="background-color: #000; margin: 0; padding: 0;">
   <main>
     {{ content | safe }}
+
+    <section>
+      <div class="social content-wrapper">
+        <h2 class="social__title">{{ common.social.title }}</h2>
+        <ul class="social__list">
+          {% for socialItem in common.social.items %}
+            <li>
+              <a href={{ socialItem.link }} rel="noopener noreferrer" target="_blank">
+                {{ socialItem.label }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <small>{{ common.footer.copyright }}</small>
+      <a href={{ common.footer.imprint.link }} rel="noopener noreferrer" target="_blank">
+        {{ common.footer.imprint.label }}
+      </a>
+    </footer>
   </main>
 </body>
 </html>

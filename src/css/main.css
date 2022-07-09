@@ -34,6 +34,10 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .content-wrapper {
   width: 100%;
   max-width: 72rem;
@@ -93,6 +97,25 @@ ul {
   width: 100%; 
 }
 
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 4px);
+}
+
+.social__title {
+  text-transform: uppercase;
+}
+
+.social__list {
+  flex: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 768px) { 
   .short-bio {
     grid-template-columns: 1fr 1fr;
@@ -136,5 +159,10 @@ ul {
 
   .info__block {
     flex: 2;
+  }
+  
+  .social__title {
+    text-align: right;
+    flex: 1;
   }
 }
