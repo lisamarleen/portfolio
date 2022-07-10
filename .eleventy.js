@@ -67,7 +67,9 @@ async function imageWithDetailShortcode(
     ? Object.values(detailMetadata)
         .map((imageFormat) => {
           return `<source type="${imageFormat[0].sourceType}"
-            srcset="${imageFormat.map((entry) => entry.srcset).join(", ")}" 
+            srcset="${imageFormat
+              .map((entry) => `/${entry.srcset}`)
+              .join(", ")}" 
             media="${detailMedia}" 
             sizes="${detailSizes}">`;
         })
@@ -81,7 +83,7 @@ async function imageWithDetailShortcode(
         return `<source type="${
           imageFormat[0].sourceType
         }" srcset="${imageFormat
-          .map((entry) => entry.srcset)
+          .map((entry) => `/${entry.srcset}`)
           .join(", ")}" sizes="${imageAttributes.sizes}">`;
       })
       .join("\n");
@@ -89,7 +91,7 @@ async function imageWithDetailShortcode(
   return `<picture>
     ${sources}
       <img
-        src="${lowsrc.url}"
+        src="/${lowsrc.url}"
         width="${lowsrc.width}"
         height="${lowsrc.height}"
         alt="${imageAttributes.alt}"
@@ -101,7 +103,6 @@ async function imageWithDetailShortcode(
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("src/assets/images");
 
   eleventyConfig.addFilter("cssmin", (pageId) => {
     const css = fs.readFileSync(`src/css/${pageId}.critical.css`, "utf8");

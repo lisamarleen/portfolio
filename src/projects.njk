@@ -4,3 +4,24 @@ pageId: projects
 pageTitle: "Lisa Marleen Portfolio 2022 - Projects"
 ---
 <h1>{{projects.title}}</h1>
+
+{% for projectItem in projects.items %}
+    <section>
+        <div class="content-wrapper">
+            <div class="project">
+                {% for projectImage in projectItem.images %}
+                    {% set computedSrc = "./src/assets/images/" + projectItem.id + "/" + projectImage.src  %}
+                    <div class="project__image">
+                        {%  imageWithDetail computedSrc, projectImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                    </div>
+                {% endfor %}
+                 <div class="project__title">
+                    <h2>{{ projectItem.title | safe }}</h2>
+                </div>
+                <p class="project__desc">
+                    {{ projectItem.description }}
+                </p>
+            </div>
+        </div>
+    </section>
+{% endfor %}
