@@ -1,9 +1,13 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
-  --spacing-unit: 8;
+  --color-grey1: #626262;
+  --spacing-unit: 8px;
   --font-headline-regular: "D-DIN Condensed Regular";
   --font-headline-bold: "D-DIN Condensed DINCondensed-Bold";
+  --font-size-s: 112.5rem;
+  --font-size-m: 2rem;
+
 }
 
 @font-face {
@@ -28,6 +32,7 @@
 
 body {
   color: var(--color-white);
+  font-size: 16px;
 }
 
 ul {
