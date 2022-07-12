@@ -4,7 +4,7 @@ pageId: home
 pageTitle: "Lisa Marleen Portfolio 2022"
 ---
 
-<section id="intro" class="intro">
+<section class="intro">
     <h1 class="intro-title">{{ home.title | safe }}</h1>
     <nav class="intro-nav">
         <ul>
@@ -15,7 +15,11 @@ pageTitle: "Lisa Marleen Portfolio 2022"
             {% endfor %}
         </ul>
     </nav>
+    <video class="intro__video" autoplay loop muted playsinline>
+        <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
+    </video>
 </section>
+
 <section class="short-bio">
     <div class="short-bio__title content-wrapper">
         <h2>{{home.shortBioTitle}}</h2>
