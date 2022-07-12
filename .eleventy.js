@@ -101,6 +101,8 @@ async function imageWithDetailShortcode(
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addWatchTarget("./src/js/");
+
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
@@ -116,5 +118,6 @@ module.exports = function (eleventyConfig) {
 
   return {
     passthroughFileCopy: true,
+    templateFormats: ["njk", "11ty.js"],
   };
 };
