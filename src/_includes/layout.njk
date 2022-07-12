@@ -8,6 +8,9 @@
   <style>
     {{ pageId | cssmin }}
   </style>
+  <script>
+    {{ pageId | jsmin | safe }}
+  </script>
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/main.js" defer></script>
 </head>
