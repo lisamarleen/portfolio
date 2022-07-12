@@ -1,5 +1,4 @@
 const CleanCSS = require("clean-css");
-const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const esbuild = require("esbuild");
@@ -107,18 +106,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
-  eleventyConfig.addNunjucksFilter("jsmin", (pageId) => {
-    const js = fs.readFileSync(`src/js/${pageId}.critical.js`, "utf8");
-    const minified = esbuild.transformSync(js, {
+  eleventyConfig.addNunjucksFilter("jsmin", (code) => {
+    const minified = esbuild.transformSync(code, {
       minify: true,
     });
 
     return minified.code;
   });
 
-  eleventyConfig.addFilter("cssmin", (pageId) => {
-    const css = fs.readFileSync(`src/css/${pageId}.critical.css`, "utf8");
-    return new CleanCSS({}).minify(css).styles;
+  eleventyConfig.addFilter("cssmin", (code) => {
+    return new CleanCSS({}).minify(code).styles;
   });
 
   eleventyConfig.addNunjucksAsyncShortcode(
