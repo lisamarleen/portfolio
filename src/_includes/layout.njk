@@ -6,7 +6,7 @@
   <title>{{pageTitle }}</title>
 
   <style>
-    {{ pageId | cssmin }}
+    {{ pageId | cssmin | safe }}
   </style>
   <script>
     {{ pageId | jsmin | safe }}
