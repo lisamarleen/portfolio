@@ -105,6 +105,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/js/");
 
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   eleventyConfig.addNunjucksFilter("jsmin", (pageId) => {

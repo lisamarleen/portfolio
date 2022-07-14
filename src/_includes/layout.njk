@@ -16,16 +16,16 @@
 </head>
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
-  <main>
-    {{ content | safe }}
+  {{ content | safe }}
 
-    <section>
-      <div class="social content-wrapper">
-        <h2 class="social__title">{{ common.social.title }}</h2>
-        <ul class="social__list">
+  <main>
+    <section class="social">
+      <div class="social-content content-wrapper">
+        <h2 class="social-content__title">{{ common.social.title }}</h2>
+        <ul class="social-content__list social-list">
           {% for socialItem in common.social.items %}
-            <li>
-              <a href={{ socialItem.link }} rel="noopener noreferrer" target="_blank">
+            <li class="social-list__item">
+              <a href={{ socialItem.link }} class="social-list__link{% if socialItem.highlighted %} social-list__link--highlighted{% endif %}" rel="noopener noreferrer" target="_blank">
                 {{ socialItem.label }}
               </a>
             </li>

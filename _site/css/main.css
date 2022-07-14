@@ -1,7 +1,8 @@
 :root {
   --color-white: #fff;
-  --color-black: #000;
+  --color-black: #030110;
   --color-grey1: #626262;
+  --color-highlight: #4961FE;
   
   --spacing-s: 8px;
   --spacing-m: 16px;
@@ -55,6 +56,7 @@
 
 body {
   color: var(--color-white);
+  background-color: var(--color-black);
   font-size: 16px;
   line-height: 20px;
   font-family: var(--font-copy);
@@ -143,17 +145,45 @@ li {
 }
 
 .social {
+  background: url(/assets/images/seamless-BG.png);
+  padding: var(--spacing--xxl) 0;
+}
+
+.social-content {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing-s) * 4px);
+  gap: var(--spacing--xxl);
 }
 
-.social__title {
+.social-content__title {
   text-transform: uppercase;
+  font-size: var(--font-size-l);
+  line-height: var(--font-line-height-m);
+  font-family: var(--font-headline-bold);
+  color: var(--color-highlight);
 }
 
-.social__list {
-  flex: 2;
+.social-list__item {
+  display: block;
+  margin-bottom: var(--spacing-m);
+}
+
+.social-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.social-list__link {
+  text-transform: uppercase;
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-height-m);
+  font-family: var(--font-headline-bold);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.social-list__link.social-list__link--highlighted {
+  color: var(--color-highlight);
+  text-decoration: underline;
 }
 
 .project {
@@ -279,10 +309,23 @@ footer {
     font-size: 96px;
     line-height: 96px;
   }
+
+  .social-content {
+    flex-direction: row;
+  }
   
-  .social__title {
-    text-align: right;
+  .social-content__list {
+    flex: 2;
+  }
+  
+  .social-content__title {
     flex: 1;
+    font-size: 130px;
+    line-height: 100px;
+  }
+
+  .social-list {
+    column-count: 2;
   }
 
   .project {

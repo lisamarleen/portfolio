@@ -19,7 +19,28 @@
     "items": [
       {
         "label": "hi@lisamarleen.de",
-        "link": "mailto:ho@lisamarleen.de"
+        "link": "mailto:ho@lisamarleen.de",
+        "highlighted": true
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
       }
     ]
   },

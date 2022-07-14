@@ -82,6 +82,7 @@
   
   .intro-title__line {
     display: inline;
+    white-space: normal;
   }
   
   .intro-nav li {
