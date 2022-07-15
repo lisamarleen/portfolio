@@ -32,21 +32,38 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     </p>
 </section>
 
-<section class="experience">
-    <div class="info content-wrapper">
-        <h2 class="info__title">{{home.experience.title | safe }}</h2>
-        <ul class="info__list">
-        {% for experienceItem in home.experience.items %}
-            <li class="listing-item">
-                <div class="listing-item__main-content">
-                    <h3>{{ experienceItem.label }}</h3>
-                    <h4>{{ experienceItem.subLabel }}</h4>
-                    <h5>{{ experienceItem.meta }}</h5>
-                </div>
-                <p>{{ experienceItem.time }}</p>
-            </li>
-        {% endfor %}
-        </ul>
+<section class="experience-education">
+    <div class="content-wrapper">
+        <div class="info">
+            <h2 class="info__title">{{home.experience.title | safe }}</h2>
+            <ul class="info__list">
+            {% for experienceItem in home.experience.items %}
+                <li class="listing-item">
+                    <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">{{ experienceItem.label }}</h3>
+                        <h4 class="listing-item__sub-label">{{ experienceItem.subLabel }}</h4>
+                        <h5 class="listing-item__meta">{{ experienceItem.meta }}</h5>
+                    </div>
+                    <p class="listing-item__action">{{ experienceItem.time }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>  
+        <div class="experience-education__education info">
+            <h2 class="info__title">{{home.education.title | safe }}</h2>
+            <ul class="info__list">
+            {% for educationItem in home.education.items %}
+                <li class="listing-item">
+                    <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">{{ educationItem.label }}</h3>
+                        <h4 class="listing-item__sub-label">{{ educationItem.subLabel }}</h4>
+                        <h5 class="listing-item__meta">{{ educationItem.meta }}</h5>
+                    </div>
+                    <p class="listing-item__action">{{ educationItem.time }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>  
     </div>
 </section>
 

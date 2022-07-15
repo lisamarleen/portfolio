@@ -13,6 +13,17 @@
       }
     ]
   },
+  "education": {
+    "title": "edu<br />cation",
+    "items": [
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text",
+        "time": "2022"
+      }
+    ]
+  },
   "teachings": {
     "title": "teaching<br />& talks",
     "items": [
