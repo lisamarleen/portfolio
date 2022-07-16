@@ -1,15 +1,27 @@
 {
   "title": "<span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'> director</span>",
   "shortBioTitle": "I'm lisa marleen (she/her), multi-disciplinary designer, art director, and digital creative",
-  "shortBioCopy": "I’m in search of non-human tools which let us evolve from our homocentric worldview and enable new perspectives with research through design. My newest project, a team effort with Laura Wagner, is an experimental film reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.",
+  "shortBioCopy": "I’m passionate about the design and UX of intelligent digital tools since they also shape us in return as we shape them. One of my main objectives is to enable new perspectives with research through design. My multidisciplinary experience derives from 5+ years of working in the field of creative technologies ranging from tangible interfaces, gamified experiences, virtual and augmented realities, interactive exhibitions, facilitating workshops, and teaching university courses. I love working with a diverse group of people and being the glue between the disciplines. It is interesting for me to empathize with new situations repeatedly and develop meaningful experiences in dialogue with all stakeholders.",
   "experience": {
     "title": "exp<br />erience",
     "items": [
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text",
+        "label": "Art director",
+        "subLabel": "Demodern creative technologies",
+        "meta": "Cologne",
         "time": "4 years"
+      },
+      {
+        "label": "Digital designer",
+        "subLabel": "Demodern creative technologies",
+        "meta": "Cologne",
+        "time": "2 years"
+      },
+      {
+        "label": "Media designer",
+        "subLabel": "Leonhardt&kern",
+        "meta": "Stuttgart",
+        "time": "3 years"
       }
     ]
   },
@@ -17,10 +29,16 @@
     "title": "edu<br />cation",
     "items": [
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text",
+        "label": "Master of Arts",
+        "subLabel": "KISD",
+        "meta": "Faculty of University of Applied Sciences Cologne",
         "time": "2022"
+      },
+      {
+        "label": "Bachelor of Arts",
+        "subLabel": "DHBW",
+        "meta": "Baden-Wuerttemberg Cooperative State University",
+        "time": "2015"
       }
     ]
   },
@@ -28,10 +46,28 @@
     "title": "teaching<br />& talks",
     "items": [
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text",
-        "link": "https://thomasrutzer.dev"
+        "label": "Animation in x-Reality",
+        "subLabel": "Vilnius Tech Summerschool",
+        "meta": "Workshop Animation in collaboration with AI",
+        "link": "https://kisd.de/projects/animation-in-x-reality-summer-school-in-vilnius/"
+      },
+      {
+        "label": "Synthesizing meaning",
+        "subLabel": "DHBW RAvensburg",
+        "meta": "lunchtime talk – making of borrowed limbs",
+        "link": "https://kisd.de/projects/animation-in-x-reality-summer-school-in-vilnius/"
+      },
+      {
+        "label": "Digital showcases",
+        "subLabel": "Jung von Matt Neckar",
+        "meta": "Demodern Talk with with Jason Brandt and Matthias Rosenthal",
+        "link": ""
+      },
+      {
+        "label": "hoax",
+        "subLabel": "Z2X16 Festival der jungen Visionär:innen",
+        "meta": "Workshop – Wie man Anonymität und Privatsphäre im Netz sichert",
+        "link": "https://z2x.zeit.de/z2x16-programm"
       }
     ]
   },
@@ -39,15 +75,33 @@
     "title": "exhibit<br />ions",
     "items": [
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text",
-        "link": "https://thomasrutzer.dev"
+        "label": "GARDENING Amelisweerd",
+        "subLabel": "Utrecht 2022",
+        "meta": "Borrowed limbs – experiental short film",
+        "link": "https://site.gardening.nu/en/event/gardening"
       },
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text"
+        "label": "Re:publica",
+        "subLabel": "Gather Town 2022",
+        "meta": "Borrowed Limbs – experiental short film"
+      },
+      {
+        "label": "Attending to futures conference",
+        "subLabel": "Cologne 2021",
+        "meta": "Entomon – Interspecies Metamorphosis",
+        "link": "https://www.attendingtofutures.de/"
+      },
+      {
+        "label": "Vienna Design week",
+        "subLabel": "Vienna 2020",
+        "meta": "Breathing Softspace – kinetic installation",
+        "link": "https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/"
+      },
+      {
+        "label": "Future award",
+        "subLabel": "Frankfurt 2015",
+        "meta": "Hoax – Software concept",
+        "link": ""
       }
     ]
   },
@@ -55,15 +109,15 @@
     "title": "publi<br />cations",
     "items": [
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text",
-        "link": "https://thomasrutzer.dev"
+        "label": "Page",
+        "subLabel": "Edition 08/22",
+        "meta": "Borrowed Limbs – experiental short film",
+        "link": "https://page-online.de/shop/page-8-2022/"
       },
       {
-        "label": "label text",
-        "subLabel": "value text",
-        "meta": "meta text"
+        "label": "Annual multimedia",
+        "subLabel": "Jahrbuch für digitales marketing 2017",
+        "meta": "Hoax – Software concept"
       }
     ]
   },
@@ -72,10 +126,30 @@
     "items": [
       {
         "label": "FWA",
-        "count": 12
+        "count": 6
       },
       {
         "label": "ADC Bronze",
+        "count": 2
+      },
+      {
+        "label": "DDA bronze",
+        "count": 1
+      },
+      {
+        "label": "DDA silver",
+        "count": 1
+      },
+      {
+        "label": "Annual multimedia award silver",
+        "count": 1
+      },
+      {
+        "label": "New York design award silver",
+        "count": 1
+      },
+      {
+        "label": "Annual multimedia award digital talent",
         "count": 1
       }
     ]

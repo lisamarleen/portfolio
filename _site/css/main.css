@@ -5,7 +5,7 @@
   --color-grey1: #626262;
   --color-grey2: #c4c4c4;
   --color-highlight: #4961FE;
-  
+
   --spacing-s: 8px;
   --spacing-m: 16px;
   --spacing-l: 32px;
@@ -78,7 +78,7 @@ li {
   list-style: none;
 }
 
-.about-section:nth-child(even) { 
+.about-section:nth-child(even) {
   background-color: var(--color-dark-blue);
 }
 
@@ -95,7 +95,7 @@ li {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: 
+  grid-template-areas:
     "image"
     "main"
     "copy";
@@ -112,7 +112,7 @@ li {
   grid-area: image;
   padding: 0 var(--spacing-m);
 }
-  
+
 .short-bio__image picture img {
   width: 100%;
   object-fit: cover;
@@ -139,11 +139,11 @@ li {
 
 .info__title {
   font-family: var(--font-headline-bold);
+  text-transform: uppercase;
 }
 
 .info__title:not(.info-title--secondary) {
   text-align: right;
-  text-transform: uppercase;
   font-size: 110px;
   line-height: 89px;
 }
@@ -163,6 +163,8 @@ li {
   font-family: var(--font-headline-bold);
   color: var(--color-grey2);
   margin-top: var(--spacing-m);
+  text-transform: uppercase;
+  line-height: var(--font-line-height-m);
 }
 
 .info__block sup {
@@ -340,7 +342,7 @@ li {
   font-size: inherit;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .content-wrapper {
     padding: 0 var(--spacing-l);
   }
@@ -360,7 +362,7 @@ li {
   .short-bio {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "main main"
       "image copy";
     gap: var(--spacing--xxl);
@@ -369,21 +371,21 @@ li {
   .short-bio__main-content {
     padding-top: var(--spacing--xxl);
   }
-  
+
   .short-bio__image {
     overflow: hidden;
     position: relative;
     flex: 1;
     padding: 0;
   }
-  
+
   .short-bio__image picture {
     overflow: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  
+
   .short-bio__copy {
     max-width: 70ch;
     min-height: 330px;
@@ -398,12 +400,12 @@ li {
   .social-content {
     flex-direction: row;
   }
-  
+
   .social-content__list {
     flex: 2;
     margin-top: -32px;
   }
-  
+
   .social-content__title {
     flex: 1;
     font-size: var(--font-size-xxl);
