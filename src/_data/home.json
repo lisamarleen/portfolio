@@ -35,6 +35,38 @@
       }
     ]
   },
+  "exhibitions": {
+    "title": "exhibit<br />ions",
+    "items": [
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text",
+        "link": "https://thomasrutzer.dev"
+      },
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text"
+      }
+    ]
+  },
+  "publications": {
+    "title": "publi<br />cations",
+    "items": [
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text",
+        "link": "https://thomasrutzer.dev"
+      },
+      {
+        "label": "label text",
+        "subLabel": "value text",
+        "meta": "meta text"
+      }
+    ]
+  },
   "awards": {
     "title": "Awards",
     "items": [

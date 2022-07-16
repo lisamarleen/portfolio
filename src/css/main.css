@@ -1,6 +1,7 @@
 :root {
   --color-white: #fff;
   --color-black: #030110;
+  --color-dark-blue: #0E0C1D;
   --color-grey1: #626262;
   --color-grey2: #c4c4c4;
   --color-highlight: #4961FE;
@@ -76,10 +77,14 @@ li {
   list-style: none;
 }
 
+.about-section:nth-child(even) { 
+  background-color: var(--color-dark-blue);
+}
+
 .content-wrapper {
   position: relative;
   width: 100%;
-  max-width: 72rem;
+  max-width: 80rem;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 var(--spacing-m);
@@ -143,6 +148,16 @@ li {
   margin-top: var(--spacing-m);
 }
 
+.info__block {
+  font-size: var(--font-size-m);
+  font-family: var(--font-headline-bold);
+  color: var(--color-grey2);
+}
+
+.info__block sup {
+  font-size: var(--font-size-s);
+}
+
 .listing-item {
   list-style: none;
   display: flex;
@@ -176,7 +191,7 @@ li {
   letter-spacing: -0.2px;
 }
 
-.listing-item__action {
+.listing-item__time {
   font-size: var(--font-size-m);
   color: var(--color-grey2);
   text-transform: uppercase;
@@ -184,11 +199,8 @@ li {
   letter-spacing: var(--font-letter-spacing-s);
 }
 
-.listing-item__link-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%; 
+.listing-item__link {
+
 }
 
 .social {
@@ -306,30 +318,16 @@ footer {
     padding: 0 var(--spacing-l);
   }
 
-  .experience-education {
+  .about-section {
     padding: 220px 0;
   }
 
-  .experience-education__education {
+  .about-section__listing {
     margin-top: 64px;
   }
 
-  .info {
-    flex-direction: row;
-    gap: var(--spacing-xl);
-  }
-
-  .info__title {
-    flex: 1;
-  }
-
-  .info__list {
-    flex: 2;
+  .about-section__listing:first-child {
     margin-top: 0;
-  }
-
-  .info__block {
-    flex: 2;
   }
 
   .short-bio {
@@ -382,6 +380,7 @@ footer {
     flex: 1;
     font-size: 130px;
     line-height: 100px;
+    text-align: right;
   }
 
   .social-list {
@@ -419,11 +418,35 @@ footer {
 
 @media (min-width: 1024px) {
   .info {
-    gap: 220px;
+    flex-direction: row;
+    gap: 120px;
+  }
+
+  .info__title {
+    flex: 1;
+  }
+
+  .info__list {
+    flex: 2;
+    margin-top: 0;
+  }
+
+  .info__block {
+    flex: 2;
   }
 
   .short-bio-title {
     font-size: 130px;
     line-height: 130px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .info {
+    gap: 196px;
+  }
+
+  .social {
+    gap: 196px;
   }
 }

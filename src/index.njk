@@ -32,9 +32,9 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     </p>
 </section>
 
-<section class="experience-education">
+<section class="experience-education about-section">
     <div class="content-wrapper">
-        <div class="info">
+        <div class="about-section__listing info">
             <h2 class="info__title">{{home.experience.title | safe }}</h2>
             <ul class="info__list">
             {% for experienceItem in home.experience.items %}
@@ -44,12 +44,12 @@ pageTitle: "Lisa Marleen Portfolio 2022"
                         <h4 class="listing-item__sub-label">{{ experienceItem.subLabel }}</h4>
                         <h5 class="listing-item__meta">{{ experienceItem.meta }}</h5>
                     </div>
-                    <p class="listing-item__action">{{ experienceItem.time }}</p>
+                    <p class="listing-item__time">{{ experienceItem.time }}</p>
                 </li>
             {% endfor %}
             </ul>
         </div>  
-        <div class="experience-education__education info">
+        <div class="about-section__listing info">
             <h2 class="info__title">{{home.education.title | safe }}</h2>
             <ul class="info__list">
             {% for educationItem in home.education.items %}
@@ -59,7 +59,7 @@ pageTitle: "Lisa Marleen Portfolio 2022"
                         <h4 class="listing-item__sub-label">{{ educationItem.subLabel }}</h4>
                         <h5 class="listing-item__meta">{{ educationItem.meta }}</h5>
                     </div>
-                    <p class="listing-item__action">{{ educationItem.time }}</p>
+                    <p class="listing-item__time">{{ educationItem.time }}</p>
                 </li>
             {% endfor %}
             </ul>
@@ -67,38 +67,84 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     </div>
 </section>
 
-<section class="teachings-talks">
-    <div class="info content-wrapper">
-        <h2 class="info__title">{{home.teachings.title | safe }}</h2>
-        <ul class="info__list">
-        {% for teachingItem in home.teachings.items %}
-            <li class="listing-item">
-                <a class="listing-item__link-wrapper" href="https://thomasrutzer.medium.com/84c52df4621c" rel="noopener noreferrer" target="_blank">
+<section class="teachings-talks about-section">
+    <div class="content-wrapper">
+        <div class="about-section__listing info">
+            <h2 class="info__title">{{home.teachings.title | safe }}</h2>
+            <ul class="info__list">
+            {% for teachingItem in home.teachings.items %}
+                <li class="listing-item">
                     <div class="listing-item__main-content">
-                        <h3>{{ teachingItem.label }}</h3>
-                        <h4>{{ teachingItem.subLabel }}</h4>
-                        <h5>{{ teachingItem.meta }}</h5>
+                        <h3 class="listing-item__label">{{ teachingItem.label }}</h3>
+                        <h4 class="listing-item__sub-label">{{ teachingItem.subLabel }}</h4>
+                        <h5 class="listing-item__meta">{{ teachingItem.meta }}</h5>
                     </div>
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
+                    {% if teachingItem.link %}
+                    <a class="listing-item__link" href={{ teachingItem.link }} rel="noopener noreferrer" target="_blank">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                    </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="about-section__listing info">
+            <h2 class="info__title">{{home.exhibitions.title | safe }}</h2>
+            <ul class="info__list">
+            {% for exhibitionItem in home.exhibitions.items %}
+                <li class="listing-item">
+                    <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">{{ exhibitionItem.label }}</h3>
+                        <h4 class="listing-item__sub-label">{{ exhibitionItem.subLabel }}</h4>
+                        <h5 class="listing-item__meta">{{ exhibitionItem.meta }}</h5>
+                    </div>
+                    {% if exhibitionItem.link %}
+                        <a class="listing-item__link" href={{ exhibitionItem.link }} rel="noopener noreferrer" target="_blank">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                        </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
 
-<section class="awards">
-    <div class="info content-wrapper">
-        <h2 class="info__title">{{home.awards.title }}</h2>
-        <p class="info__block">
-        {% for awardsItem in home.awards.items %}
-            <span>
-                {{ awardsItem.label }}
-                {% if awardsItem.count > 1 %}
-                    <sup>{{ awardsItem.count }}</sup>
-                {% endif %}
-            </span>
-        {% endfor %}
-        </p>
+<section class="publications-awards about-section">
+    <div class="content-wrapper">
+        <div class="about-section__listing info">
+            <h2 class="info__title">{{home.publications.title | safe }}</h2>
+            <ul class="info__list">
+            {% for publicationItem in home.publications.items %}
+                <li class="listing-item">
+                    <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">{{ publicationItem.label }}</h3>
+                        <h4 class="listing-item__sub-label">{{ publicationItem.subLabel }}</h4>
+                        <h5 class="listing-item__meta">{{ publicationItem.meta }}</h5>
+                    </div>
+                    {% if publicationItem.link %}
+                    <a class="listing-item__link" href={{ publicationItem.link }} rel="noopener noreferrer" target="_blank">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                    </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="about-section__listing info">
+            <h2 class="info__title">{{home.awards.title }}</h2>
+            <p class="info__block">
+            {% for awardsItem in home.awards.items %}
+                <span>
+                    {{ awardsItem.label }}
+                    {% if awardsItem.count > 1 %}
+                        <sup>{{ awardsItem.count }}x</sup>
+                    {% endif %}
+                </span>
+            {% endfor %}
+            </p>
+        </div>
     </div>
 </section>
