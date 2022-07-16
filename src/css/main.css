@@ -399,6 +399,7 @@ li {
 
   .social-content {
     flex-direction: row;
+    padding: 96px 0;
   }
 
   .social-content__list {
