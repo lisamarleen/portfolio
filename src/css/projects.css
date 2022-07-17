@@ -150,6 +150,10 @@
 }
 
 @media (min-width: 1024px) {
+  .project__image.project__image--alignment-left {
+    justify-self: flex-start;
+  }
+
   .project__image.project__image--alignment-right {
     justify-self: flex-end;
   }
