@@ -67,7 +67,7 @@
           "src": "entomon2.png",
           "alt": "some alt text",
           "largeView": {
-            "width": "2/3",
+            "width": "1/2",
             "alignment": "center"
           }
         },
@@ -75,7 +75,7 @@
           "src": "entomon3.png",
           "alt": "some alt text",
           "largeView": {
-            "width": "1/2",
+            "width": "2/3",
             "alignment": "right"
           }
         },
