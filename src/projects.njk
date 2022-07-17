@@ -15,7 +15,7 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Projects"
                 {% endfor %}
                 <h2 class="project__title">{{ projectItem.title | safe }}</h2>
                 <div class="project__desc">
-                    <p class="project-copy">{{ projectItem.description | safe }}</p>
+                    <div class="formatted-copy">{{ projectItem.description | safe }}</div>
                     <div class="project-links">
                         {% for projectLink in projectItem.links %}
                             <a class="project-links__item" href={{ projectLink.link }} rel="noopener noreferrer" target="_blank">

@@ -75,15 +75,6 @@
   margin-top: var(--spacing-l);
 }
 
-.project-copy {
-  font-size: var(--font-size-xs);
-  line-height: var(--font-line-height-xs);
-}
-
-.project-copy a {
-  color: inherit;
-}
-
 .project-links {
   display: flex;
   justify-content: flex-end;
