@@ -22,13 +22,14 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 
 <section class="short-bio">
     <div class="short-bio__main-content content-wrapper">
-        <h2 class="short-bio-title">{{home.shortBioTitle}}</h2>
+        <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
     <div class="short-bio__image">
-        {%  imageWithDetail "./src/assets/images/test.jpg", "My pug, Bobby", "(min-width: 768px) 50vw, 100vw", "./src/assets/images/testDetail.jpg", "(max-width: 767px)", "100vw" %}
+        {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.fileName %}
+        {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", "./src/assets/images/testDetail.jpg", "(max-width: 767px)", "100vw" %}
     </div>
     <p class="short-bio__copy">
-        {{home.shortBioCopy}}
+        {{home.shortBio.copy}}
     </p>
 </section>
 
@@ -141,7 +142,8 @@ pageTitle: "Lisa Marleen Portfolio 2022"
                     {{ awardsItem.label }}
                     {% if awardsItem.count > 1 %}
                         <sup>{{ awardsItem.count }}x</sup>
-                    {% endif %},
+                    {% endif %}
+                    {% if not loop.last %},&nbsp;{% endif %}
                 </span>
             {% endfor %}
             </p>

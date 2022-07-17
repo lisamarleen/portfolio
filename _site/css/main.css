@@ -169,6 +169,7 @@ li {
 
 .info__block sup {
   font-size: var(--font-size-s);
+  text-transform: lowercase;
 }
 
 .listing-item {
@@ -330,6 +331,7 @@ li {
   padding: var(--spacing-m);
   color: var(--color-grey2);
   text-transform: uppercase;
+  font-family: var(--font-headline-regular);
 }
 
 .footer__copyright {
@@ -478,6 +480,7 @@ li {
 
   .info__block {
     flex: 2;
+    margin-top: 0;
   }
 
   .short-bio-title {
