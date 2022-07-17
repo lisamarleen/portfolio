@@ -127,6 +127,7 @@ async function imageWithDetailShortcode(
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/js/");
+  eleventyConfig.addWatchTarget("./src/css/");
 
   eleventyConfig.addTransform("cssminFile", minifyCSS);
 
