@@ -98,6 +98,55 @@
           "label": "Latent space walks"
         }
       ]
+    },
+    {
+      "id": "breathingsoftspace",
+      "title": "Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;",
+      "description": "<b>Breathing Softspace adapts to the visitors’ behavior through shapes, lights, and sounds.</b><br />The interactive installation was a team effort with <b>textile artist <a href='' rel='noopener noreferrer' target='http://marieschumann.de/'>Marie Schumann</a></b> and <b>creative technologist <a href='' rel='noopener noreferrer' target='https://matthiasrosenthal.de/blog_2017/'>Matthias Rosenthal</a></b> and creates a space to discover dimensionality, movement, and the play of material of woven textiles. Loose threads add dimension to the textile while motion enhances the optical volume and gives the textile the ability to grow and shrink and, due to that, change the space around them.<br /><b>Shy or bold? Near or far?</b> The user interaction is subdivided by six states mirroring the visitors behavior. Nine electronic winches fixed to the ceiling controlled the textile dynamically via a DMX interface. Moreover, LED lights and a fan were connected to the DMX network. A Unity-3D application simulates the room, the textile, and the connected hardware, such as light colors and sound, on the PC in real-time.",
+      "images": [
+        {
+          "src": "breathingsoftspace1.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "left"
+          }
+        },
+        {
+          "src": "breathingsoftspace2.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "2/3",
+            "alignment": "right"
+          }
+        },
+        {
+          "src": "breathingsoftspace3.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "center"
+          }
+        },
+        {
+          "src": "breathingsoftspace4.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/1",
+            "alignment": "center"
+          }
+        }
+      ],
+      "links": [
+        {
+          "link": "https://www.behance.net/gallery/106630681/Breathing-Softspace",
+          "label": "Link to case"
+        },
+        {
+          "link": "https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/",
+          "label": "At Vienna Design Week"
+        }
+      ]
     }
   ]
 }
