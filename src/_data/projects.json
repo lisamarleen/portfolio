@@ -2,12 +2,12 @@
   "title": "my Projects",
   "items": [
     {
-      "id": "project1",
+      "id": "borrowedlimbs",
       "title": "Bor<br />rowed<br /> limbs",
-      "description": "My newest project, a team effort with <a href='' rel='noopener noreferrer' target='_blank'>Laura Wagner</a>, is an experimental film reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.",
+      "description": "<b>This experimental short film is reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species.</b><br />The plot is centered around an AI main character who uses the human body as a sensing device to gain a physical understanding of their surroundings. Influenced by posthuman thinkers, the work aims to provoke a discussion about Cartesian notions of disembodied intelligence. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.<br />The main part of the film was produced with a machine-learning-backed process called “<b>CLIP guided diffusion</b>”. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. In a way, the practical processes involved in producing the film reflect the speculative idea of an ongoing dialogue found in the narrative. The work resulted in a modular design pipeline for controlled image synthesis using AI tools as a design appropriation to communicate speculative concepts. It was created as a team effort with <a href='' rel='noopener noreferrer' target='https://lwgnr.de/index.html'>Laura Wagner</a> and part of the Master Research at <a href='' rel='noopener noreferrer' target='https://kisd.de/projects/borrowed-limbs-short-film/'>KISD</a> - Cologne International School of Design (Faculty of <a href='' rel='noopener noreferrer' target='https://www.th-koeln.de/en/homepage_26.php'>TH Köln</a>).",
       "images": [
         {
-          "src": "project1FirstImage.jpg",
+          "src": "borrowedlimbs1.png",
           "alt": "some alt text",
           "largeView": {
             "width": "1/2",
@@ -15,14 +15,15 @@
           }
         },
         {
-          "src": "diana.jpg",
+          "src": "borrowedlimbs2.png",
           "alt": "some alt text",
           "largeView": {
-            "width": "2/3"
+            "width": "2/3",
+            "alignment": "right"
           }
         },
         {
-          "src": "project1FirstImage.jpg",
+          "src": "borrowedlimbs3.png",
           "alt": "some alt text",
           "largeView": {
             "width": "1/2",
@@ -30,22 +31,22 @@
           }
         },
         {
-          "src": "project1FirstImage.jpg",
+          "src": "borrowedlimbs4.png",
           "alt": "some alt text",
           "largeView": {
-            "width": "1/3",
+            "width": "1/1",
             "alignment": "center"
           }
         }
       ],
       "links": [
         {
-          "link": "https://thomasrutzer.dev",
-          "label": "Link label"
+          "link": "https://vimeo.com/682432232",
+          "label": "Link to film"
         },
         {
-          "link": "https://thomasrutzer.dev",
-          "label": "Link label"
+          "link": "https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg",
+          "label": "Link to research paper"
         }
       ]
     }
