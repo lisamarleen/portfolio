@@ -15,32 +15,36 @@
   ],
 
   "social": {
-    "title": "Say hi!",
+    "title": "Say hi",
     "items": [
+      {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/in/lisa-marleen-mantel-345185177/"
+      },
+      {
+        "label": "Instagram",
+        "link": "https://www.instagram.com/_lisamarleen/"
+      },
+      {
+        "label": "Twitter",
+        "link": "https://twitter.com/lizamarleen"
+      },
       {
         "label": "hi@lisamarleen.de",
         "link": "mailto:ho@lisamarleen.de",
         "highlighted": true
       },
       {
-        "label": "LinkedIn",
-        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+        "label": "Behance",
+        "link": "https://medium.com/@lisamarleen"
       },
       {
-        "label": "LinkedIn",
-        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+        "label": "Medium",
+        "link": "https://medium.com/@lisamarleen"
       },
       {
-        "label": "LinkedIn",
-        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
-      },
-      {
-        "label": "LinkedIn",
-        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
-      },
-      {
-        "label": "LinkedIn",
-        "link": "https://www.linkedin.com/lisamarleenmantel?_l=de_DE"
+        "label": "Stateofthedeep.art",
+        "link": "https://stateofthedeep.art/"
       }
     ]
   },
