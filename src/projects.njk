@@ -3,24 +3,28 @@ layout: layout.njk
 pageId: projects
 pageTitle: "Lisa Marleen Portfolio 2022 - Projects"
 ---
-<h1>{{projects.title}}</h1>
-
 {% for projectItem in projects.items %}
-    <section>
+    <section class="project-section">
         <div class="content-wrapper">
             <div class="project">
                 {% for projectImage in projectItem.images %}
                     {% set computedSrc = "./src/assets/images/" + projectItem.id + "/" + projectImage.src  %}
-                    <div class="project__image">
+                    <div class="project__image project__image--alignment-{{ projectImage.largeView.alignment | default('left') }}  project__image--width-{{ projectImage.largeView.width | default('1/1') }}">
                         {%  imageWithDetail computedSrc, projectImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                     </div>
                 {% endfor %}
-                 <div class="project__title">
-                    <h2>{{ projectItem.title | safe }}</h2>
+                <h2 class="project__title">{{ projectItem.title | safe }}</h2>
+                <div class="project__desc">
+                    <p class="project-copy">{{ projectItem.description | safe }}</p>
+                    <div class="project-links">
+                        {% for projectLink in projectItem.links %}
+                            <a class="project-links__item" href={{ projectLink.link }} rel="noopener noreferrer" target="_blank">
+                                {{ projectLink.label }}
+                                {% include "icon-arrow-right-up.njk" %}
+                            </a>
+                        {% endfor %}
+                    </div>
                 </div>
-                <p class="project__desc">
-                    {{ projectItem.description }}
-                </p>
             </div>
         </div>
     </section>
