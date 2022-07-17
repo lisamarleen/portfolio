@@ -70,8 +70,8 @@ async function imageWithDetailShortcode(
           return `<source type="${imageFormat[0].sourceType}"
             srcset="${imageFormat
               .map((entry) => `/${entry.srcset}`)
-              .join(", ")}" 
-            media="${detailMedia}" 
+              .join(", ")}"
+            media="${detailMedia}"
             sizes="${detailSizes}">`;
         })
         .join("\n")
@@ -106,6 +106,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/videos");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   eleventyConfig.addNunjucksFilter("jsmin", (pageId) => {
