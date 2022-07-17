@@ -4,6 +4,30 @@ const Image = require("@11ty/eleventy-img");
 const esbuild = require("esbuild");
 const fs = require("fs");
 
+
+function minifyCSS(source, output_path) {
+  if (
+    !output_path ||
+    !output_path.endsWith(".css") ||
+    !process.env.NODE_ENV === "production"
+  )
+    return source;
+
+  const result = new CleanCSS({
+    level: 2,
+  })
+    .minify(source)
+    .styles.trim();
+  console.log(
+    `minify ${output_path}`,
+    source.length,
+    `→`,
+    result.length,
+    `(${((1 - result.length / source.length) * 100).toFixed(2)}% reduction)`
+  );
+  return result;
+}
+
 function imageFileName({ src, width, format, imageSizes }) {
   const extension = path.extname(src);
   const name = path.basename(src, extension);
@@ -104,7 +128,8 @@ async function imageWithDetailShortcode(
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/js/");
 
-  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addTransform("cssminFile", minifyCSS);
+
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/videos");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
@@ -120,7 +145,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksFilter("cssmin", (pageId) => {
-    const code = fs.readFileSync(`src/css/${pageId}.critical.css`, "utf8");
+    const code = fs.readFileSync(
+      `src/css/critical/${pageId}.critical.css`,
+      "utf8"
+    );
     return new CleanCSS({}).minify(code).styles;
   });
 
