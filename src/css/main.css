@@ -112,6 +112,8 @@ li {
 
 .formatted-copy a {
   color: var(--color-white);
+  font-family: var(--font-copy-bold);
+  text-decoration-thickness: 2px;
 }
 
 .formatted-copy b {
@@ -119,7 +121,7 @@ li {
 }
 
 .formatted-copy p + p {
-  margin-top: var(--spacing-m);
+  margin-top: 16px;
 }
 
 .info {
