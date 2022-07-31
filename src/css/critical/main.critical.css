@@ -1,0 +1,32 @@
+.page-intro {
+    padding: var(--spacing-m, 8px);
+}
+
+.page-title {
+    font-family: var(--font-headline-bold);
+    font-size: var(--font-size-xl, 7rem);
+    text-transform: uppercase;
+    letter-spacing: 2.86px;
+    line-height: var(--font-line-height-xl, 6rem);
+    text-align: right;
+    margin: var(--spacing-m, 16px) 0 var(--spacing-xl, 32px) 0;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        font-size: var(--font-line-height-xxl, 8rem);
+        line-height: var(--font-line-height-xxl, 7rem); 
+        margin-bottom: 0;
+    }
+}
+  
+@media (min-width: 1280px) { 
+    .page-title {
+        font-size: var(--font-size-3xl, 10rem);
+        line-height: var(--font-line-height-3xl, 8.625rem);
+    }
+
+    .page-intro {
+        padding: 40px 48px;
+    }
+}

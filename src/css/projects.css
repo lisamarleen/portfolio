@@ -1,14 +1,5 @@
-.projects-title {
-  text-transform: uppercase;
-  text-align: right;
-  font-size: var(--font-size-xl);
-  line-height: var(--font-line-height-xl);
-  font-family: var(--font-headline-bold);
-  padding: var(--spacing-m) 0 var(--spacing-xl);
-}
-
 .project-section {
-  padding: var(--spacing-l) 0;
+  padding: var(--spacing-xl) 0;
 }
 
 .project {
