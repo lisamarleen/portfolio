@@ -1,3 +1,12 @@
+.projects-title {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
+  font-family: var(--font-headline-bold);
+  padding: var(--spacing-m) 0 var(--spacing-xl);
+}
+
 .project-section {
   padding: var(--spacing-l) 0;
 }
@@ -11,6 +20,19 @@
     "image3"
     "image4"
     "desc";
+}
+
+.project__title {
+  position: relative;
+  z-index: 1;
+  grid-area: title;
+  justify-self: flex-end;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 110px;
+  line-height: 89px;
+  font-family: var(--font-headline-bold);
+  padding: var(--spacing-m) 0 var(--spacing-xl);
 }
 
 .project__image {
@@ -57,19 +79,6 @@
   grid-area: image4;
 }
 
-.project__title {
-  position: relative;
-  z-index: 1;
-  grid-area: title;
-  justify-self: flex-end;
-  text-transform: uppercase;
-  text-align: right;
-  font-size: 110px;
-  line-height: 89px;
-  font-family: var(--font-headline-bold);
-  padding: var(--spacing-m) 0 var(--spacing-xl);
-}
-
 .project__desc {
   grid-area: desc;
   margin-top: var(--spacing-l);
@@ -111,6 +120,10 @@
       "desc image4";
     gap: var(--spacing-l);
   }
+  
+  .project-section {
+    padding: var(--spacing-xl) 0;
+  }
 
   .project__image:nth-child(2) {
     opacity: 1;
@@ -141,6 +154,10 @@
 }
 
 @media (min-width: 1024px) {
+  .project-section {
+    padding: var(--spacing-xxl) 0;
+  }
+
   .project__image.project__image--alignment-left {
     justify-self: flex-start;
   }
