@@ -6,7 +6,6 @@
   justify-content: space-between;
   flex-direction: column;
   box-sizing: border-box;
-  padding: var(--spacing-m, 8px);
 }
 
 .intro-nav ul {
@@ -39,14 +38,8 @@
 .intro-title {
   align-self: flex-end;
   text-align: right;
-  margin: 0;
-  font-family: var(--font-headline-bold);
-  font-size: 110px;
   /* font-size: clamp(2rem, -0.875rem + 33.333vw, 7.5rem);*/
   max-width: 17ch;
-  text-transform: uppercase;
-  letter-spacing: 2.86px;
-  line-height: 89px;
 }
 
 .intro-title__line {
@@ -75,11 +68,6 @@
 }
 
 @media (min-width: 768px) {
-  .intro-title {
-    font-size: 112px;
-    line-height: 104px;
-  }
-  
   .intro-title__line {
     display: inline;
     white-space: normal;
@@ -87,17 +75,6 @@
   
   .intro-nav li {
     border: none;
-  }
-}
-
-@media (min-width: 1280px) { 
-  .intro {
-    padding: 40px 48px;
-  }
-
-  .intro-title {
-    font-size: 158px;
-    line-height: 138px;
   }
 }
 
