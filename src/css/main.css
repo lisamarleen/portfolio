@@ -21,11 +21,13 @@
   --font-size-s: 1.25rem;
   --font-size-m: 2rem;
   --font-size-l: 2.25rem;
+  --font-size-xl: 7rem;
   --font-size-xxl: 8rem;
 
   --font-line-height-xs: 1.875rem;
   --font-line-height-m: 2rem;
   --font-line-height-l: 2.25rem;
+  --font-line-height-xl: 6rem;
   --font-line-height-xxl: 7rem;
   --font-letter-spacing-s: 0.7px;
 }
