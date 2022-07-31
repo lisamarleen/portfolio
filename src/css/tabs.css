@@ -1,7 +1,16 @@
 .tabs-list {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-m) 0;
+    gap: var(--spacing-m);
+    padding: var(--spacing-m);
+}
+
+.tabs-list.tabs-list--sticky {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-layer-above);
+    background-color: var(--color-black);
 }
 
 .tabs-list__item {
@@ -21,7 +30,17 @@
 
 @media (min-width: 768px) {
     .tabs-list {
-        display: inline-flex;
-        gap: var(--spacing-m);
+        justify-content: flex-end;
+    }
+
+    .tabs-list.tabs-list--sticky {
+        top: var(--spacing-xl);
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 1280px) { 
+    .tabs-list {
+      padding: 0 48px;
     }
 }
