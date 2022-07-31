@@ -1,3 +1,151 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "borrowedlimbs",
+      "title": "Bor<br />rowed &nbsp;<br /> limbs",
+      "description": "<p><b>This experimental short film is reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species.</p><p></b>The plot is centered around an AI main character who uses the human body as a sensing device to gain a physical understanding of their surroundings. Influenced by posthuman thinkers, the work aims to provoke a discussion about Cartesian notions of disembodied intelligence. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.<br />The main part of the film was produced with a machine-learning-backed process called “<b>CLIP guided diffusion</b>”. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. In a way, the practical processes involved in producing the film reflect the speculative idea of an ongoing dialogue found in the narrative. The work resulted in a modular design pipeline for controlled image synthesis using AI tools as a design appropriation to communicate speculative concepts.</p><p>It was created as a team effort with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> and part of the Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a> - Cologne International School of Design (Faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>TH Köln</a>).</p>",
+      "images": [
+        {
+          "src": "borrowedlimbs1.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "left"
+          }
+        },
+        {
+          "src": "borrowedlimbs2.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "2/3",
+            "alignment": "right"
+          }
+        },
+        {
+          "src": "borrowedlimbs3.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "center"
+          }
+        },
+        {
+          "src": "borrowedlimbs4.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/1",
+            "alignment": "center"
+          }
+        }
+      ],
+      "links": [
+        {
+          "link": "https://vimeo.com/682432232",
+          "label": "Link to film"
+        },
+        {
+          "link": "https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg",
+          "label": "Link to research paper"
+        }
+      ]
+    },
+    {
+      "id": "entomon",
+      "title": "Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;",
+      "description": "<p><b>“Entomon – Interspecies metamorphosis” was the result of a self initiated project with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> in our series of projects for the <a href='https://stateofthedeep.art/' rel='noopener noreferrer' target='_blank'>stateofthedeep.art</a> collective.</b></p><p>The results were visual experiments speculating on posthuman representation. A Generative Adversarial Network was trained with the StyleGAN2-ada-pytorch framework of NVlabs. We adapted a network that was originally trained on human faces, in transfer training it with our dataset of insect close-ups. The process of training a GAN on two incompatible datasets, produced phenotypes of human-insect hybrids. Insects and arachnids species are seen as disgusting, as vermins which shouldn‘t be part of the human habitat. A hybridization between human faces and features of unwanted bodies lets us discover alternatives to the humanist understanding of the „natural“. Exploring the latent space of bodily features between species helped us to think about possible posthuman forms of representation.<br /></p><p>How much will we need to reshape human bodies to detach from discriminating norms, from natural and artificial?</p>",
+      "images": [
+        {
+          "src": "entomon1.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "left"
+          }
+        },
+        {
+          "src": "entomon2.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "center"
+          }
+        },
+        {
+          "src": "entomon3.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "2/3",
+            "alignment": "right"
+          }
+        },
+        {
+          "src": "entomon4.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "left"
+          }
+        }
+      ],
+      "links": [
+        {
+          "link": "https://vimeo.com/682432232",
+          "label": "Link to curated collection"
+        },
+        {
+          "link": "https://vimeo.com/683741589",
+          "label": "Latent space walks"
+        }
+      ]
+    },
+    {
+      "id": "breathingsoftspace",
+      "title": "Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;",
+      "description": "<p><b>Breathing Softspace adapts to the visitors’ behavior through shapes, lights, and sounds.</b><p></p>The interactive installation was a team effort with <b>textile artist <a href='http://marieschumann.de/' rel='noopener noreferrer' target='_blank'>Marie Schumann</a></b> and <b>creative technologist <a href='https://matthiasrosenthal.de/blog_2017/' rel='noopener noreferrer' target='_blank'>Matthias Rosenthal</a></b> and creates a space to discover dimensionality, movement, and the play of material of woven textiles. Loose threads add dimension to the textile while motion enhances the optical volume and gives the textile the ability to grow and shrink and, due to that, change the space around them.</p><p><b>Shy or bold? Near or far?</b> The user interaction is subdivided by six states mirroring the visitors behavior. Nine electronic winches fixed to the ceiling controlled the textile dynamically via a DMX interface. Moreover, LED lights and a fan were connected to the DMX network. A Unity-3D application simulates the room, the textile, and the connected hardware, such as light colors and sound, on the PC in real-time.</p>",
+      "images": [
+        {
+          "src": "breathingsoftspace1.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "left"
+          }
+        },
+        {
+          "src": "breathingsoftspace2.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "2/3",
+            "alignment": "right"
+          }
+        },
+        {
+          "src": "breathingsoftspace3.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/2",
+            "alignment": "center"
+          }
+        },
+        {
+          "src": "breathingsoftspace4.png",
+          "alt": "some alt text",
+          "largeView": {
+            "width": "1/1",
+            "alignment": "center"
+          }
+        }
+      ],
+      "links": [
+        {
+          "link": "https://www.behance.net/gallery/106630681/Breathing-Softspace",
+          "label": "Link to case"
+        },
+        {
+          "link": "https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/",
+          "label": "At Vienna Design Week"
+        }
+      ]
+    }
+  ]
 }
