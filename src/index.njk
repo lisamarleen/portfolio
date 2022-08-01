@@ -5,7 +5,7 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 ---
 
 <section class="page-intro intro">
-    <h1 class="page-title intro-title">{{ home.title | safe }}</h1>
+    <h1 class="page-intro__title intro-title">{{ home.title | safe }}</h1>
     <nav class="intro-nav">
         <ul>
             {% for navigationItem in common.navigation %}
@@ -15,9 +15,11 @@ pageTitle: "Lisa Marleen Portfolio 2022"
             {% endfor %}
         </ul>
     </nav>
-    <video class="intro__video" autoplay loop muted playsinline>
-        <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
-    </video>
+    <div class="page-intro__background">
+        <video class="intro__video" autoplay loop muted playsinline>
+            <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
+        </video>
+    </div>
 </section>
 
 <section class="short-bio">

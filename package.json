@@ -16,6 +16,8 @@
     "esbuild": "^0.14.49"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^2.0.1"
+    "@11ty/eleventy-img": "^2.0.1",
+    "motion": "^10.13.1",
+    "splitting": "^1.0.6"
   }
 }

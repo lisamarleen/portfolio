@@ -6,8 +6,8 @@
   <title>Lisa Marleen Portfolio 2022</title>
 
   <style>
-    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-s,8px) 0;border-bottom:1px solid var(--color-grey1,#626262)}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover;z-index:-1}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s ease-in forwards}@media (min-width:768px){.intro-title__line{display:inline;white-space:normal}.intro-nav li{border:none}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
-    .page-intro{padding:var(--spacing-m,8px)}.page-title{font-family:var(--font-headline-bold);font-size:var(--font-size-xl, 7rem);text-transform:uppercase;letter-spacing:2.86px;line-height:var(--font-line-height-xl, 6rem);text-align:right;margin:var(--spacing-m,16px) 0 var(--spacing-xl,32px) 0}@media (min-width:768px){.page-title{font-size:var(--font-line-height-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem);margin-bottom:0}}@media (min-width:1280px){.page-title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8.625rem)}.page-intro{padding:40px 48px}}
+    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-s,8px) 0;border-bottom:1px solid var(--color-grey1,#626262)}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s ease-in forwards}@media (min-width:768px){.intro-title__line{display:inline;white-space:normal}.intro-nav li{border:none}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+    .page-intro{padding:var(--spacing-m,8px)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xl, 7rem);text-transform:uppercase;letter-spacing:2.86px;line-height:var(--font-line-height-xl, 6rem);text-align:right;margin:var(--spacing-m,16px) 0 var(--spacing-xl,32px) 0}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover;z-index:-1}@media (min-width:768px){.page-intro__title{font-size:var(--font-line-height-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem);margin-bottom:0}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8.625rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
     document.addEventListener("DOMContentLoaded",()=>{const d=document.querySelector(".intro__video");d.classList.add("intro__video--with-fade"),d.addEventListener("canplay",()=>d.classList.add("intro__video--loaded"))});
@@ -22,7 +22,7 @@
   <main>
    
 <section class="page-intro intro">
-    <h1 class="page-title intro-title"><span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'> director</span></h1>
+    <h1 class="page-intro__title intro-title"><span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'> director</span></h1>
     <nav class="intro-nav">
         <ul>
             
@@ -40,9 +40,11 @@
             
         </ul>
     </nav>
-    <video class="intro__video" autoplay loop muted playsinline>
-        <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
-    </video>
+    <div class="page-intro__background">
+        <video class="intro__video" autoplay loop muted playsinline>
+            <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
+        </video>
+    </div>
 </section>
 
 <section class="short-bio">
