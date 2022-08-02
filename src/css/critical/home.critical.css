@@ -63,17 +63,19 @@
 }
 
 .intro__video--with-fade.intro__video--loaded {
-  animation: fadeIn 3000ms ease-in forwards;
+  animation: fadeIn 3000ms 2000ms ease-in forwards;
 }
 
 @media (min-width: 768px) {
+  .intro-nav li {
+    border: none;
+  }
+}
+
+@media (min-width: 1280px) {
   .intro-title__line {
     display: inline;
     white-space: normal;
-  }
-  
-  .intro-nav li {
-    border: none;
   }
 }
 

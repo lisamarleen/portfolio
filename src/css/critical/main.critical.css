@@ -9,7 +9,15 @@
     letter-spacing: 2.86px;
     line-height: var(--font-line-height-xl, 6rem);
     text-align: right;
-    margin: var(--spacing-m, 16px) 0 var(--spacing-xl, 32px) 0;
+}
+
+.page-intro__title .word {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.page-intro__title .char {
+    display: inline-block;
 }
 
 .page-intro__background {
@@ -26,9 +34,8 @@
 
 @media (min-width: 768px) {
     .page-intro__title {
-        font-size: var(--font-line-height-xxl, 8rem);
+        font-size: var(--font-size-xxl, 8rem);
         line-height: var(--font-line-height-xxl, 7rem); 
-        margin-bottom: 0;
     }
 }
   
