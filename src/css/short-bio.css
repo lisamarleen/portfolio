@@ -1,4 +1,5 @@
 .short-bio {
+  position: relative;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -8,6 +9,9 @@
     "copy";
   gap: var(--spacing-l);
   padding: var(--spacing-m) 0;
+  background-color: var(--color-black);
+  
+  --scroll-progress: 0;
 }
 
 .short-bio__main-content {
@@ -18,11 +22,14 @@
 .short-bio__image {
   grid-area: image;
   padding: 0 var(--spacing-m);
+  opacity: 0;
 }
 
 .short-bio__image picture img {
   width: 100%;
   object-fit: cover;
+  filter: brightness(2);
+  transform: scale(1.1);
 }
 
 .short-bio__copy {
@@ -30,13 +37,40 @@
   font-size: var(--font-size-xs);
   line-height: var(--font-line-height-m);
   padding: 0 var(--spacing-m);
+  opacity: 0;
 }
 
 .short-bio-title {
+  position: relative;
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-l);
   line-height: var(--font-line-height-l);
+  /* opacity: var(--scroll-progress);*/
 }
+
+.short-bio-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(247deg 2% 88%) 19%,
+    hsl(247deg 2% 76%) 29%,
+    hsl(247deg 2% 64%) 36%,
+    hsl(247deg 2% 53%) 40%,
+    hsl(247deg 3% 43%) 44%,
+    hsl(247deg 4% 32%) 48%,
+    hsl(246deg 7% 23%) 53%,
+    hsl(245deg 12% 13%) 62%,
+    hsl(248deg 88% 3%) 88%
+  );
+  mix-blend-mode: darken;
+  opacity: calc(1 - var(--scroll-progress));
+} 
 
 @media (min-width: 768px) {
   .short-bio {
@@ -49,7 +83,8 @@
   }
 
   .short-bio__main-content {
-    padding-top: var(--spacing--xxl);
+    padding-top: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xxl);
   }
 
   .short-bio__image {
@@ -79,8 +114,16 @@
 }
 
 @media (min-width: 1024px) {
+  .short-bio {
+    padding: var(--spacing-xxl) 0;
+  }
+
   .short-bio-title {
     font-size: var(--font-size-xxl);
     line-height: var(--font-line-height-xxl);
+  }
+
+  .short-bio__copy {
+    padding-left: var(--spacing-xxl);
   }
 }

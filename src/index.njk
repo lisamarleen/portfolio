@@ -5,6 +5,11 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 ---
 
 <section class="page-intro intro" data-page-animation-container>
+    <div class="page-intro__background" aria-hidden="true" data-page-animation-background>
+        <video class="intro__video" autoplay loop muted playsinline>
+            <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
+        </video>
+    </div>
     <h1 class="page-intro__title intro-title" data-page-animation-title>{{ home.title | safe }}</h1>
     <nav class="page-intro__content intro-nav" data-page-animation-content>
         <ul>
@@ -15,14 +20,9 @@ pageTitle: "Lisa Marleen Portfolio 2022"
             {% endfor %}
         </ul>
     </nav>
-    <div class="page-intro__background" data-page-animation-background>
-        <video class="intro__video" autoplay loop muted playsinline>
-            <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
-        </video>
-    </div>
 </section>
 
-<section class="short-bio">
+<section class="short-bio" data-page-animation-scroll-progress>
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
@@ -30,7 +30,7 @@ pageTitle: "Lisa Marleen Portfolio 2022"
         {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.fileName %}
         {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", "./src/assets/images/testDetail.jpg", "(max-width: 767px)", "100vw" %}
     </div>
-    <p class="short-bio__copy">
+    <p class="short-bio__copy" data-page-animation-fade-in-view>
         {{home.shortBio.copy}}
     </p>
 </section>
@@ -38,10 +38,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 <section class="experience-education about-section">
     <div class="content-wrapper">
         <div class="about-section__listing info">
-            <h2 class="info__title">{{home.experience.title | safe }}</h2>
-            <ul class="info__list">
+            <h2 class="info__title" data-page-animation-fade-in-view>{{home.experience.title | safe }}</h2>
+            <ul class="info__list listing" data-page-animation-custom-class-in-view="listing">
             {% for experienceItem in home.experience.items %}
-                <li class="listing-item">
+                <li class="listing-item" style="--animation-delay: {{ loop.index * 100 }}ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">{{ experienceItem.label }}</h3>
                         <h4 class="listing-item__sub-label">{{ experienceItem.subLabel }}</h4>
@@ -53,10 +53,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
             </ul>
         </div>
         <div class="about-section__listing info">
-            <h2 class="info__title">{{home.education.title | safe }}</h2>
-            <ul class="info__list">
+            <h2 class="info__title" data-page-animation-fade-in-view>{{home.education.title | safe }}</h2>
+            <ul class="info__list listing" data-page-animation-custom-class-in-view="listing">
             {% for educationItem in home.education.items %}
-                <li class="listing-item">
+                <li class="listing-item" style="--animation-delay: {{ loop.index * 100 }}ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">{{ educationItem.label }}</h3>
                         <h4 class="listing-item__sub-label">{{ educationItem.subLabel }}</h4>
@@ -73,10 +73,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 <section class="teachings-talks about-section">
     <div class="content-wrapper">
         <div class="about-section__listing info">
-            <h2 class="info__title">{{home.teachings.title | safe }}</h2>
-            <ul class="info__list">
+            <h2 class="info__title" data-page-animation-fade-in-view>{{home.teachings.title | safe }}</h2>
+            <ul class="info__list listing" data-page-animation-custom-class-in-view="listing">
             {% for teachingItem in home.teachings.items %}
-                <li class="listing-item">
+                <li class="listing-item" style="--animation-delay: {{ loop.index * 100 }}ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">{{ teachingItem.label }}</h3>
                         <h4 class="listing-item__sub-label">{{ teachingItem.subLabel }}</h4>
@@ -93,10 +93,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
         </div>
 
         <div class="about-section__listing info">
-            <h2 class="info__title">{{home.exhibitions.title | safe }}</h2>
-            <ul class="info__list">
+            <h2 class="info__title" data-page-animation-fade-in-view>{{home.exhibitions.title | safe }}</h2>
+            <ul class="info__list listing" data-page-animation-custom-class-in-view="listing">
             {% for exhibitionItem in home.exhibitions.items %}
-                <li class="listing-item">
+                <li class="listing-item" style="--animation-delay: {{ loop.index * 100 }}ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">{{ exhibitionItem.label }}</h3>
                         <h4 class="listing-item__sub-label">{{ exhibitionItem.subLabel }}</h4>
@@ -117,10 +117,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 <section class="publications-awards about-section">
     <div class="content-wrapper">
         <div class="about-section__listing info">
-            <h2 class="info__title">{{home.publications.title | safe }}</h2>
-            <ul class="info__list">
+            <h2 class="info__title" data-page-animation-fade-in-view>{{home.publications.title | safe }}</h2>
+            <ul class="info__list listing" data-page-animation-custom-class-in-view="listing">
             {% for publicationItem in home.publications.items %}
-                <li class="listing-item">
+                <li class="listing-item" style="--animation-delay: {{ loop.index * 100 }}ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">{{ publicationItem.label }}</h3>
                         <h4 class="listing-item__sub-label">{{ publicationItem.subLabel }}</h4>
@@ -137,8 +137,8 @@ pageTitle: "Lisa Marleen Portfolio 2022"
         </div>
 
         <div class="about-section__listing info">
-            <h2 class="info__title info-title--secondary">{{home.awards.title }}</h2>
-            <p class="info__block">
+            <h2 class="info__title info-title--secondary" data-page-animation-fade-in-view>{{home.awards.title }}</h2>
+            <p class="info__block" data-page-animation-fade-in-view>
             {% for awardsItem in home.awards.items %}
                 <span>
                     {{ awardsItem.label }}
