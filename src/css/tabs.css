@@ -1,3 +1,7 @@
+.tabs {
+    background-color: var(--color-black);
+}
+
 .tabs-list {
     position: relative;
     display: flex;
