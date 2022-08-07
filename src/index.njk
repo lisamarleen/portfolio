@@ -26,9 +26,10 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
-    <div class="short-bio__image">
-        {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.fileName %}
-        {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", "./src/assets/images/testDetail.jpg", "(max-width: 767px)", "100vw" %}
+    <div class="short-bio__image"  data-page-animation-image>
+        {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.defaultFileName %}
+        {% set shortBioDetailImageSrc = "./src/assets/images/" +  home.shortBio.image.detailFileName %}
+        {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", shortBioDetailImageSrc, "(max-width: 767px)", "100vw" %}
     </div>
     <p class="short-bio__copy" data-page-animation-fade-in-view>
         {{home.shortBio.copy}}

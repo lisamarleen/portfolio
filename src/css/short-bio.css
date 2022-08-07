@@ -21,8 +21,9 @@
 
 .short-bio__image {
   grid-area: image;
-  padding: 0 var(--spacing-m);
+  margin: 0 var(--spacing-m);
   opacity: 0;
+  overflow: hidden;
 }
 
 .short-bio__image picture img {
@@ -91,7 +92,7 @@
     overflow: hidden;
     position: relative;
     flex: 1;
-    padding: 0;
+    margin: 0;
   }
 
   .short-bio__image picture {
