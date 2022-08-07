@@ -49,9 +49,17 @@ pageTitle: "Lisa Marleen Portfolio 2022"
                         <h5 class="listing-item__meta">{{ experienceItem.meta }}</h5>
                     </div>
                     <p class="listing-item__time">{{ experienceItem.time }}</p>
+                    {% if loop.first %}
+                        <p class="sr-only">Current Position</p>
+                        <span class="listing-item-current-hint" aria-hidden="true">
+                            {% include "asterix.njk" %}
+                            {% include "circle-highlight.njk" %}
+                        </span>
+                    {% endif %}
                 </li>
             {% endfor %}
             </ul>
+            <span class="listing-item-current-label">{% include "current-position.njk" %}</span>
         </div>
         <div class="about-section__listing info">
             <h2 class="info__title" data-page-animation-fade-in-view>{{home.education.title | safe }}</h2>

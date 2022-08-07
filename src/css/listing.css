@@ -79,3 +79,35 @@
   left: calc(var(--spacing-s) * 2);
   top: calc(var(--spacing-s) * -2);
 }
+
+.listing-item-current-hint {
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.listing-item-current-hint svg path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.listing.listing--in-view .listing-item-current-hint svg path {
+  animation: svgStroke 700ms 2000ms var(--ease-out-circ) forwards;
+}
+
+.listing-item-current-hint svg:first-child {
+  position: absolute;
+  right: 34px;
+  top: 20px;
+}
+
+.listing-item-current-label {
+  position: absolute;
+  right: 0;
+  bottom: -24px;
+  opacity: 0;
+}
+
+.listing.listing--in-view + .listing-item-current-label {
+  animation: fadeIn 700ms 2000ms var(--ease-out-circ) forwards;
+}
