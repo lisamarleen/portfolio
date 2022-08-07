@@ -29,11 +29,6 @@
 .project__image {
   width: calc(100% - var(--spacing-xl));
   overflow: hidden;
-  opacity: 0;
-}
-
-.no-js .project__image {
-  opacity: 1;
 }
 
 .project__image:nth-child(odd) {
@@ -50,7 +45,7 @@
   margin-top: calc(var(--spacing-l) * -1);
 }
 
-.project__image:nth-child(2) {
+.project__image:nth-child(2) img {
   opacity: 0.6;
 }
 
@@ -123,7 +118,7 @@
     padding: var(--spacing-xl) 0;
   }
 
-  .project__image:nth-child(2) {
+  .project__image:nth-child(2) img {
     opacity: 1;
   }
 
@@ -153,7 +148,7 @@
 
 @media (min-width: 1024px) {
   .project-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-3xl) 0;
   }
 
   .project__image.project__image--alignment-left {

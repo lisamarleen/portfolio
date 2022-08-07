@@ -32,6 +32,15 @@
     object-fit: cover;
 }
 
+[data-page-animation-image], [data-page-animation-fade-in-view] {
+    opacity: 0;
+}
+
+.no-js [data-page-animation-image], .no-js [data-page-animation-fade-in-view] {
+    opacity: 1;
+  }
+  
+
 @media (min-width: 768px) {
     .page-intro__title {
         font-size: var(--font-size-xxl, 8rem);

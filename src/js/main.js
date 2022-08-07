@@ -65,10 +65,10 @@ function initPageAnimations() {
   if (title) {
     sequence.push([
       shuffle(chars),
-      { y: ["-100%", 0], opacity: [0, 1] },
+      { y: ["100%", 0], opacity: [0, 1] },
       {
         delay: stagger(0.05, {
-          easing: EaseinQuad,
+          easing: EaseoutCubic,
         }),
       },
     ]);
@@ -79,8 +79,8 @@ function initPageAnimations() {
 
     sequence.push([
       content,
-      { opacity: [0, 1], y: [-16, 0] },
-      { easing: EaseoutCubic, at: "-0.75", duration: 1 },
+      { opacity: [0, 1] },
+      { easing: EaseoutCubic, at: "-0.5", duration: 1 },
     ]);
   }
 
@@ -160,20 +160,34 @@ function initImageAnimations() {
 
   Array.from(allAnimations).map((container) => {
     const image = container.querySelector("img");
-    container.style.opacity = 0;
 
     inView(
       container,
       (info) => {
         timeline([
-          [container, { opacity: 1 }, { duration: 0.4 }],
+          [
+            container,
+            {
+              opacity: 1,
+            },
+            { duration: 0.7, easing: EaseoutSine },
+          ],
+          [
+            container,
+            {
+              clipPath: [
+                "polygon(0% 8%, 100% 8%, 100% 100%, 0% 100%)",
+                "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              ],
+            },
+            { duration: 1.2, easing: EaseoutSine, at: "-0.6" },
+          ],
           [
             image,
             {
-              scale: [1.2, 1],
-              filter: ["brightness(2)", "brightness(1)"],
+              scale: [1.1, 1],
             },
-            { easing: EaseoutSine, duration: 1.7, at: "-0.5" },
+            { easing: EaseoutSine, duration: 1.2, at: "-1.2" },
           ],
         ]);
       },
