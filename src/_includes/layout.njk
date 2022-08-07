@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta content="initial-scale=1, width=device-width" name="viewport">
@@ -20,6 +20,18 @@
 
   <main>
    {{ content | safe }}
+   
+    <nav class="exit-nav">
+      <div class="content-wrapper">
+          <ul class="exit-nav-list" data-page-animation-fade-in-view>
+              {% for navigationItem in common.navigation %}
+                  <li class="exit-nav-list__item">
+                      <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                  </li>
+              {% endfor %}
+          </ul>
+        </div>
+    </nav>
 
     <section class="social">
       <div class="content-wrapper">
