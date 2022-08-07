@@ -2,11 +2,32 @@
     background-color: var(--color-black);
 }
 
+.tabs-list__link + svg {
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: auto;
+    transform: translate(-16px, -8px);
+}
+
+.tabs-list__link + svg path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.tabs-list__link[aria-selected] + svg, .tabs-list__link:hover + svg {
+    display: block;
+}
+
+.tabs-list__link[aria-selected] + svg path, .tabs-list__link:hover + svg path {
+    animation: svgStroke 700ms var(--ease-out-circ) forwards;
+}
+
 .tabs-list {
     position: relative;
     display: flex;
     justify-content: space-between;
-    gap: var(--spacing-m);
+    gap: var(--spacing-xl);
     padding: var(--spacing-m);
 }
 
@@ -26,6 +47,7 @@
     color: var(--color-white);
     font-size: var(--font-size-m);
     font-family: var(--font-headline-bold);
+    transition: color 300ms var(--ease-out-circ);
 }
 
 .tabs-list__link[aria-selected] {

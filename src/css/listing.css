@@ -1,6 +1,7 @@
 
 .listing.listing--in-view .listing-item:before, .listing.listing--in-view .listing-item:after  {
   transform: scaleX(1);
+  opacity: 1;
 }
 
 .listing.listing--in-view .listing-item {
@@ -28,8 +29,9 @@
   width: 100%;
   height: 1px;
   background: var(--color-grey1);
+  opacity: 0;
   transform: scaleX(0);
-  transition: transform 600ms var(--animation-delay) var(--ease-in-circ);
+  transition: all 700ms calc(100ms + var(--animation-delay)) var(--ease-in-circ);
 }
 
 .listing-item:after {
