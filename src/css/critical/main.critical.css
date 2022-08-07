@@ -51,7 +51,7 @@
 @media (min-width: 1280px) { 
     .page-intro__title {
         font-size: var(--font-size-3xl, 10rem);
-        line-height: var(--font-line-height-3xl, 8.625rem);
+        line-height: var(--font-line-height-3xl, 8rem);
     }
 
     .page-intro {
