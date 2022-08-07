@@ -20,14 +20,20 @@
   justify-self: flex-end;
   text-transform: uppercase;
   text-align: right;
-  font-size: 110px;
-  line-height: 89px;
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
   font-family: var(--font-headline-bold);
   padding: var(--spacing-m) 0 var(--spacing-xl);
 }
 
 .project__image {
   width: calc(100% - var(--spacing-xl));
+  overflow: hidden;
+  opacity: 0;
+}
+
+.no-js .project__image {
+  opacity: 1;
 }
 
 .project__image:nth-child(odd) {
