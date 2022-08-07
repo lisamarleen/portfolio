@@ -67,7 +67,6 @@ function initPageAnimations() {
       shuffle(chars),
       { y: ["-100%", 0], opacity: [0, 1] },
       {
-        duration: 0.6,
         delay: stagger(0.05, {
           easing: EaseinQuad,
         }),
@@ -76,10 +75,12 @@ function initPageAnimations() {
   }
 
   if (content) {
+    content.style.opacity = 0;
+
     sequence.push([
       content,
-      { opacity: [0, 1] },
-      { easing: EaseoutCubic, at: "-0.75" },
+      { opacity: [0, 1], y: [-16, 0] },
+      { easing: EaseoutCubic, at: "-0.75", duration: 1 },
     ]);
   }
 
@@ -122,7 +123,7 @@ function initFadeInViewAnimations() {
     inView(
       container,
       (info) => {
-        animate(info.target, { opacity: [0, 1] }, { duration: 1 });
+        animate(info.target, { opacity: [0, 1] }, { duration: 2 });
       },
       { amount: 0.5 }
     );
@@ -152,27 +153,41 @@ function initCustomClassAnimations() {
   });
 }
 
+function initImageAnimations() {
+  const allAnimations = document.querySelectorAll(
+    "[data-page-animation-image]"
+  );
+
+  Array.from(allAnimations).map((container) => {
+    const image = container.querySelector("img");
+    container.style.opacity = 0;
+
+    inView(
+      container,
+      (info) => {
+        timeline([
+          [container, { opacity: 1 }, { duration: 0.4 }],
+          [
+            image,
+            {
+              scale: [1.2, 1],
+              filter: ["brightness(2)", "brightness(1)"],
+            },
+            { easing: EaseoutSine, duration: 1.7, at: "-0.5" },
+          ],
+        ]);
+      },
+      { amount: 0.5 }
+    );
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.remove("no-js");
+
   initPageAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();
   initCustomClassAnimations();
-
-  inView(
-    document.querySelector(".short-bio__image"),
-    (info) => {
-      timeline([
-        [info.target, { opacity: [0, 1] }, { duration: 0.5 }],
-        [
-          info.target.querySelector("img"),
-          {
-            scale: [1.2, 1],
-            filter: ["brightness(2)", "brightness(1)"],
-          },
-          { easing: EaseoutSine, duration: 0.7, at: "-0.5" },
-        ],
-      ]);
-    },
-    { amount: 0.5 }
-  );
+  initImageAnimations();
 });
