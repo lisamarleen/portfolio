@@ -28,12 +28,11 @@ function minifyCSS(source, output_path) {
   return result;
 }
 
-function imageFileName({ src, width, format, imageSizes }) {
+function imageFileName({ src, id, format }) {
   const extension = path.extname(src);
   const name = path.basename(src, extension);
 
-  const size = imageSizes[width + ""];
-  return `${name}_${size}.${format}`;
+  return `${name}_${id}.${format}`;
 }
 
 async function imageWithDetailShortcode(
@@ -55,12 +54,11 @@ async function imageWithDetailShortcode(
     formats: imageFormats,
     urlPath: "./assets/images",
     outputDir: "./_site/assets/images",
-    filenameFormat: (id, src, width, format) =>
+    filenameFormat: (id, src, _width, format) =>
       imageFileName({
         src,
-        width,
+        id,
         format,
-        imageSizes,
       }),
   });
 
@@ -71,12 +69,11 @@ async function imageWithDetailShortcode(
           formats: imageFormats,
           urlPath: "./assets/images",
           outputDir: "./_site/assets/images",
-          filenameFormat: (id, src, width, format) =>
+          filenameFormat: (id, src, _width, format) =>
             imageFileName({
               src,
-              width,
+              id,
               format,
-              imageSizes,
             }),
         })
       : null;
