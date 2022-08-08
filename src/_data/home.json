@@ -1,5 +1,15 @@
 {
   "title": "<span class='intro-title__line intro-title__line--1'>Multi</span><span class='intro-title__line intro-title__line--2'>discipli</span><span class='intro-title__line intro-title__line--3'>nary art</span><span class='intro-title__line intro-title__line--4'> director</span>",
+  "navigation": [
+    {
+      "label": "Selected Cases",
+      "link": "/cases"
+    },
+    {
+      "label": "About",
+      "link": "#about"
+    }
+  ],
   "shortBio": {
     "title": "I'm lisa marleen (she/her), multi-disciplinary designer, art director, and digital creative",
     "copy": "I’m passionate about the design and UX of intelligent digital tools since they also shape us in return as we shape them. One of my main objectives is to enable new perspectives with research through design. My multidisciplinary experience derives from 5+ years of working in the field of creative technologies ranging from tangible interfaces, gamified experiences, virtual and augmented realities, interactive exhibitions, facilitating workshops, and teaching university courses. I love working with a diverse group of people and being the glue between the disciplines. It is interesting for me to empathize with new situations repeatedly and develop meaningful experiences in dialogue with all stakeholders.",

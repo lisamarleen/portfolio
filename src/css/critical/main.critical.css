@@ -19,6 +19,11 @@
 
 .page-intro__title .char {
     display: inline-block;
+    opacity: 0;
+}
+
+.no-js .page-intro__title .char {
+    opacity: 1;
 }
 
 .page-intro__background {

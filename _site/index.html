@@ -6,11 +6,11 @@
   <title>Lisa Marleen Portfolio 2022</title>
 
   <style>
-    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-m,16px) 0;border-bottom:1px solid var(--color-grey1,#626262)}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s 1s ease-in forwards}@media (min-width:768px){.intro-nav li{border:none}}@media (min-width:1280px){.intro-title__line{display:inline;white-space:normal}}
-    .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xl, 7rem);text-transform:uppercase;letter-spacing:2.86px;line-height:var(--font-line-height-xl, 6rem);text-align:right}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}[data-page-animation-fade-in-view],[data-page-animation-image]{opacity:0}.no-js [data-page-animation-fade-in-view],.no-js [data-page-animation-image]{opacity:1}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
+    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-m,16px) 0;border-bottom:1px solid var(--color-grey1,#626262)}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s 1s ease-in forwards}@media (min-width:768px){.intro-nav li{border:none;padding:var(--spacing-s,8px) 0}}@media (min-width:1280px){.intro-title__line{display:inline;white-space:normal}}
+    .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xl, 7rem);text-transform:uppercase;letter-spacing:2.86px;line-height:var(--font-line-height-xl, 6rem);text-align:right}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}[data-page-animation-fade-in-view],[data-page-animation-image]{opacity:0}.no-js [data-page-animation-fade-in-view],.no-js [data-page-animation-image]{opacity:1}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
-    document.addEventListener("DOMContentLoaded",()=>{const d=document.querySelector(".intro__video");d.classList.add("intro__video--with-fade"),d.addEventListener("canplay",()=>d.classList.add("intro__video--loaded"))});
+    document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".intro__video");document.querySelector("[href='#about']").addEventListener("click",()=>{window.scrollTo({top:window.innerHeight,left:0,behavior:"smooth"})}),e.classList.add("intro__video--with-fade"),e.addEventListener("canplay",()=>e.classList.add("intro__video--loaded"))});
 
   </script>
   <link rel="stylesheet" href="/css/main.css">
@@ -32,11 +32,7 @@
         <ul>
             
                 <li>
-                    <a href=/projects>Projects</a>
-                </li>
-            
-                <li>
-                    <a href=/playground>Visual Playground</a>
+                    <a href=/cases>Selected Cases</a>
                 </li>
             
                 <li>
@@ -47,7 +43,7 @@
     </nav>
 </section>
 
-<section class="short-bio" data-page-animation-scroll-progress>
+<section class="short-bio" id="about" data-page-animation-scroll-progress>
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">I&#39;m lisa marleen (she/her), multi-disciplinary designer, art director, and digital creative</h2>
     </div>

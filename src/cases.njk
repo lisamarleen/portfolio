@@ -1,0 +1,82 @@
+---
+layout: layout.njk
+pageId: cases
+pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
+---
+
+<div class="page-intro" data-page-animation-container>
+    <h1 class="page-intro__title" data-page-animation-title>{{ cases.title | safe }}</h1>
+</div>
+<div class="tabs">
+    <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
+        <li class="tabs-list__item">
+            <a class="tabs-list__link" href="#casesIndependent">{{ cases.tabs.leftTitle }}</a>
+            {% include "underline-deco.njk" %}
+        </li>
+        <li class="tabs-list__item">
+            <a class="tabs-list__link" href="#casesCommercial">{{ cases.tabs.rightTitle }}</a>
+            {% include "underline-deco.njk" %}
+        </li>
+    </ul>
+    <section class="tabs-panel" id="casesIndependent">
+        {% for caseItem in independent.items %}
+            <div class="case-section">
+                <div class="content-wrapper">
+                    <div class="case">
+                        {% for caseImage in caseItem.images %}
+                            {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
+                            <div 
+                                class="case__image case__image--alignment-{{ caseImage.largeView.alignment | default('left') }} case__image--width-{{ caseImage.largeView.width | default('1/1') }}" 
+                                data-page-animation-image>
+                                {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                            </div>
+                        {% endfor %}
+                        <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
+                        <div class="case__desc" data-page-animation-fade-in-view>
+                            <div class="formatted-copy">{{ caseItem.description | safe }}</div>
+                            <div class="case-links">
+                                {% for caseLink in caseItem.links %}
+                                    <a class="case-links__item" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
+                                        {{ caseLink.label }}
+                                        {% include "icon-arrow-right-up.njk" %}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <section class="tabs-panel" id="casesCommercial">
+        {% for caseItem in commercial.items %}
+            <div class="case-section">
+                <div class="content-wrapper">
+                    <div class="case">
+                        {% for caseImage in caseItem.images %}
+                            {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
+                            <div 
+                                data-page-animation-image
+                                class="case__image case__image--alignment-{{ caseImage.largeView.alignment | default('left') }} case__image--width-{{ caseImage.largeView.width | default('1/1') }}">
+                                {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                            </div>
+                        {% endfor %}
+                        <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
+                        <div class="case__desc" data-page-animation-fade-in-view>
+                            <div class="formatted-copy">{{ caseItem.description | safe }}</div>
+                            <div class="case-links">
+                                {% for caseLink in caseItem.links %}
+                                    <a class="case-links__item" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
+                                        {{ caseLink.label }}
+                                        {% include "icon-arrow-right-up.njk" %}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</div>
+

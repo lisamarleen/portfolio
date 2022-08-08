@@ -69,6 +69,7 @@
 @media (min-width: 768px) {
   .intro-nav li {
     border: none;
+    padding: var(--spacing-s, 8px) 0;
   }
 }
 
