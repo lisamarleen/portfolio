@@ -13,9 +13,12 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     <h1 class="page-intro__title intro-title" data-page-animation-title>{{ home.title | safe }}</h1>
     <nav class="page-intro__content intro-nav" data-page-animation-content>
         <ul>
-            {% for navigationItem in common.navigation %}
+            {% for navigationItem in home.navigation %}
                 <li>
-                    <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                    <a href={{navigationItem.link}}>
+                        {{navigationItem.label}}
+                        {% if navigationItem.isSkipLink %}{% include "icon-arrow-down-scribbled.njk" %}{% endif %}
+                    </a>
                 </li>
             {% endfor %}
         </ul>
