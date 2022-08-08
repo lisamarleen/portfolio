@@ -29,7 +29,6 @@
 .short-bio__image picture img {
   width: 100%;
   object-fit: cover;
-  filter: brightness(2);
   transform: scale(1.1);
 }
 
