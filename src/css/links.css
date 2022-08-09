@@ -1,0 +1,14 @@
+.external-link {
+    display: inline-flex;
+    align-items: flex-end;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-headline-bold);
+    font-size: var(--font-size-l);
+    gap: var(--spacing-m);
+}
+
+.external-link svg {
+    font-size: 1.2rem;
+}

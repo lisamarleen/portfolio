@@ -271,16 +271,12 @@ li {
 
 .social-list__link {
   position: relative;
-  text-transform: uppercase;
-  font-size: var(--font-size-m);
-  line-height: var(--font-line-height-m);
-  font-family: var(--font-headline-bold);
-  color: var(--color-white);
-  text-decoration: none;
 }
 
 .social-list__link.social-list__link--highlighted {
   color: var(--color-highlight);
+  margin-top: var(--spacing-xl);
+  margin-bottom: 0;
 }
 
 .social-list__link.social-list__link--highlighted svg {
@@ -334,7 +330,7 @@ li {
 
   .social-content__list {
     flex: 2;
-    margin-top: -32px;
+    margin-top: -24px;
   }
 
   .social-content__title {

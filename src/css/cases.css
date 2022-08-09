@@ -85,22 +85,11 @@
 }
 
 .case-links__item {
-  display: flex;
-  align-items: flex-end;
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: var(--font-headline-bold);
-  font-size: var(--font-size-l);
   margin-top: var(--spacing-s);
 }
 
 .case-links__item:first-child {
   margin-top: 0;
-}
-
-.case-links__item svg {
-  font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
