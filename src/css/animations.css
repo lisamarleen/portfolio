@@ -1,3 +1,11 @@
+[data-page-animation-fade-in-view] {
+  opacity: 0;
+}
+
+.no-js [data-page-animation-fade-in-view] {
+  opacity: 1;
+}
+
 @keyframes svgStroke {
     0% {
         stroke-dashoffset: 1;
