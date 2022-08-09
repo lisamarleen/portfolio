@@ -10,7 +10,7 @@
     .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xl, 7rem);text-transform:uppercase;letter-spacing:2.86px;line-height:var(--font-line-height-xl, 6rem);text-align:right}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}[data-page-animation-fade-in-view],[data-page-animation-image]{opacity:0}.no-js [data-page-animation-fade-in-view],.no-js [data-page-animation-image]{opacity:1}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
-    document.addEventListener("DOMContentLoaded",()=>{initTab()});function initTab(){const o=document.querySelector(".tabs"),n=o.querySelector("ul"),r=n.querySelectorAll("a"),l=o.querySelectorAll('[id^="cases"]'),u=(t,i)=>{i.focus(),i.removeAttribute("tabindex"),i.setAttribute("aria-selected","true"),t.removeAttribute("aria-selected"),t.setAttribute("tabindex","-1");let e=Array.prototype.indexOf.call(r,i),d=Array.prototype.indexOf.call(r,t);l[d].hidden=!0,l[e].hidden=!1};n.setAttribute("role","tablist"),Array.prototype.forEach.call(r,(t,i)=>{t.setAttribute("role","tab"),t.setAttribute("id","tab"+(i+1)),t.setAttribute("tabindex","-1"),t.parentNode.setAttribute("role","presentation"),t.addEventListener("click",e=>{e.preventDefault();let d=n.querySelector("[aria-selected]");e.currentTarget!==d&&u(d,e.currentTarget)}),t.addEventListener("keydown",e=>{let d=Array.prototype.indexOf.call(r,e.currentTarget),a=e.which===37?d-1:e.which===39?d+1:e.which===40?"down":null;a!==null&&(e.preventDefault(),a==="down"?l[i].focus():r[a]&&u(e.currentTarget,r[a]))})}),Array.prototype.forEach.call(l,(t,i)=>{t.setAttribute("role","tabpanel"),t.setAttribute("tabindex","-1");let e=t.getAttribute("id");t.setAttribute("aria-labelledby",r[i].id),t.hidden=!0}),r[0].removeAttribute("tabindex"),r[0].setAttribute("aria-selected","true"),l[0].hidden=!1}
+    document.addEventListener("DOMContentLoaded",()=>{initTab()});function initTab(){const c=document.querySelector(".tabs"),n=c.querySelector("ul"),i=n.querySelectorAll("a"),a=c.querySelectorAll(".tabs-panel"),d=window.location.hash?Array.from(i).findIndex(t=>t.getAttribute("href")===window.location.hash):0,s=(t,r)=>{r.focus(),r.removeAttribute("tabindex"),r.setAttribute("aria-selected","true"),t.removeAttribute("aria-selected"),t.setAttribute("tabindex","-1");let e=Array.prototype.indexOf.call(i,r),o=Array.prototype.indexOf.call(i,t);a[o].hidden=!0,a[e].hidden=!1,window.scrollTo({top:r.offsetTop,left:0,behavior:"smooth"})};window.addEventListener("hashchange",t=>{t.preventDefault();let r=n.querySelector("[aria-selected]"),e=n.querySelector("[tabindex]");e!==r&&s(r,e)}),n.setAttribute("role","tablist"),Array.prototype.forEach.call(i,(t,r)=>{t.setAttribute("role","tab"),t.setAttribute("id","tab"+(r+1)),t.setAttribute("tabindex","-1"),t.parentNode.setAttribute("role","presentation"),t.addEventListener("click",e=>{e.preventDefault();let o=n.querySelector("[aria-selected]");e.currentTarget!==o&&(window.location.hash=e.currentTarget.getAttribute("href"))}),t.addEventListener("keydown",e=>{let o=Array.prototype.indexOf.call(i,e.currentTarget),l=e.which===37?o-1:e.which===39?o+1:e.which===40?"down":null;l!==null&&(e.preventDefault(),l==="down"?a[r].focus():i[l]&&s(e.currentTarget,i[l]))})}),Array.prototype.forEach.call(a,(t,r)=>{t.setAttribute("role","tabpanel"),t.setAttribute("tabindex","-1");let e=t.getAttribute("id");t.setAttribute("aria-labelledby",i[r].id),t.hidden=!0}),i[d].removeAttribute("tabindex"),i[d].setAttribute("aria-selected","true"),a[d].hidden=!1}
 
   </script>
   <link rel="stylesheet" href="/css/main.css">
@@ -27,19 +27,19 @@
 <div class="tabs">
     <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
         <li class="tabs-list__item">
-            <a class="tabs-list__link" href="#casesIndependent">Independent</a>
+            <a class="tabs-list__link" href="#independent">Independent</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
     <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
 </svg>
         </li>
         <li class="tabs-list__item">
-            <a class="tabs-list__link" href="#casesCommercial">In Commision</a>
+            <a class="tabs-list__link" href="#incommision">In Commision</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
     <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
 </svg>
         </li>
     </ul>
-    <section class="tabs-panel" id="casesIndependent">
+    <section class="tabs-panel" id="independent">
         
             <div class="case-section">
                 <div class="content-wrapper">
@@ -122,7 +122,7 @@
                             <div class="formatted-copy"><p><b>This experimental short film is reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species.</p><p></b>The plot is centered around an AI main character who uses the human body as a sensing device to gain a physical understanding of their surroundings. Influenced by posthuman thinkers, the work aims to provoke a discussion about Cartesian notions of disembodied intelligence. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.<br />The main part of the film was produced with a machine-learning-backed process called “<b>CLIP guided diffusion</b>”. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. In a way, the practical processes involved in producing the film reflect the speculative idea of an ongoing dialogue found in the narrative. The work resulted in a modular design pipeline for controlled image synthesis using AI tools as a design appropriation to communicate speculative concepts.</p><p>It was created as a team effort with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> and part of the Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a> - Cologne International School of Design (Faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>TH Köln</a>).</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
                                         Link to film
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -132,7 +132,7 @@
 </svg>
                                     </a>
                                 
-                                    <a class="case-links__item" href=https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg rel="noopener noreferrer" target="_blank">
                                         Link to research paper
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -229,7 +229,7 @@
                             <div class="formatted-copy"><p><b>“Entomon – Interspecies metamorphosis” was the result of a self initiated project with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> in our series of projects for the <a href='https://stateofthedeep.art/' rel='noopener noreferrer' target='_blank'>stateofthedeep.art</a> collective.</b></p><p>The results were visual experiments speculating on posthuman representation. A Generative Adversarial Network was trained with the StyleGAN2-ada-pytorch framework of NVlabs. We adapted a network that was originally trained on human faces, in transfer training it with our dataset of insect close-ups. The process of training a GAN on two incompatible datasets, produced phenotypes of human-insect hybrids. Insects and arachnids species are seen as disgusting, as vermins which shouldn‘t be part of the human habitat. A hybridization between human faces and features of unwanted bodies lets us discover alternatives to the humanist understanding of the „natural“. Exploring the latent space of bodily features between species helped us to think about possible posthuman forms of representation.<br /></p><p>How much will we need to reshape human bodies to detach from discriminating norms, from natural and artificial?</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
                                         Link to curated collection
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -239,7 +239,7 @@
 </svg>
                                     </a>
                                 
-                                    <a class="case-links__item" href=https://vimeo.com/683741589 rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://vimeo.com/683741589 rel="noopener noreferrer" target="_blank">
                                         Latent space walks
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -336,7 +336,7 @@
                             <div class="formatted-copy"><p><b>Breathing Softspace adapts to the visitors’ behavior through shapes, lights, and sounds.</b><p></p>The interactive installation was a team effort with <b>textile artist <a href='http://marieschumann.de/' rel='noopener noreferrer' target='_blank'>Marie Schumann</a></b> and <b>creative technologist <a href='https://matthiasrosenthal.de/blog_2017/' rel='noopener noreferrer' target='_blank'>Matthias Rosenthal</a></b> and creates a space to discover dimensionality, movement, and the play of material of woven textiles. Loose threads add dimension to the textile while motion enhances the optical volume and gives the textile the ability to grow and shrink and, due to that, change the space around them.</p><p><b>Shy or bold? Near or far?</b> The user interaction is subdivided by six states mirroring the visitors behavior. Nine electronic winches fixed to the ceiling controlled the textile dynamically via a DMX interface. Moreover, LED lights and a fan were connected to the DMX network. A Unity-3D application simulates the room, the textile, and the connected hardware, such as light colors and sound, on the PC in real-time.</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://www.behance.net/gallery/106630681/Breathing-Softspace rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://www.behance.net/gallery/106630681/Breathing-Softspace rel="noopener noreferrer" target="_blank">
                                         Link to case
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -346,7 +346,7 @@
 </svg>
                                     </a>
                                 
-                                    <a class="case-links__item" href=https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/ rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/ rel="noopener noreferrer" target="_blank">
                                         At Vienna Design Week
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -362,8 +362,23 @@
                 </div>
             </div>
         
+        <nav class="exit-nav">
+            <div class="content-wrapper">
+                <ul class="exit-nav-list" data-page-animation-fade-in-view>
+                
+                    <li class="exit-nav-list__item">
+                        <a href=#incommision>Cases – In Commission</a>
+                    </li>
+                
+                    <li class="exit-nav-list__item">
+                        <a href=/>About</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </nav>
     </section>
-    <section class="tabs-panel" id="casesCommercial">
+    <section class="tabs-panel" id="incommision">
         
             <div class="case-section">
                 <div class="content-wrapper">
@@ -442,11 +457,11 @@
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Sasu's<br />Mystical<br />Quest</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
-                            <div class="formatted-copy"><p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards. By shifting weight left & right and jumping up, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. Our intention for the users was to use their bodies to control their character. To accomplish this, we had to consider many challenges, including uncontrollable sunlight conditions, a wide range of users ages and weights, building a plug-and-play system, being resistant to the vibrations, and needing to be up and running 24/7.</p></div>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
+                            <div class="formatted-copy"><p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards. By shifting weight left & right and jumping up, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. Our intention for the users was to use their bodies to control their character. To accomplish this, we had to consider many challenges, including uncontrollable sunlight conditions, a wide range of users' ages and weights, building a plug-and-play system, being resistant to the vibrations, and needing to be up and running 24/7.</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://demodern.de/projekte/sasus-mystical-quest rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://demodern.de/projekte/sasus-mystical-quest rel="noopener noreferrer" target="_blank">
                                         Link to case
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -539,11 +554,11 @@
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>SAP<br />Soft<br />ware &nbsp;<br />demo</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
                                         Link to case
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -636,11 +651,11 @@
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />active &nbsp;<br />Games<br />IFA</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
                                         Link to case
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -733,11 +748,11 @@
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Off<br />shore &nbsp;<br />VR Ex<br />perience &nbsp;</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
                                         Link to case
                                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32.801" height="32.801" viewBox="0 0 32.801 32.801">
   <g id="np_arrow-right_888647_FFFFFF" transform="translate(-8.581 20.938) rotate(-45)">
@@ -753,30 +768,24 @@
                 </div>
             </div>
         
+        <nav class="exit-nav">
+            <div class="content-wrapper">
+                <ul class="exit-nav-list" data-page-animation-fade-in-view>
+                
+                    <li class="exit-nav-list__item">
+                        <a href=#independent>Cases – Independent</a>
+                    </li>
+                
+                    <li class="exit-nav-list__item">
+                        <a href=/>About</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </nav>
     </section>
 </div>
 
-
-   
-    <nav class="exit-nav">
-      <div class="content-wrapper">
-          <ul class="exit-nav-list" data-page-animation-fade-in-view>
-              
-                  <li class="exit-nav-list__item">
-                      <a href=/projects>Projects</a>
-                  </li>
-              
-                  <li class="exit-nav-list__item">
-                      <a href=/playground>Visual Playground</a>
-                  </li>
-              
-                  <li class="exit-nav-list__item">
-                      <a href=#about>About</a>
-                  </li>
-              
-          </ul>
-        </div>
-    </nav>
 
     <section class="social">
       <div class="content-wrapper">
@@ -785,51 +794,81 @@
           <ul class="social-content__list social-list">
             
               <li class="social-list__item">
-                <a href=https://www.linkedin.com/in/lisa-marleen-mantel-345185177/ class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://www.linkedin.com/in/lisa-marleen-mantel-345185177/ 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   LinkedIn
                   
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=https://www.instagram.com/_lisamarleen/ class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://www.instagram.com/_lisamarleen/ 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   Instagram
                   
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=https://twitter.com/lizamarleen class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://twitter.com/lizamarleen 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   Twitter
                   
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=mailto:hi@lisamarleen.de class="social-list__link social-list__link--highlighted" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=mailto:hi@lisamarleen.de 
+                  class="social-list__link social-list__link--highlighted external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   hi@lisamarleen.de
-                   <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
     <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
 </svg>
+                  
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=https://medium.com/@lisamarleen class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://medium.com/@lisamarleen 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   Behance
                   
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=https://medium.com/@lisamarleen class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://medium.com/@lisamarleen 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   Medium
                   
                 </a>
               </li>
             
               <li class="social-list__item">
-                <a href=https://stateofthedeep.art/ class="social-list__link" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href=https://stateofthedeep.art/ 
+                  class="social-list__link external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   Stateofthedeep.art
                   
                 </a>
