@@ -10,15 +10,15 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
 <div class="tabs">
     <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
         <li class="tabs-list__item">
-            <a class="tabs-list__link" href="#casesIndependent">{{ cases.tabs.leftTitle }}</a>
+            <a class="tabs-list__link" href="#independent">{{ cases.tabs.leftTitle }}</a>
             {% include "underline-deco.njk" %}
         </li>
         <li class="tabs-list__item">
-            <a class="tabs-list__link" href="#casesCommercial">{{ cases.tabs.rightTitle }}</a>
+            <a class="tabs-list__link" href="#incommision">{{ cases.tabs.rightTitle }}</a>
             {% include "underline-deco.njk" %}
         </li>
     </ul>
-    <section class="tabs-panel" id="casesIndependent">
+    <section class="tabs-panel" id="independent">
         {% for caseItem in independent.items %}
             <div class="case-section">
                 <div class="content-wrapper">
@@ -36,7 +36,7 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                             <div class="formatted-copy">{{ caseItem.description | safe }}</div>
                             <div class="case-links">
                                 {% for caseLink in caseItem.links %}
-                                    <a class="case-links__item" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
                                         {{ caseLink.label }}
                                         {% include "icon-arrow-right-up.njk" %}
                                     </a>
@@ -47,8 +47,19 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                 </div>
             </div>
         {% endfor %}
+        <nav class="exit-nav">
+            <div class="content-wrapper">
+                <ul class="exit-nav-list" data-page-animation-fade-in-view>
+                {% for navigationItem in cases.exitNavigationIndependent %}
+                    <li class="exit-nav-list__item">
+                        <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </nav>
     </section>
-    <section class="tabs-panel" id="casesCommercial">
+    <section class="tabs-panel" id="incommision">
         {% for caseItem in commercial.items %}
             <div class="case-section">
                 <div class="content-wrapper">
@@ -62,11 +73,11 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                             </div>
                         {% endfor %}
                         <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy">{{ caseItem.description | safe }}</div>
                             <div class="case-links">
                                 {% for caseLink in caseItem.links %}
-                                    <a class="case-links__item" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
                                         {{ caseLink.label }}
                                         {% include "icon-arrow-right-up.njk" %}
                                     </a>
@@ -77,6 +88,16 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                 </div>
             </div>
         {% endfor %}
+        <nav class="exit-nav">
+            <div class="content-wrapper">
+                <ul class="exit-nav-list" data-page-animation-fade-in-view>
+                {% for navigationItem in cases.exitNavigationInCommision %}
+                    <li class="exit-nav-list__item">
+                        <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </nav>
     </section>
 </div>
-

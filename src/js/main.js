@@ -54,6 +54,32 @@ function shuffle(arr) {
   return arr;
 }
 
+function initNav() {
+  const navigations = document.querySelectorAll("nav a");
+
+  Array.from(navigations).map((nav) => {
+    const link = nav.getAttribute("href");
+
+    if (link.startsWith("#")) {
+      nav.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const linkedElem = document.getElementById(
+          link.substring(1, link.length)
+        );
+
+        window.scrollTo({
+          top: linkedElem ? linkedElem.offsetTop : "#",
+          left: 0,
+          behavior: "smooth",
+        });
+
+        window.location.hash = `#${link.substring(1, link.length)}`;
+      });
+    }
+  });
+}
+
 function initPageAnimations() {
   const background = document.querySelector("[data-page-animation-background]");
   const container = document.querySelector("[data-page-animation-container]");
@@ -68,7 +94,7 @@ function initPageAnimations() {
       { y: ["100%", 0], opacity: [0, 1] },
       {
         delay: stagger(0.05, {
-          easing: EaseoutCubic,
+          easing: EaseinQuad,
         }),
       },
     ]);
@@ -118,14 +144,14 @@ function initFadeInViewAnimations() {
   );
 
   Array.from(allAnimations).map((container) => {
-    container.style.opacity = 0;
+    const amount = container.getAttribute("data-in-view-amount") || 0.5;
 
     inView(
       container,
       (info) => {
         animate(info.target, { opacity: [0, 1] }, { duration: 2 });
       },
-      { amount: 0.5 }
+      { amount }
     );
   });
 }
@@ -199,6 +225,7 @@ function initImageAnimations() {
 document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.classList.remove("no-js");
 
+  initNav();
   initPageAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();

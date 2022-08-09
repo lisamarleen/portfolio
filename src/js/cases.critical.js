@@ -7,7 +7,12 @@ function initTab() {
   const tabbed = document.querySelector(".tabs");
   const tablist = tabbed.querySelector("ul");
   const tabs = tablist.querySelectorAll("a");
-  const panels = tabbed.querySelectorAll('[id^="cases"]');
+  const panels = tabbed.querySelectorAll(".tabs-panel");
+  const selectedTabIndex = window.location.hash
+    ? Array.from(tabs).findIndex(
+        (tab) => tab.getAttribute("href") === window.location.hash
+      )
+    : 0;
 
   const switchTab = (oldTab, newTab) => {
     newTab.focus();
@@ -21,7 +26,24 @@ function initTab() {
     let oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
     panels[oldIndex].hidden = true;
     panels[index].hidden = false;
+
+    window.scrollTo({
+      top: newTab.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
+
+  window.addEventListener("hashchange", (e) => {
+    e.preventDefault();
+
+    let currentTab = tablist.querySelector("[aria-selected]");
+    let newTab = tablist.querySelector("[tabindex]");
+
+    if (newTab !== currentTab) {
+      switchTab(currentTab, newTab);
+    }
+  });
 
   tablist.setAttribute("role", "tablist");
 
@@ -35,7 +57,7 @@ function initTab() {
       e.preventDefault();
       let currentTab = tablist.querySelector("[aria-selected]");
       if (e.currentTarget !== currentTab) {
-        switchTab(currentTab, e.currentTarget);
+        window.location.hash = e.currentTarget.getAttribute("href");
       }
     });
 
@@ -68,7 +90,7 @@ function initTab() {
     panel.hidden = true;
   });
 
-  tabs[0].removeAttribute("tabindex");
-  tabs[0].setAttribute("aria-selected", "true");
-  panels[0].hidden = false;
+  tabs[selectedTabIndex].removeAttribute("tabindex");
+  tabs[selectedTabIndex].setAttribute("aria-selected", "true");
+  panels[selectedTabIndex].hidden = false;
 }

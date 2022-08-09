@@ -25,11 +25,11 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     </nav>
 </section>
 
-<section class="short-bio" data-page-animation-scroll-progress>
+<section id="about" class="short-bio" data-page-animation-scroll-progress>
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
-    <div class="short-bio__image"  data-page-animation-image>
+    <div class="short-bio__image" data-page-animation-image>
         {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.defaultFileName %}
         {% set shortBioDetailImageSrc = "./src/assets/images/" +  home.shortBio.image.detailFileName %}
         {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", shortBioDetailImageSrc, "(max-width: 767px)", "100vw" %}
@@ -164,3 +164,15 @@ pageTitle: "Lisa Marleen Portfolio 2022"
         </div>
     </div>
 </section>
+   
+<nav class="exit-nav">
+    <div class="content-wrapper">
+        <ul class="exit-nav-list" data-page-animation-fade-in-view>
+        {% for navigationItem in home.exitNavigation %}
+            <li class="exit-nav-list__item">
+                <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</nav>

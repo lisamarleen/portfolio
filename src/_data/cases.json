@@ -3,5 +3,25 @@
   "tabs": {
     "leftTitle": "Independent",
     "rightTitle": "In Commision"
-  }
+  },
+  "exitNavigationIndependent": [
+    {
+      "label": "Cases – In Commission",
+      "link": "#incommision"
+    },
+    {
+      "label": "About",
+      "link": "/"
+    }
+  ],
+  "exitNavigationInCommision": [
+    {
+      "label": "Cases – Independent",
+      "link": "#independent"
+    },
+    {
+      "label": "About",
+      "link": "/"
+    }
+  ]
 }

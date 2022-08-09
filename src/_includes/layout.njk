@@ -20,18 +20,6 @@
 
   <main>
    {{ content | safe }}
-   
-    <nav class="exit-nav">
-      <div class="content-wrapper">
-          <ul class="exit-nav-list" data-page-animation-fade-in-view>
-              {% for navigationItem in common.navigation %}
-                  <li class="exit-nav-list__item">
-                      <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
-                  </li>
-              {% endfor %}
-          </ul>
-        </div>
-    </nav>
 
     <section class="social">
       <div class="content-wrapper">
@@ -40,9 +28,15 @@
           <ul class="social-content__list social-list">
             {% for socialItem in common.social.items %}
               <li class="social-list__item">
-                <a href={{ socialItem.link }} class="social-list__link{% if socialItem.highlighted %} social-list__link--highlighted{% endif %}" rel="noopener noreferrer" target="_blank">
+                <a 
+                  href={{ socialItem.link }} 
+                  class="social-list__link{% if socialItem.highlighted %} social-list__link--highlighted{% endif %} external-link" 
+                  rel="noopener noreferrer" 
+                  target="_blank">
                   {{ socialItem.label }}
-                  {% if socialItem.highlighted %} {% include "underline-deco.njk" %}{% endif %}
+                  {% if socialItem.highlighted %} 
+                    {% include "underline-deco.njk" %}
+                  {% endif %}
                 </a>
               </li>
             {% endfor %}
