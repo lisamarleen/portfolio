@@ -108,6 +108,11 @@ html {
   margin: 0;
 }
 
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
 body {
   color: var(--color-white);
   background-color: var(--color-black);
