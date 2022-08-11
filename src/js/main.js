@@ -223,8 +223,6 @@ function initImageAnimations() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.documentElement.classList.remove("no-js");
-
   initNav();
   initPageAnimations();
   intiScrollProgressAnimations();
