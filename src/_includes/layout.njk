@@ -10,10 +10,11 @@
     {{ "main" | cssmin | safe }}
   </style>
   <script>
+    {{ "main" | jsmin | safe }}
     {{ pageId | jsmin | safe }}
   </script>
-  <link rel="stylesheet" href="/css/main.css">
-  <script src="/js/main.js" defer></script>
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <script src="{{ '/js/main.js' | url }}" defer></script>
 </head>
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
