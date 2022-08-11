@@ -6,6 +6,14 @@
   opacity: 1;
 }
 
+[data-page-animation-image], [data-page-animation-fade-in-view] {
+  opacity: 0;
+}
+
+.no-js [data-page-animation-image], .no-js [data-page-animation-fade-in-view] {
+  opacity: 1;
+}
+
 @keyframes svgStroke {
     0% {
         stroke-dashoffset: 1;
