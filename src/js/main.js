@@ -29,9 +29,9 @@ function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
   return response;
 }
 
-const EaseoutSine = getCSSCustomProp("--ease-out-sine");
+const EaseOutSine = getCSSCustomProp("--ease-out-sine");
 const EaseinQuad = getCSSCustomProp("--ease-in-quad");
-const EaseoutCubic = getCSSCustomProp("--ease-out-cubic");
+const EaseOutCubic = getCSSCustomProp("--ease-out-cubic");
 
 function setCssCustomProp(propKey, element, value) {
   element.style.setProperty(propKey, value);
@@ -93,8 +93,9 @@ function initPageAnimations() {
       shuffle(chars),
       { y: ["100%", 0], opacity: [0, 1] },
       {
-        delay: stagger(0.05, {
-          easing: EaseinQuad,
+        duration: 0.7,
+        delay: stagger(0.02, {
+          easing: EaseOutCubic,
         }),
       },
     ]);
@@ -106,18 +107,29 @@ function initPageAnimations() {
     sequence.push([
       content,
       { opacity: [0, 1] },
-      { easing: EaseoutCubic, at: "-0.5", duration: 1 },
+      { easing: EaseOutCubic, at: "-0.25", duration: 1 },
     ]);
   }
 
-  timeline(sequence);
-
   if (background) {
-    scroll(animate(background, { opacity: [0, 1, 1, 0] }), {
-      target: container,
-      offset: ["start start", "end end", "start start", "end start"],
-    });
+    scroll(
+      animate(background, {
+        opacity: [0, 1, 1, 0],
+        clipPath: [
+          "polygon(2vw 2vw, calc(100% - 2vw) 2vw, calc(100% - 2vw) calc(100% - 2vw), 2vw calc(100% - 2vw))",
+          "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          "polygon(2vw 2vw, calc(100% - 2vw) 2vw, calc(100% - 2vw) calc(100% - 2vw), 2vw calc(100% - 2vw))",
+        ],
+      }),
+      {
+        target: container,
+        offset: ["start start", "end end", "start start", "end start"],
+      }
+    );
   }
+
+  timeline(sequence);
 }
 
 function intiScrollProgressAnimations() {
@@ -196,7 +208,7 @@ function initImageAnimations() {
             {
               opacity: 1,
             },
-            { duration: 0.7, easing: EaseoutSine },
+            { duration: 0.7, easing: EaseOutSine },
           ],
           [
             container,
@@ -206,14 +218,14 @@ function initImageAnimations() {
                 "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
               ],
             },
-            { duration: 1.2, easing: EaseoutSine, at: "-0.6" },
+            { duration: 1.2, easing: EaseOutSine, at: "-0.6" },
           ],
           [
             image,
             {
               scale: [1.1, 1],
             },
-            { easing: EaseoutSine, duration: 1.2, at: "-1.2" },
+            { easing: EaseOutSine, duration: 1.2, at: "-1.2" },
           ],
         ]);
       },
