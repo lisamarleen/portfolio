@@ -41,7 +41,8 @@
     width: 100%;
     height: auto;
     left: 0;
-    bottom: -24px;
+    bottom: -14px;
+    top: auto;
 }
 
 .social-list__link.social-list__link--highlighted svg path {
