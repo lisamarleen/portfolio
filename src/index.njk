@@ -7,7 +7,7 @@ pageTitle: "Lisa Marleen Portfolio 2022"
 <section class="page-intro intro" data-page-animation-container>
     <div class="page-intro__background" aria-hidden="true" data-page-animation-background>
         <video class="intro__video" autoplay loop muted playsinline>
-            <source src="./assets/videos/FluidBG.mp4" type="video/mp4">
+            <source src="{{ './assets/videos/FluidBG.mp4' | url }}" type="video/mp4">
         </video>
     </div>
     <h1 class="page-intro__title intro-title" data-page-animation-title>{{ home.title | safe }}</h1>
@@ -25,7 +25,7 @@ pageTitle: "Lisa Marleen Portfolio 2022"
     </nav>
 </section>
 
-<section id="about" class="short-bio" data-page-animation-scroll-progress>
+<section id="about" class="short-bio" data-page-animation-fade-in-view>
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>

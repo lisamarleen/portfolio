@@ -37,7 +37,6 @@
   font-size: var(--font-size-xs);
   line-height: var(--font-line-height-m);
   padding: 0 var(--spacing-m);
-  opacity: 0;
 }
 
 .short-bio-title {
@@ -47,7 +46,7 @@
   line-height: var(--font-line-height-l);
   /* opacity: var(--scroll-progress);*/
 }
-
+/* 
 .short-bio-title::after {
   content: "";
   position: absolute;
@@ -70,7 +69,7 @@
   );
   mix-blend-mode: darken;
   opacity: calc(1 - var(--scroll-progress));
-} 
+}  */
 
 @media (min-width: 768px) {
   .short-bio {
@@ -106,11 +105,6 @@
     min-height: 330px;
     flex: 1;
   }
-
-  .short-bio-title {
-    font-size: 96px;
-    line-height: 96px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -126,4 +120,13 @@
   .short-bio__copy {
     padding-left: var(--spacing-xxl);
   }
+}
+
+
+@media (min-width: 1280px) {
+  .short-bio-title {
+    font-size: 130px;
+    line-height: 130px;
+  }
+
 }
