@@ -34,21 +34,11 @@
   text-transform: uppercase;
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-m);
+  transition: color var(--hover-default-transiton-duration, 300ms);
 }
 
-.intro-nav li a[href^="#"] svg  {
-  transform: rotate(122deg);
-  top: 4px;
-  position: absolute;
-  right: -32px;
-  width: 32px;
-  height: 32px;
-  opacity: 0;
-  transition: opacity 300ms ease-in;
-}
-
-.intro-nav li a[href^="#"]:hover svg {
-  opacity: 1;
+.intro-nav li a:hover {
+  color: var(--color-primary, #4961fe);
 }
 
 .intro-title {

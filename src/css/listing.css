@@ -1,7 +1,7 @@
 
 .listing.listing--in-view .listing-item:before, .listing.listing--in-view .listing-item:after  {
   transform: scaleX(1);
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .listing.listing--in-view .listing-item {
@@ -30,8 +30,8 @@
   height: 1px;
   background: var(--color-grey1);
   opacity: 0;
-  transform: scaleX(0);
-  transition: all 1200ms calc(100ms + var(--animation-delay)) var(--ease-in-circ);
+  transform: scaleX(0.7);
+  transition: all 700ms calc(100ms + var(--animation-delay)) var(--ease-in-circ);
 }
 
 .listing-item:after {
@@ -44,6 +44,7 @@
 
 .listing-item__label {
   font-size: var(--font-size-m);
+  line-height: var(--font-line-height-m);
   font-family: var(--font-headline-bold);
   text-transform: uppercase;
   margin-bottom: var(--spacing-s);
@@ -55,19 +56,21 @@
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: -0.2px;
+
 }
 
 .listing-item__meta {
   font-size: var(--font-size-s);
-  color: var(--color-grey2);
+  color: var(--color-grey1);
   text-transform: uppercase;
   font-family: var(--font-headline-regular);
   letter-spacing: -0.2px;
+  margin-top: 4px;
 }
 
 .listing-item__time {
   font-size: var(--font-size-m);
-  color: var(--color-grey2);
+  color: var(--color-grey1);
   text-transform: uppercase;
   font-family: var(--font-headline-regular);
   letter-spacing: var(--font-letter-spacing-s);
@@ -81,7 +84,7 @@
 }
 
 .listing-item__link svg {
-  transition: stroke 300ms var(--ease-out-circ);
+  transition: stroke var(--hover-default-transiton-duration) var(--ease-out-circ);
 }
 
 .listing-item__link:hover svg {
@@ -103,9 +106,14 @@
   animation: svgStroke 700ms 2000ms var(--ease-out-circ) forwards;
 }
 
+.listing-item-current-hint svg:last-child {
+  width: 300px;
+  height: auto;
+}
+
 .listing-item-current-hint svg:first-child {
   position: absolute;
-  right: 34px;
+  right: 72px;
   top: 20px;
 }
 

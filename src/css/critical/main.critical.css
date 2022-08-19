@@ -5,10 +5,9 @@
 
 .page-intro__title {
     font-family: var(--font-headline-bold);
-    font-size: var(--font-size-xl, 7rem);
+    font-size: var(--font-size-xxl, 6.875rem);
     text-transform: uppercase;
-    letter-spacing: 2.86px;
-    line-height: var(--font-line-height-xl, 6rem);
+    line-height: var(--font-line-height-xxl, 5.625rem);
     text-align: right;
 }
 
