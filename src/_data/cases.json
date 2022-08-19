@@ -7,7 +7,8 @@
   "exitNavigationIndependent": [
     {
       "label": "Cases – In Commission",
-      "link": "#incommision"
+      "link": "#incommision",
+      "isSkipLink": true
     },
     {
       "label": "About",
@@ -17,7 +18,8 @@
   "exitNavigationInCommision": [
     {
       "label": "Cases – Independent",
-      "link": "#independent"
+      "link": "#independent",
+      "isSkipLink": true
     },
     {
       "label": "About",

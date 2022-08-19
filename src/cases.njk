@@ -52,7 +52,10 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                 <ul class="exit-nav-list" data-page-animation-fade-in-view>
                 {% for navigationItem in cases.exitNavigationIndependent %}
                     <li class="exit-nav-list__item">
-                        <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                        <a href={{navigationItem.link}}>
+                            {{navigationItem.label}}
+                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled.njk" %}{% endif %}
+                        </a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -93,7 +96,10 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                 <ul class="exit-nav-list" data-page-animation-fade-in-view>
                 {% for navigationItem in cases.exitNavigationInCommision %}
                     <li class="exit-nav-list__item">
-                        <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+                        <a href={{navigationItem.link}}>
+                            {{navigationItem.label}}
+                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled.njk" %}{% endif %}
+                        </a>
                     </li>
                 {% endfor %}
                 </ul>
