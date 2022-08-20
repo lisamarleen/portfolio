@@ -11,6 +11,15 @@
     text-align: right;
 }
 
+.page-intro__subtitle {
+    font-family: var(--font-headline-bold);
+    font-size: var(--font-size-l, 2rem);
+    text-transform: uppercase;
+    line-height: var(--font-line-height-l, 2.25rem);
+    text-align: right;
+    margin-top: var(--spacing-l, 16px);
+}
+
 .page-intro__title .word {
     overflow: hidden;
     display: inline-block;
