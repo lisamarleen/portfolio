@@ -198,6 +198,7 @@ function initImageAnimations() {
 
   Array.from(allAnimations).map((container) => {
     const image = container.querySelector("img");
+    const amount = container.getAttribute("data-in-view-amount") || 0.5;
 
     inView(
       container,
@@ -229,7 +230,7 @@ function initImageAnimations() {
           ],
         ]);
       },
-      { amount: 0.5 }
+      { amount }
     );
   });
 }
