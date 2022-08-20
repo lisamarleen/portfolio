@@ -6,6 +6,10 @@
       "link": "/cases"
     },
     {
+      "label": "Visual Playground",
+      "link": "/off-the-grid"
+    },
+    {
       "label": "About",
       "link": "#about",
       "isSkipLink": true
@@ -15,6 +19,10 @@
     {
       "label": "Selected Cases",
       "link": "/cases"
+    },
+    {
+      "label": "Visual Playground",
+      "link": "/off-the-grid"
     }
   ],
   "shortBio": {

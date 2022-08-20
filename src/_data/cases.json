@@ -22,6 +22,10 @@
       "isSkipLink": true
     },
     {
+      "label": "Visual Playground",
+      "link": "/off-the-grid"
+    },
+    {
       "label": "About",
       "link": "/"
     }
