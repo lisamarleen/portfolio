@@ -26,7 +26,7 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                         {% for caseImage in caseItem.images %}
                             {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
-                                class="case__image case__image--alignment-{{ caseImage.largeView.alignment | default('left') }} case__image--width-{{ caseImage.largeView.width | default('1/1') }}" 
+                                class="visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}" 
                                 data-page-animation-image>
                                 {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                             </div>
@@ -71,7 +71,7 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                             {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
                                 data-page-animation-image
-                                class="case__image case__image--alignment-{{ caseImage.largeView.alignment | default('left') }} case__image--width-{{ caseImage.largeView.width | default('1/1') }}">
+                                class="visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}">
                                 {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                             </div>
                         {% endfor %}
