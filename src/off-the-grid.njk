@@ -1,0 +1,35 @@
+---
+layout: layout.njk
+pageId: offthegrid
+pageTitle: "Lisa Marleen — Off the Grid"
+---
+
+<div class="page-intro" data-page-animation-container>
+    <h1 class="page-intro__title" data-page-animation-title>{{ offthegrid.title | safe }}</h1>
+    <h2 class="page-intro__subtitle" data-page-animation-content>{{ offthegrid.subtitle | safe }}</h2>
+</div>
+
+<section class="off-the-grid-section">
+    <div class="content-wrapper">
+        {% for visual in offthegrid.items %}
+            {% set computedSrc = "./src/assets/images/offTheGrid/" + visual.src %}
+            <div 
+                class="visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
+                data-page-animation-image data-in-view-amount="0.2">
+                {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<nav class="exit-nav">
+    <div class="content-wrapper">
+        <ul class="exit-nav-list" data-page-animation-fade-in-view>
+        {% for navigationItem in home.exitNavigation %}
+            <li class="exit-nav-list__item">
+                <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</nav>

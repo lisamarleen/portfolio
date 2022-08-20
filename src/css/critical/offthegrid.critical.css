@@ -1,0 +1,9 @@
+.off-the-grid-section {
+    padding: var(--spacing-xl, 48px) 0;
+}
+
+@media (min-width: 1024px) {
+    .off-the-grid-section {
+        padding: var(--spacing-3xl, 128px) 0;
+    }
+}

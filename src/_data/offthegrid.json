@@ -1,0 +1,25 @@
+{
+  "title": "Off<br /> the Grid",
+  "subtitle": "Visual playground<br /> of fun side projects",
+  "items": [
+    {
+      "src": "1.png",
+      "alt": "some alt text",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "left"
+      },
+      "srcType": "image"
+    }
+  ],
+  "exitNavigationInCommision": [
+    {
+      "label": "Selected Cases",
+      "link": "/cases"
+    },
+    {
+      "label": "About",
+      "link": "/"
+    }
+  ]
+}
