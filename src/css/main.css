@@ -110,12 +110,6 @@ html {
   margin: 0;
 }
 
-*:focus {
-  outline: 1px solid currentColor;
-  outline-offset: 4px;
-  outline-style: dashed;
-}
-
 ::selection {
   color: var(--color-white);
   background-color: var(--color-primary);
