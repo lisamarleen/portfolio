@@ -1,18 +1,28 @@
 {
   "title": "Off<br /> the Grid",
-  "subtitle": "Visual playground<br /> of fun side projects",
+  "subtitle": "Off the grid<br /> of fun side projects",
   "items": [
     {
       "src": "1.png",
       "alt": "some alt text",
+      "link": "http://google.de",
       "largeView": {
         "width": "1/2",
         "alignment": "left"
       },
       "srcType": "image"
+    },
+    {
+      "src": "1.png",
+      "alt": "some alt text",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "right"
+      },
+      "srcType": "image"
     }
   ],
-  "exitNavigationInCommision": [
+  "exitNavigation": [
     {
       "label": "Selected Cases",
       "link": "/cases"
