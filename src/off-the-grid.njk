@@ -9,14 +9,22 @@ pageTitle: "Lisa Marleen — Off the Grid"
     <h2 class="page-intro__subtitle" data-page-animation-content>{{ offthegrid.subtitle | safe }}</h2>
 </div>
 
-<section class="off-the-grid-section">
-    <div class="content-wrapper">
+<section class="page-content off-the-grid-section">
+    <div class="off-the-grid-section__content content-wrapper">
         {% for visual in offthegrid.items %}
             {% set computedSrc = "./src/assets/images/offTheGrid/" + visual.src %}
             <div 
                 class="visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
                 data-page-animation-image data-in-view-amount="0.2">
-                {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+                {% if visual.link %}
+                    <a class="visual__link" href="http://google.de" rel="noopener noreferrer" target="_blank">
+                        {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+                        {% include "icon-arrow-right-up.njk" %}
+                        {% include "circle-highlight.njk" %}
+                    </a>
+                {% else %}
+                    {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+                {% endif %}
             </div>
         {% endfor %}
     </div>
@@ -25,7 +33,7 @@ pageTitle: "Lisa Marleen — Off the Grid"
 <nav class="exit-nav">
     <div class="content-wrapper">
         <ul class="exit-nav-list" data-page-animation-fade-in-view>
-        {% for navigationItem in home.exitNavigation %}
+        {% for navigationItem in offthegrid.exitNavigation %}
             <li class="exit-nav-list__item">
                 <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
             </li>
