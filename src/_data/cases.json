@@ -11,6 +11,10 @@
       "isSkipLink": true
     },
     {
+      "label": "Off the grid",
+      "link": "/off-the-grid"
+    },
+    {
       "label": "About",
       "link": "/"
     }
