@@ -45,6 +45,10 @@
     object-fit: cover;
 }
 
+.page-content {
+    padding: var(--spacing-xl, 48px) 0;
+}
+
 @media (min-width: 768px) {
     .page-intro__title {
         font-size: var(--font-size-xxl, 8rem);
@@ -52,6 +56,12 @@
     }
 }
   
+@media (min-width: 1024px) {
+    .page-content {
+        padding: var(--spacing-3xl, 128px) 0;
+    }
+}
+
 @media (min-width: 1280px) { 
     .page-intro__title {
         font-size: var(--font-size-3xl, 10rem);
