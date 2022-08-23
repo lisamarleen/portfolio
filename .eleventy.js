@@ -131,6 +131,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/videos");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets/app-images");
+  eleventyConfig.addPassthroughCopy("src/assets/share");
 
   eleventyConfig.addNunjucksFilter("jsmin", (pageId) => {
     const code = fs.readFileSync(`src/js/${pageId}.critical.js`, "utf8");
