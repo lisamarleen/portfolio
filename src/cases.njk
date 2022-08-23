@@ -32,7 +32,7 @@ pageTitle: "Lisa Marleen Portfolio 2022 - Cases"
                             </div>
                         {% endfor %}
                         <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
-                        <div class="case__desc" data-page-animation-fade-in-view>
+                        <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy">{{ caseItem.description | safe }}</div>
                             <div class="case-links">
                                 {% for caseLink in caseItem.links %}
