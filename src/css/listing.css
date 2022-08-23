@@ -51,7 +51,7 @@
 }
 
 .listing-item__sub-label {
-  font-family: var(--font-headline-bold);
+  font-family: var(--font-headline-regular);
   font-size: var(--font-size-s);
   color: var(--color-white);
   text-transform: uppercase;
@@ -125,5 +125,5 @@
 }
 
 .listing.listing--in-view + .listing-item-current-label {
-  animation: fadeIn 700ms 2000ms var(--ease-out-circ) forwards;
+  animation: fadeIn 700ms 2400ms var(--ease-out-circ) forwards;
 }
