@@ -46,7 +46,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href={{ "/assets/app-images/favicon-32x32.png" | url }} />
     <link rel="icon" type="image/png" sizes="96x96" href={{ "/assets/app-images/favicon-96x96.png" | url }} />
     <link rel="icon" type="image/png" sizes="16x16" href={{ "/assets/app-images/favicon-16x16.png" | url }} />
-    <link rel="manifest" href={{ assets/app-images/manifest.json | url }} />
+    <link rel="manifest" href={{ "assets/app-images/manifest.json" | url }} />
 
     <meta property="og:url" content="www.stateofthedeep.art" />
     <meta property="og:title" content="Entomon" />
@@ -80,8 +80,8 @@
     {{ "main" | jsmin | safe }}
     {{ pageId | jsmin | safe }}
   </script>
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-  <script src="{{ '/js/main.js' | url }}" defer></script>
+  <link rel="stylesheet" href="{{ "/css/main.css" | url }}">
+  <script src="{{ "/js/main.js" | url }}" defer></script>
 </head>
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
