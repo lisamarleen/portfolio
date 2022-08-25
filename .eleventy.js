@@ -135,21 +135,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/share");
 
   eleventyConfig.addNunjucksFilter("jsmin", (pageId) => {
-    const code = fs.readFileSync(`src/js/${pageId}.critical.js`, "utf8");
-    const minified = esbuild.transformSync(code, {
-      minify: true,
-      target: "es6",
-    });
+    try {
+      const code = fs.readFileSync(
+        `src/js/critical/${pageId}.critical.js`,
+        "utf8"
+      );
 
-    return minified.code;
+      const minified = esbuild.transformSync(code, {
+        minify: true,
+        target: "es6",
+      });
+
+      return minified.code;
+    } catch (e) {}
+
+    return null;
   });
 
   eleventyConfig.addNunjucksFilter("cssmin", (pageId) => {
-    const code = fs.readFileSync(
-      `src/css/critical/${pageId}.critical.css`,
-      "utf8"
-    );
-    return new CleanCSS({}).minify(code).styles;
+    try {
+      const code = fs.readFileSync(
+        `src/css/critical/${pageId}.critical.css`,
+        "utf8"
+      );
+
+      return new CleanCSS({}).minify(code).styles;
+    } catch (e) {}
+
+    return null;
   });
 
   eleventyConfig.addNunjucksAsyncShortcode(
