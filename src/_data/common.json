@@ -1,8 +1,8 @@
 {
   "navigation": [
     {
-      "label": "Projects",
-      "link": "/projects"
+      "label": "Selected Cases",
+      "link": "/cases"
     },
     {
       "label": "Off the grid",
