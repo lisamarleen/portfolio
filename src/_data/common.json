@@ -6,11 +6,11 @@
     },
     {
       "label": "Off the grid",
-      "link": "/playground"
+      "link": "/off-the-grid"
     },
     {
       "label": "About",
-      "link": "#about"
+      "link": "/"
     }
   ],
 
@@ -51,8 +51,8 @@
   "footer": {
     "copyright": "© Lisa Marleen Mantel 2022",
     "imprint": {
-      "label": "Imprint",
-      "link": "/test"
+      "label": "Impressum",
+      "link": "/impressum"
     }
   }
 }

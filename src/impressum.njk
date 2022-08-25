@@ -1,0 +1,28 @@
+---
+layout: layout.njk
+pageId: impressum
+pageTitle: "Lisa Marleen — Impressum"
+pageDescription: "Hello"
+---
+
+<div class="page-intro" data-page-animation-container>
+    <h1 class="page-intro__title" data-page-animation-title>Impres<br />sum</h1>
+</div>
+
+<section class="page-content">
+    <div class="content-wrapper">
+       
+    </div>
+</section>
+
+<nav class="exit-nav">
+    <div class="content-wrapper">
+        <ul class="exit-nav-list" data-page-animation-fade-in-view>
+        {% for navigationItem in common.navigation %}
+            <li class="exit-nav-list__item">
+                <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</nav>
