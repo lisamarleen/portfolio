@@ -3,9 +3,29 @@
   "subtitle": "Off the grid<br /> of fun side projects",
   "items": [
     {
-      "src": "1.png",
-      "alt": "some alt text",
-      "link": "http://google.de",
+      "src": "entomon.png",
+      "alt": "An insect human hybrid created with Z-Brush and Cinema4D, rendered with Octane.",
+      "link": "https://www.instagram.com/p/CXZUSumtZlq/",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "center"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "darkmatter.png",
+      "alt": "A 3D animation of dark matter. Spheres of dark, reflective fluid are rising up before a bright backgound.",
+      "link": "https://www.instagram.com/p/B_dNpQ9IQyw/",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "hackaton.png",
+      "alt": "A 3D rendered avatar chilling in colorful sweatpants on an armchair with a remote control and bunny slippers just about to bite into a slice of pizza.",
+      "link": "https://www.youtube.com/watch?v=L5nYjfHaNMM",
       "largeView": {
         "width": "1/2",
         "alignment": "left"
@@ -13,11 +33,110 @@
       "srcType": "image"
     },
     {
-      "src": "1.png",
-      "alt": "some alt text",
+      "src": "medium.png",
+      "alt": "An illustration of an asian woman covering her mouth with her arm. The handwritten font behind her reads 'Je suis ne pas un virus'",
+      "link": "https://medium.com/@lisamarleen/jenesuispasunvirus-7a8b5ab73f4a",
+      "largeView": {
+        "width": "3/4",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "handzero.png",
+      "alt": "A 3D rendered hand floating over the ground forming an 'o' with thumb and pointing finger. The hand is made of glossy, colorful reflective material.",
+      "link": "https://www.instagram.com/p/B8WPLzkombp/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "handthree.png",
+      "alt": "A 3D rendered hand floating over the ground showing three fingers as it was counting. The hand is made of glossy, colorful reflective material. In a looping animation pink smoke is covering the hand from time to time.",
+      "link": "https://www.instagram.com/p/B4IL6oHoQva/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "left"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "klaaar.png",
+      "alt": "Three colorful soap bubbles intersecting wiith each other, particles are floating inside. Behind there is a font reading 'klaaar'.",
+      "link": "https://www.instagram.com/p/Begu6i3h4yZ/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "handtwo.png",
+      "alt": "A 3D rendered hand floating over the ground showing two fingers as it was counting. The hand is made of glossy, dark material. In a looping animation a yellow fluid is circling around it.",
+      "link": "https://www.instagram.com/p/B40SlkNorJd/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "center"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "handone.png",
+      "alt": "A 3D rendered hand floating over the ground showing one finger as it was counting. The hand is made of glossy material.",
+      "link": "https://www.instagram.com/p/B7tZRh_oSQH/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "left"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "mouth.png",
+      "alt": "An animation of illustrated mouths opening and coming towards the camera. In each mouth there is a rotating spiral revealing another mouth. An endless loop.",
+      "link": "https://www.instagram.com/p/Bd3cDJXBG6O/",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "fuckoff.png",
+      "alt": "A small, blue 3D character trying to catch a floating ballon. When failing it is getting angry and showing the finger into the camera.",
+      "largeView": {
+        "width": "2/3",
+        "alignment": "left"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "demodern.png",
+      "alt": "An illustrated logo with the letters 'dmdrn' and a hexagon shape in the background.",
+      "largeView": {
+        "width": "1/3",
+        "alignment": "right"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "tung.png",
+      "alt": "A woman being showered with colorful custard. She is trying to lick it off her face.",
+      "link": "https://www.behance.net/gallery/25483669/Vinyl-record-cover-tunng",
       "largeView": {
         "width": "1/2",
-        "alignment": "right"
+        "alignment": "left"
+      },
+      "srcType": "image"
+    },
+    {
+      "src": "scanner.png",
+      "alt": "A blond woman pressing her nose and tongue onto a scanner. The rest of her face is covered by her long hair.",
+      "link": "https://www.behance.net/gallery/24232029/Synthetic",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "center"
       },
       "srcType": "image"
     }
