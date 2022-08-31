@@ -176,11 +176,14 @@ nav li a[href^="#"]:hover svg {
 
 .content-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 100rem;
-  margin: 0 auto;
   box-sizing: border-box;
   padding: 0 var(--spacing-m);
+  width: min(100%, 100rem);
+  margin-inline: auto;
+}
+
+.content-wrapper.content-wrapper--small {
+  width: min(100%, 64rem);
 }
 
 .exit-nav {

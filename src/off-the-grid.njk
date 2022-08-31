@@ -11,20 +11,20 @@ pageDescription: "Hello"
 </div>
 
 <section class="page-content off-the-grid-section">
-    <div class="off-the-grid-section__content content-wrapper">
+    <div class="off-the-grid-section__content content-wrapper content-wrapper--small">
         {% for visual in offthegrid.items %}
             {% set computedSrc = "./src/assets/images/offTheGrid/" + visual.src %}
             <div 
-                class="visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
+                class="off-the-grid__visual visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
                 data-page-animation-image data-in-view-amount="0.2">
                 {% if visual.link %}
-                    <a class="visual__link" href="http://google.de" rel="noopener noreferrer" target="_blank">
-                        {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+                    <a class="visual__link" href={{ visual.link }} rel="noopener noreferrer" target="_blank">
+                        {%  imageWithDetail computedSrc, visual.alt, "(min-width: 768px) 50vw, 100vw" %}
                         {% include "icon-arrow-right-up.njk" %}
                         {% include "circle-highlight.njk" %}
                     </a>
                 {% else %}
-                    {%  imageWithDetail computedSrc, visual.largeView.alt, "(min-width: 768px) 50vw, 100vw" %}
+                    {%  imageWithDetail computedSrc, visual.alt, "(min-width: 768px) 50vw, 100vw" %}
                 {% endif %}
             </div>
         {% endfor %}
