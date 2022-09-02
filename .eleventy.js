@@ -35,6 +35,15 @@ function imageFileName({ src, id, format }) {
   return `${name}_${id}.${format}`;
 }
 
+async function lazyVideo(src, width, height) {
+  const srcType = src.substr(src.indexOf("."));
+  return `
+  <video autoplay muted loop playsinline width="${width}" height="${height}">
+  <source data-src="${src}" type="video/${srcType}">
+</video>
+    `;
+}
+
 async function imageWithDetailShortcode(
   src,
   alt,
@@ -169,6 +178,8 @@ module.exports = function (eleventyConfig) {
     "imageWithDetail",
     imageWithDetailShortcode
   );
+
+  eleventyConfig.addNunjucksAsyncShortcode("lazyVideo", lazyVideo);
 
   return {
     passthroughFileCopy: true,

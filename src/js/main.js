@@ -193,17 +193,18 @@ function initCustomClassAnimations() {
 
 function initImageAnimations() {
   const allAnimations = document.querySelectorAll(
-    "[data-page-animation-image]"
+    "[data-page-animation-visual]"
   );
 
   Array.from(allAnimations).map((container) => {
     const image = container.querySelector("img");
+    const visualType = container.getAttribute("data-visual-type") || "image";
     const amount = container.getAttribute("data-in-view-amount") || 0.5;
 
     inView(
       container,
       (info) => {
-        timeline([
+        const animations = [
           [
             container,
             {
@@ -221,18 +222,40 @@ function initImageAnimations() {
             },
             { duration: 1.2, easing: EaseOutSine, at: "-0.6" },
           ],
-          [
+        ];
+
+        if (visualType === "lazy-video") {
+          const video = document.querySelectorAll("video");
+          initLazyVideo(video[0]);
+        } else {
+          animations.push([
             image,
             {
               scale: [1.1, 1],
             },
             { easing: EaseOutSine, duration: 1.2, at: "-1.2" },
-          ],
-        ]);
+          ]);
+        }
+
+        timeline(animations);
       },
       { amount }
     );
   });
+}
+
+function initLazyVideo(videoElem) {
+  for (const source in videoElem.children) {
+    const videoSource = videoElem.children[source];
+    if (
+      typeof videoSource.tagName === "string" &&
+      videoSource.tagName === "SOURCE"
+    ) {
+      videoSource.src = videoSource.dataset.src;
+    }
+  }
+
+  videoElem.load();
 }
 
 document.addEventListener("DOMContentLoaded", () => {

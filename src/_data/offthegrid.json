@@ -23,6 +23,17 @@
       "srcType": "image"
     },
     {
+      "src": "1.mp4",
+      "link": "https://www.instagram.com/p/CXZUSumtZlq/",
+      "largeView": {
+        "width": "1/2",
+        "alignment": "center"
+      },
+      "srcType": "video",
+      "width": "2560",
+      "height": "1440"
+    },
+    {
       "src": "hackaton.png",
       "alt": "A 3D rendered avatar chilling in colorful sweatpants on an armchair with a remote control and bunny slippers just about to bite into a slice of pizza.",
       "link": "https://www.youtube.com/watch?v=L5nYjfHaNMM",
