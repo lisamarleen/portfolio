@@ -28,7 +28,7 @@ pageDescription: "Hello"
                             {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
                                 class="case__visual visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}" 
-                                data-page-animation-image>
+                                data-page-animation-visual>
                                 {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                             </div>
                         {% endfor %}
@@ -39,7 +39,7 @@ pageDescription: "Hello"
                                 {% for caseLink in caseItem.links %}
                                     <a class="case-links__item external-link" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
                                         {{ caseLink.label }}
-                                        {% include "icon-arrow-right-up.njk" %}
+                                        {% include "icon-link.njk" %}
                                     </a>
                                 {% endfor %}
                             </div>
@@ -71,7 +71,7 @@ pageDescription: "Hello"
                         {% for caseImage in caseItem.images %}
                             {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
-                                data-page-animation-image
+                                data-page-animation-visual
                                 class="visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}">
                                 {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                             </div>
@@ -83,7 +83,7 @@ pageDescription: "Hello"
                                 {% for caseLink in caseItem.links %}
                                     <a class="case-links__item external-link" href={{ caseLink.link }} rel="noopener noreferrer" target="_blank">
                                         {{ caseLink.label }}
-                                        {% include "icon-arrow-right-up.njk" %}
+                                        {% include "icon-link.njk" %}
                                     </a>
                                 {% endfor %}
                             </div>

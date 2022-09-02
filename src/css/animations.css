@@ -6,11 +6,11 @@
   opacity: 1;
 }
 
-[data-page-animation-image], [data-page-animation-fade-in-view] {
+[data-page-animation-visual], [data-page-animation-fade-in-view] {
   opacity: 0;
 }
 
-.no-js [data-page-animation-image], .no-js [data-page-animation-fade-in-view] {
+.no-js [data-page-animation-visual], .no-js [data-page-animation-fade-in-view] {
   opacity: 1;
 }
 
