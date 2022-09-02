@@ -36,7 +36,8 @@ function imageFileName({ src, id, format }) {
 }
 
 async function lazyVideo(src, width, height) {
-  const srcType = src.substr(src.indexOf("."));
+  const srcType = src.substr(src.indexOf(".") + 1);
+
   return `
   <video autoplay muted loop playsinline width="${width}" height="${height}">
   <source data-src="${src}" type="video/${srcType}">
