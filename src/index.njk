@@ -30,7 +30,7 @@ pageDescription: "Hello"
     <div class="short-bio__main-content content-wrapper">
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
-    <div class="short-bio__image" data-page-animation-image>
+    <div class="short-bio__image" data-page-animation-visual>
         {% set shortBioImageSrc = "./src/assets/images/" + home.shortBio.image.defaultFileName %}
         {% set shortBioDetailImageSrc = "./src/assets/images/" +  home.shortBio.image.detailFileName %}
         {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", shortBioDetailImageSrc, "(max-width: 767px)", "100vw" %}
@@ -97,7 +97,7 @@ pageDescription: "Hello"
                     </div>
                     {% if teachingItem.link %}
                     <a class="listing-item__link" href={{ teachingItem.link }} rel="noopener noreferrer" target="_blank">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                        {% include "icon-link.njk" %}
                     </a>
                     {% endif %}
                 </li>
@@ -117,7 +117,7 @@ pageDescription: "Hello"
                     </div>
                     {% if exhibitionItem.link %}
                         <a class="listing-item__link" href={{ exhibitionItem.link }} rel="noopener noreferrer" target="_blank">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
+                        {% include "icon-link.njk" %}
                         </a>
                     {% endif %}
                 </li>
@@ -140,9 +140,9 @@ pageDescription: "Hello"
                         <h5 class="listing-item__meta">{{ publicationItem.meta }}</h5>
                     </div>
                     {% if publicationItem.link %}
-                    <a class="listing-item__link" href={{ publicationItem.link }} rel="noopener noreferrer" target="_blank">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7 17l9.2-9.2M17 17V7H7"></path></svg>
-                    </a>
+                        <a class="listing-item__link" href={{ publicationItem.link }} rel="noopener noreferrer" target="_blank">
+                            {% include "icon-link.njk" %}
+                        </a>
                     {% endif %}
                 </li>
             {% endfor %}

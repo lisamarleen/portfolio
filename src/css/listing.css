@@ -83,14 +83,6 @@
   top: calc(var(--spacing-s) * -2);
 }
 
-.listing-item__link svg {
-  transition: stroke var(--hover-default-transiton-duration) var(--ease-out-circ);
-}
-
-.listing-item__link:hover svg {
-  stroke: var(--color-highlight);
-}
-
 .listing-item-current-hint {
   position: absolute;
   left: -30px;

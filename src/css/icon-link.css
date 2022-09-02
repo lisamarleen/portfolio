@@ -1,0 +1,25 @@
+.icon-link {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-link:hover .icon-link__circle path {
+    animation: svgStroke 700ms var(--ease-out-circ) forwards;
+}
+
+.icon-link svg {
+    fill: var(--color-highlight);
+}
+
+.icon-link__circle {
+    position: absolute;
+    left: -16px;
+    top: -16px;
+}
+
+.icon-link__circle path {
+    stroke-dasharray: 0.5;
+    stroke-dashoffset: 0.5;
+}
