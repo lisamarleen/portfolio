@@ -225,7 +225,7 @@ function initImageAnimations() {
         ];
 
         if (visualType === "lazy-video") {
-          const video = document.querySelectorAll("video");
+          const video = container.querySelectorAll("video");
           initLazyVideo(video[0]);
         } else {
           animations.push([
