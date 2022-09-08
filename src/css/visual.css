@@ -84,6 +84,14 @@
     width: 66%;
   }
 
+  .visual.visual--width-3\/4 {
+    width: 75%;
+  }
+
+  .visual.visual--width-3\/5 {
+    width: 60%;
+  }
+
   .visual.visual--alignment-center {
     align-self: center;
     justify-self: center;
