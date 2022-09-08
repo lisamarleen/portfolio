@@ -14,15 +14,3 @@
 .external-link:hover {
     color: var(--color-highlight);
 }
-
-.external-link svg {
-    position: relative;
-    top: -8px;
-    font-size: 1.2rem;
-    transition: var(--hover-default-transiton-duration);
-    fill: var(--color-white);
-}
-
-.external-link:hover svg {
-    fill: var(--color-highlight);
-}
