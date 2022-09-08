@@ -258,8 +258,44 @@ function initLazyVideo(videoElem) {
   videoElem.load();
 }
 
+function initHomeLink() {
+  let isAnimatedIn = false;
+  const elem = document.querySelector(".page-header");
+  const chars = document.querySelectorAll(".page-header__home-link .char");
+  const animatedChars = shuffle(
+    Array.from(chars).filter((c, index) => index !== 0 && index !== 4)
+  );
+
+  const options = {
+    duration: 0.4,
+    delay: stagger(0.02, {
+      easing: EaseOutCubic,
+    }),
+  };
+
+  elem.addEventListener("mouseover", async () => {
+    if (!isAnimatedIn) {
+      await animate(
+        animatedChars,
+        { y: ["-100%", 0], opacity: [0, 1] },
+        options
+      );
+      console.log("now");
+      isAnimatedIn = true;
+    }
+  });
+
+  elem.addEventListener("mouseout", async () => {
+    if (isAnimatedIn) {
+      animate(animatedChars, { y: [0, "100%"], opacity: [1, 0] }, options);
+      isAnimatedIn = false;
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
+  initHomeLink();
   initPageAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();
