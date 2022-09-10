@@ -95,7 +95,7 @@
 }
 
 .listing.listing--in-view .listing-item-current-hint svg path {
-  animation: svgStroke 700ms 2000ms var(--ease-out-circ) forwards;
+  animation: svgStroke 700ms 300ms var(--ease-out-circ) forwards;
 }
 
 .listing-item-current-hint svg:last-child {
