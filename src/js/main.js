@@ -91,12 +91,19 @@ function initPageAnimations() {
   if (title) {
     sequence.push([
       shuffle(chars),
-      { y: ["100%", 0], opacity: [0, 1] },
+      {
+        rotateY: [25, 0],
+        opacity: [0, 1],
+        color: [
+          getCSSCustomProp("--color-dark-blue"),
+          getCSSCustomProp("--color-white"),
+        ],
+        filter: ["blur(2px)", "blur(0)"],
+      },
       {
         duration: 0.7,
-        delay: stagger(0.02, {
-          easing: EaseOutCubic,
-        }),
+        delay: stagger(0.02),
+        easing: EaseinQuad,
       },
     ]);
   }
