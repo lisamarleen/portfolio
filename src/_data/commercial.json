@@ -11,7 +11,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sasu2.png",
@@ -19,7 +20,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sasu3.png",
@@ -27,7 +29,8 @@
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sasu4.png",
@@ -35,7 +38,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         }
       ],
       "links": [
@@ -56,7 +60,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sap2.png",
@@ -64,7 +69,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sap3.png",
@@ -72,7 +78,8 @@
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "sap4.png",
@@ -80,7 +87,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         }
       ],
       "links": [
@@ -101,7 +109,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "ifa2.png",
@@ -109,7 +118,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "ifa3.png",
@@ -117,7 +127,8 @@
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "ifa4.png",
@@ -125,7 +136,8 @@
           "largeView": {
             "width": "2/3",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         }
       ],
       "links": [
@@ -146,7 +158,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "draeger2.png",
@@ -154,7 +167,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "draeger3.png",
@@ -162,7 +176,8 @@
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image"
         },
         {
           "src": "draeger4.png",
@@ -170,7 +185,8 @@
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image"
         }
       ],
       "links": [
