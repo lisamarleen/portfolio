@@ -8,9 +8,19 @@
     font-size: var(--font-size-l);
     line-height: var(--font-line-height-l);
     gap: var(--spacing-m);
-    transition: var(--hover-default-transiton-duration);
+    transition: color var(--hover-default-transiton-duration);
+}
+
+.external-link svg {
+    fill: var(--color-white);
+    transition: fill var(--hover-default-transiton-duration);
+
 }
 
 .external-link:hover {
     color: var(--color-highlight);
+}
+
+.external-link:hover svg {
+    fill: var(--color-highlight);
 }
