@@ -78,26 +78,32 @@
     "title": "teaching<br />& talks",
     "items": [
       {
+        "label": "Synthesizing meaning",
+        "subLabel": "DHBW Ravensburg 2022",
+        "meta": "Expert Workshop – AI & Design",
+        "link": "https://www.instagram.com/p/CiGekLgDwUu/"
+      },
+      {
         "label": "Animation in x-Reality",
-        "subLabel": "Vilnius Tech Summerschool",
+        "subLabel": "Vilnius Tech Summerschool 2022",
         "meta": "Workshop Animation in collaboration with AI",
         "link": "https://kisd.de/projects/animation-in-x-reality-summer-school-in-vilnius/"
       },
       {
-        "label": "Synthesizing meaning",
-        "subLabel": "DHBW RAvensburg",
+        "label": "Borrowed Limbs",
+        "subLabel": "DHBW Ravensburg 2022",
         "meta": "lunchtime talk – making of borrowed limbs",
         "link": "https://kisd.de/projects/animation-in-x-reality-summer-school-in-vilnius/"
       },
       {
         "label": "Digital showcases",
-        "subLabel": "Jung von Matt Neckar",
+        "subLabel": "Jung von Matt Neckar 2018",
         "meta": "Demodern Talk with with Jason Brandt and Matthias Rosenthal",
         "link": ""
       },
       {
         "label": "hoax",
-        "subLabel": "Z2X16 Festival der jungen Visionär:innen",
+        "subLabel": "Z2X16 Festival der jungen Visionär:innen 2016",
         "meta": "Workshop – Wie man Anonymität und Privatsphäre im Netz sichert",
         "link": "https://z2x.zeit.de/z2x16-programm"
       }
@@ -106,6 +112,12 @@
   "exhibitions": {
     "title": "exhibit<br />ions",
     "items": [
+      {
+        "label": "Ars Electronica",
+        "subLabel": "Linz 2022",
+        "meta": "Borrowed limbs – experiental short film",
+        "link": "https://ars.electronica.art/planetb/en/welcome-to-planetb/"
+      },
       {
         "label": "GARDENING Amelisweerd",
         "subLabel": "Utrecht 2022",
@@ -144,7 +156,7 @@
         "label": "Page",
         "subLabel": "Edition 08/22",
         "meta": "Borrowed Limbs – experiental short film",
-        "link": "https://page-online.de/shop/page-8-2022/"
+        "link": "https://page-online.de/branche-karriere/ki-bei-bewusstsein/"
       },
       {
         "label": "Annual multimedia",
