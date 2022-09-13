@@ -145,7 +145,7 @@ nav li a[href^="#"] svg  {
   width: 32px;
   height: 32px;
   opacity: 0;
-  transition: opacity var(--hover-default-transiton-duration, 300ms);
+  transition: opacity var(--hover-default-transiton-duration) var(--ease-in-back);
 }
 
 nav li a[href^="#"]:hover svg {
