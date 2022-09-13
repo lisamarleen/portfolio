@@ -5,7 +5,7 @@
     height: 40px;
 }
 
-.a:hover > .icon-link__circle path {
+a:hover > .icon-link .icon-link__circle path {
     animation: svgStroke 700ms var(--ease-out-circ) forwards;
 }
 
@@ -29,6 +29,11 @@ a:hover > .icon-link svg {
 }
 
 .icon-link__circle path {
-    stroke-dasharray: 0.5;
-    stroke-dashoffset: 0.5;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    fill: none;
+    stroke: #4961fd;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
 }
