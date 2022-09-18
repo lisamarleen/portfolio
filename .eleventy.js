@@ -103,6 +103,8 @@ async function imageWithDetailShortcode(
               .map((entry) => `/${entry.srcset}`)
               .join(", ")}"
             media="${detailMedia}"
+            width="${imageFormat[0].width}"
+            height="${imageFormat[0].height}"
             sizes="${detailSizes}">`;
         })
         .join("\n")
@@ -116,7 +118,10 @@ async function imageWithDetailShortcode(
           imageFormat[0].sourceType
         }" srcset="${imageFormat
           .map((entry) => `/${entry.srcset}`)
-          .join(", ")}" sizes="${imageAttributes.sizes}">`;
+          .join(", ")}" 
+          width="${imageFormat[0].width}"
+          height="${imageFormat[0].height}"
+          sizes="${imageAttributes.sizes}">`;
       })
       .join("\n");
 
