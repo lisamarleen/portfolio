@@ -11,6 +11,7 @@
 }
 
 .tabs-list__link + svg path {
+    opacity: 0;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
 }

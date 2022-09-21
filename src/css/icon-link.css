@@ -29,6 +29,7 @@ a:hover > .icon-link svg {
 }
 
 .icon-link__circle path {
+    opacity: 0;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     fill: none;
