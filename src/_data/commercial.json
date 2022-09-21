@@ -7,39 +7,43 @@
       "images": [
         {
           "src": "sasu1.png",
-          "alt": "some alt text",
+          "alt": "A photo of a girl standing on a squre balance board. In front of her a Portrait Screen with a colorful underwater game environment.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#02449b"
         },
         {
           "src": "sasu2.png",
-          "alt": "some alt text",
+          "alt": "An image of a 3D underwater world with vivid blue colors and salmon colored plants populating the floor.",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#74dafb"
         },
         {
           "src": "sasu3.png",
-          "alt": "some alt text",
+          "alt": "A 3D created diver in a cute style. They are floating underwater and trying to touch a gemstone.",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#2a30b2"
         },
         {
           "src": "sasu4.png",
-          "alt": "some alt text",
+          "alt": "A photo of two feet in white sneakers standing on a balance board which has a colorful animated Interface.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#fa7c5b"
         }
       ],
       "links": [
@@ -56,39 +60,43 @@
       "images": [
         {
           "src": "sap1.png",
-          "alt": "some alt text",
+          "alt": "An image of various Interface elements all belonging to the same application.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#8384dd"
         },
         {
           "src": "sap2.png",
-          "alt": "some alt text",
+          "alt": "An illustration of an orange fish eating a piece of plastic floating in the ocean.",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#aeb9bf"
         },
         {
           "src": "sap3.png",
-          "alt": "some alt text",
+          "alt": "An illustration of three scientists in the antarctic taking water probes",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#f8f9fb"
         },
         {
           "src": "sap4.png",
-          "alt": "some alt text",
+          "alt": "An illustration of a person sitting on aa laptop, an interface of an incoming call popping up next to him",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#60a4de"
         }
       ],
       "links": [
@@ -105,39 +113,43 @@
       "images": [
         {
           "src": "ifa1.png",
-          "alt": "some alt text",
+          "alt": "A photo of an installation with a huge portrait screen with a racing game exhibited at a Telekom trade fair booth.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#f0198f"
         },
         {
           "src": "ifa2.png",
-          "alt": "some alt text",
+          "alt": "A photo of many visitors at the Telekom booth playing a game on a big screen",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#a00021"
         },
         {
           "src": "ifa3.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of the game showing a futuristic city with a magenta racing track.",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#60a4de"
         },
         {
           "src": "ifa4.png",
-          "alt": "some alt text",
+          "alt": "A closeup photo of people using their phones as a controller for the racing game.",
           "largeView": {
             "width": "2/3",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#beb2bb"
         }
       ],
       "links": [
@@ -154,39 +166,43 @@
       "images": [
         {
           "src": "draeger1.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of a VR game showing the user looking at their hands.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#8fa6b6"
         },
         {
           "src": "draeger2.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of a VR game showing the right side of an helicopter approaching an oil rig",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#c5c7cf"
         },
         {
           "src": "draeger3.png",
-          "alt": "some alt text",
+          "alt": "An over the shoulder photo of a person holding an ipad for controlling the VR game, in the background a person with VR glasses playing",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#bcbeca"
         },
         {
           "src": "draeger4.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of the ingame view of the player showing the oil rig in a first person perspective.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
           },
-          "srcType": "image"
+          "srcType": "image",
+          "placeholderColor": "#343637"
         }
       ],
       "links": [
