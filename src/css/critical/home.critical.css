@@ -69,7 +69,7 @@
 }
 
 .intro__video--with-fade.intro__video--loaded {
-  animation: fadeIn 3000ms 1000ms ease-in forwards;
+  animation: fadeIn 3000ms 300ms ease-in forwards;
 }
 
 @media (min-width: 768px) {
