@@ -35,8 +35,8 @@ pageDescription: "Hello"
         {% set shortBioDetailImageSrc = "./src/assets/images/" +  home.shortBio.image.detailFileName %}
         {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", shortBioDetailImageSrc, "(max-width: 767px)", "100vw" %}
     </div>
-    <p class="short-bio__copy" data-page-animation-fade-in-view>
-        {{home.shortBio.copy}}
+    <p class="short-bio__copy formatted-copy" data-page-animation-fade-in-view>
+        {{home.shortBio.copy | safe}}
     </p>
 </section>
 
