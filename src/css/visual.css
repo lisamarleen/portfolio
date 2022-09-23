@@ -3,16 +3,17 @@
   position: relative;
   width: calc(100% - var(--spacing-xl));
   overflow: hidden;
+  aspect-ratio: var(--aspect-ratio);
 }
 
 .visual:before {
   content: "";
   position: absolute;
   background-color: var(--placeholder-color);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  left: 2px;
+  top: 2px;
 }
 
 .visual:nth-child(odd) {

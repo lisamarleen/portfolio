@@ -17,7 +17,7 @@ pageDescription: "Hello"
                 class="off-the-grid__visual visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="{{ 'lazy-video' if visual.srcType === 'video' else 'image' }}"
-                style="--placeholder-color:{{ visual.placeholderColor | default('var(--color-grey1)') }}">
+                style="--placeholder-color:{{ visual.placeholderColor | default('var(--color-grey1)') }}; --aspect-ratio:{{ visual.width | int | default(16)  }} / {{ visual.height | int | default(9) }}">
                 {% if visual.srcType === "image" %}
                     {% set computedSrc = "./src/assets/images/offthegrid/" + visual.src %}
                     {%  imageWithDetail computedSrc, visual.alt, "(min-width: 768px) 50vw, 100vw" %}
