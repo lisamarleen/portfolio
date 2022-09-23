@@ -15,7 +15,7 @@ pageDescription: "Hello"
     <nav class="page-intro__content intro-nav" data-page-animation-content>
         <ul>
             {% for navigationItem in home.navigation %}
-                <li>
+                <li style="--animation-delay:{{ loop.index }}">
                     <a href={{navigationItem.link}}>
                         {{navigationItem.label}}
                         {% if navigationItem.isSkipLink %}{% include "icon-arrow-down-scribbled.njk" %}{% endif %}

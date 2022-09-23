@@ -20,6 +20,14 @@
   box-sizing: border-box;
   padding: var(--spacing-m, 16px) 0;
   border-bottom: 1px solid var(--color-grey1, #626262);
+  animation: moveInFromYAndFadeIn 700ms var(--ease-in-quad) forwards;
+  animation-delay: calc(var(--animation-delay) * 100ms + 3300ms);
+  opacity: 0;
+}
+
+.no-js .intro-nav li {
+  opacity: 1;
+  animation: none;
 }
 
 .intro-nav li:last-child {

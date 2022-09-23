@@ -1,11 +1,4 @@
-import {
-  animate,
-  scroll,
-  ScrollOffset,
-  stagger,
-  timeline,
-  inView,
-} from "motion";
+import { animate, inView, scroll, stagger, timeline } from "motion";
 import Splitting from "splitting";
 
 function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
@@ -31,6 +24,7 @@ function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
 
 const EaseOutSine = getCSSCustomProp("--ease-out-sine");
 const EaseinQuad = getCSSCustomProp("--ease-in-quad");
+const EaseInSine = getCSSCustomProp("--ease-in-sine");
 const EaseOutCubic = getCSSCustomProp("--ease-out-cubic");
 
 function setCssCustomProp(propKey, element, value) {
@@ -101,9 +95,9 @@ function initPageAnimations() {
         filter: ["blur(2px)", "blur(0)"],
       },
       {
-        duration: 0.7,
-        delay: stagger(0.02),
-        easing: EaseinQuad,
+        duration: 1.2,
+        delay: stagger(0.05),
+        easing: EaseInSine,
       },
     ]);
   }
@@ -114,7 +108,11 @@ function initPageAnimations() {
     sequence.push([
       content,
       { opacity: [0, 1] },
-      { easing: EaseOutCubic, at: "-0.25", duration: 1 },
+      {
+        easing: EaseOutCubic,
+        at: "-0.25",
+        duration: 1,
+      },
     ]);
   }
 
