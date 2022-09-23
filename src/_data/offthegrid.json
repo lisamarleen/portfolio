@@ -11,6 +11,8 @@
         "alignment": "center"
       },
       "srcType": "image",
+      "width": "1080",
+      "height": "1350",
       "placeholderColor": "#641e02"
     },
     {
@@ -22,8 +24,8 @@
         "alignment": "right"
       },
       "srcType": "video",
-      "width": "1080",
-      "height": "1350",
+      "width": 1080,
+      "height": 1350,
       "placeholderColor": "#f4d9ff"
     },
     {
@@ -34,6 +36,8 @@
         "width": "1/2",
         "alignment": "left"
       },
+      "width": 590,
+      "height": 590,
       "srcType": "image",
       "placeholderColor": "#a9b7fe"
     },
@@ -45,6 +49,8 @@
         "width": "1/2",
         "alignment": "center"
       },
+      "width": 792,
+      "height": 440,
       "srcType": "image",
       "placeholderColor": "#fd3b00"
     },
@@ -57,8 +63,8 @@
         "alignment": "right"
       },
       "srcType": "video",
-      "width": "1080",
-      "height": "1350",
+      "width": 1080,
+      "height": 1350,
       "placeholderColor": "#5bd0d4"
     },
     {
@@ -70,8 +76,8 @@
         "alignment": "left"
       },
       "srcType": "video",
-      "width": "1080",
-      "height": "1350",
+      "width": 1080,
+      "height": 1350,
       "placeholderColor": "#fcb9b9"
     },
     {
@@ -83,8 +89,8 @@
         "alignment": "right"
       },
       "srcType": "video",
-      "width": "1920",
-      "height": "1920",
+      "width": 1920,
+      "height": 1920,
       "placeholderColor": "#d7ecd4"
     },
     {
@@ -96,8 +102,8 @@
         "alignment": "center"
       },
       "srcType": "video",
-      "width": "1080",
-      "height": "1350",
+      "width": 1080,
+      "height": 1350,
       "placeholderColor": "#b4edff"
     },
     {
@@ -109,8 +115,8 @@
         "alignment": "left"
       },
       "srcType": "video",
-      "width": "1080",
-      "height": "1350",
+      "width": 1080,
+      "height": 1350,
       "placeholderColor": "#ecfedb"
     },
     {
@@ -122,8 +128,8 @@
         "alignment": "right"
       },
       "srcType": "video",
-      "width": "1920",
-      "height": "1920",
+      "width": 1920,
+      "height": 1920,
       "placeholderColor": "#00e2ff"
     },
     {
@@ -134,8 +140,8 @@
         "alignment": "left"
       },
       "srcType": "video",
-      "width": "800",
-      "height": "600",
+      "width": 800,
+      "height": 600,
       "placeholderColor": "#f2d779"
     },
     {
@@ -146,8 +152,8 @@
         "alignment": "right"
       },
       "srcType": "video",
-      "width": "1920",
-      "height": "1920",
+      "width": 1920,
+      "height": 1920,
       "placeholderColor": "#9c33ff"
     },
     {
@@ -158,6 +164,8 @@
         "width": "2/3",
         "alignment": "left"
       },
+      "width": 792,
+      "height": 792,
       "srcType": "image",
       "placeholderColor": "#eaeaea"
     },
@@ -169,6 +177,8 @@
         "width": "2/3",
         "alignment": "right"
       },
+      "width": 788,
+      "height": 1082,
       "srcType": "image",
       "placeholderColor": "#c0a796"
     }
