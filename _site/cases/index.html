@@ -74,7 +74,7 @@
 
   <style>
     
-    .page-header{font-family:var(--font-headline-bold);font-size:var(--font-size-m, 2rem);text-transform:uppercase;line-height:var(--font-line-height-m, 2rem);position:absolute;top:var(--spacing-m,8px);left:var(--spacing-m,8px);z-index:var(--z-layer-above,10);color:var(--color-white,#fff)}.page-header__home-link{color:inherit;text-decoration:none}.page-header__home-link .word{display:inline-block;overflow:hidden}.page-header__home-link .char{display:inline-block}.page-header__home-link .word .char:not(:first-child){transform:translateX(-100%);opacity:0}.page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{position:relative;font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-m 2rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-intro__title{top:-4px;font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-header{top:40px;left:48px}.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
+    .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
     document.documentElement.classList.remove("no-js");
@@ -87,26 +87,6 @@
 </head>
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
-
-  <header class="page-header">
-    <a class="page-header__home-link" href="/">
-      <span class="word">
-        <span class="char">L</span>
-        <span class="char">i</span>
-        <span class="char">s</span>
-        <span class="char">a</span>
-      </span>
-      <span class="word">
-        <span class="char">M</span>
-        <span class="char">a</span>
-        <span class="char">r</span>
-        <span class="char">l</span>
-        <span class="char">e</span>
-        <span class="char">e</span>
-        <span class="char">n</span>
-      </span>
-    </a>
-  </header>
 
   <main>
    
@@ -134,141 +114,145 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-left visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/borrowedlimbs1_4Yjo3FUFS-.avif 768w, /assets/images/borrowedlimbs1_4Yjo3FUFS-.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/borrowedlimbs1_4Yjo3FUFS-.webp 768w, /assets/images/borrowedlimbs1_4Yjo3FUFS-.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/borrowedlimbs1_4Yjo3FUFS-.jpeg 768w, /assets/images/borrowedlimbs1_4Yjo3FUFS-.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/borrowedlimbs1_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="some alt text"
-        loading="lazy"
-        decoding="async">
-    </picture>
+                                data-page-animation-visual data-in-view-amount="0.2"
+                                data-visual-type="lazy-video"
+                                style="--placeholder-color:#ffe7c8">
+                                
+                                    
+                                    
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/borrowedlimbs/borrowedlimbs.webm" type="video/webm">
+</video>
+    
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-right visual--width-2/3" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.avif 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.webp 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.jpeg 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#bef7ff">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.avif 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.avif 1280w" 
+          width="768"
+          height="756"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.webp 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.webp 1280w" 
+          width="768"
+          height="756"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/borrowedlimbs2_iJgtQA7cU9.jpeg 768w, /assets/images/borrowedlimbs2_iJgtQA7cU9.jpeg 1280w" 
+          width="768"
+          height="756"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/borrowedlimbs2_iJgtQA7cU9.jpeg"
         width="768"
         height="756"
-        alt="some alt text"
+        alt="An AI generated, looping video sequence of a human hand turning upside down"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-center visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.avif 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.webp 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.jpeg 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#ff9966">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.avif 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.avif 1280w" 
+          width="768"
+          height="471"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.webp 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.webp 1280w" 
+          width="768"
+          height="471"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/borrowedlimbs3_4Su8_bi4ku.jpeg 768w, /assets/images/borrowedlimbs3_4Su8_bi4ku.jpeg 1280w" 
+          width="768"
+          height="471"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/borrowedlimbs3_4Su8_bi4ku.jpeg"
         width="768"
         height="471"
-        alt="some alt text"
+        alt="An AI generated image of a human hand reaching for a fruit hanging on a tree"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-center visual--width-1/1" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.avif 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.webp 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.jpeg 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#ffe7c8">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.avif 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.avif 1280w" 
+          width="768"
+          height="404"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.webp 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.webp 1280w" 
+          width="768"
+          height="404"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/borrowedlimbs4_NLiWQi31_3.jpeg 768w, /assets/images/borrowedlimbs4_NLiWQi31_3.jpeg 1280w" 
+          width="768"
+          height="404"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/borrowedlimbs4_NLiWQi31_3.jpeg"
         width="768"
         height="404"
-        alt="some alt text"
+        alt="An AI generated portrait image of a human AI hybrid looking into the camera"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Bor<br />rowed &nbsp;<br /> limbs</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>This experimental short film is reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species.</p><p></b>The plot is centered around an AI main character who uses the human body as a sensing device to gain a physical understanding of their surroundings. Influenced by posthuman thinkers, the work aims to provoke a discussion about Cartesian notions of disembodied intelligence. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.<br />The main part of the film was produced with a machine-learning-backed process called “<b>CLIP guided diffusion</b>”. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. In a way, the practical processes involved in producing the film reflect the speculative idea of an ongoing dialogue found in the narrative. The work resulted in a modular design pipeline for controlled image synthesis using AI tools as a design appropriation to communicate speculative concepts.</p><p>It was created as a team effort with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> and part of the Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a> - Cologne International School of Design (Faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>TH Köln</a>).</p></div>
+                            <div class="formatted-copy"><p><b>This is my most recent project with focus on designing in collaboration with AI. It was part of my Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a>, faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>Cologne University of Applied Science</a>, and created and published February 2022 as a team effort together with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a>.</b><br /></p><p>The work was produced by integrating different generative Machine Learning techniques into a coherent narrative and visual language. Main part of the film was produced with a machine-learning-backed process called <b>“CLIP guided diffusion”</b>. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. The work resulted in a <b>modular design pipeline for controlled image synthesis</b> using AI tools to generate, interpolate and upscale moving images to communicate speculative concepts. A detailed documentation can be found in our research paper which is an excerpt from our master thesis with the Title “Synthesising Meaning”.<br /></p><p>“Borrowed Limbs” was showcased this year at <a href='https://ars.electronica.art/planetb/en/welcome-to-planetb/' rel='noopener noreferrer' target='_blank'>Ars Electronica</a>, <a href='https://site.gardening.nu/en/event/gardening' rel='noopener noreferrer' target='_blank'>GARDENING Amelisweerd exhibition</a> in Utrecht, Re:publica 2022 and featured in the <a href='https://page-online.de/branche-karriere/ki-bei-bewusstsein/' rel='noopener noreferrer' target='_blank'>PAGE magazine in July</a>. It will be screening at Ars Electronica Festival in Linz in September and the Animation Festival on Tour as well as shown at the Museum of Applied Arts Cologne in the context of the Cologne Design Prize in November.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
-                                        Link to film
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Borrowed Limbs
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                                     <a class="case-links__item external-link" href=https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg rel="noopener noreferrer" target="_blank">
-                                        Link to research paper
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Research paper
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -281,76 +265,128 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-left visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/entomon1_-5Ct90M0mh.avif 768w, /assets/images/entomon1_-5Ct90M0mh.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/entomon1_-5Ct90M0mh.webp 768w, /assets/images/entomon1_-5Ct90M0mh.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/entomon1_-5Ct90M0mh.jpeg 768w, /assets/images/entomon1_-5Ct90M0mh.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#11bfcd">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/entomon1_-5Ct90M0mh.avif 768w, /assets/images/entomon1_-5Ct90M0mh.avif 1280w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/entomon1_-5Ct90M0mh.webp 768w, /assets/images/entomon1_-5Ct90M0mh.webp 1280w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/entomon1_-5Ct90M0mh.jpeg 768w, /assets/images/entomon1_-5Ct90M0mh.jpeg 1280w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/entomon1_-5Ct90M0mh.jpeg"
         width="768"
         height="839"
-        alt="some alt text"
+        alt="A human insect hybrid face generated by styleGAN2"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-center visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/entomon2_p8mwbqYO9x.avif 768w, /assets/images/entomon2_p8mwbqYO9x.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/entomon2_p8mwbqYO9x.webp 768w, /assets/images/entomon2_p8mwbqYO9x.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/entomon2_p8mwbqYO9x.jpeg 768w, /assets/images/entomon2_p8mwbqYO9x.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#f38f7a">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/entomon2_p8mwbqYO9x.avif 768w, /assets/images/entomon2_p8mwbqYO9x.avif 1280w" 
+          width="768"
+          height="1026"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/entomon2_p8mwbqYO9x.webp 768w, /assets/images/entomon2_p8mwbqYO9x.webp 1280w" 
+          width="768"
+          height="1026"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/entomon2_p8mwbqYO9x.jpeg 768w, /assets/images/entomon2_p8mwbqYO9x.jpeg 1280w" 
+          width="768"
+          height="1026"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/entomon2_p8mwbqYO9x.jpeg"
         width="768"
         height="1026"
-        alt="some alt text"
+        alt="A human insect hybrid face generated by styleGAN2"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-right visual--width-2/3" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/entomon3_Lfy5FucVmj.avif 768w, /assets/images/entomon3_Lfy5FucVmj.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/entomon3_Lfy5FucVmj.webp 768w, /assets/images/entomon3_Lfy5FucVmj.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/entomon3_Lfy5FucVmj.jpeg 768w, /assets/images/entomon3_Lfy5FucVmj.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#d7e26f">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/entomon3_Lfy5FucVmj.avif 768w, /assets/images/entomon3_Lfy5FucVmj.avif 1280w" 
+          width="768"
+          height="488"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/entomon3_Lfy5FucVmj.webp 768w, /assets/images/entomon3_Lfy5FucVmj.webp 1280w" 
+          width="768"
+          height="488"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/entomon3_Lfy5FucVmj.jpeg 768w, /assets/images/entomon3_Lfy5FucVmj.jpeg 1280w" 
+          width="768"
+          height="488"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/entomon3_Lfy5FucVmj.jpeg"
         width="768"
         height="488"
-        alt="some alt text"
+        alt="A human insect hybrid face generated by styleGAN2"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-left visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/entomon4_mFORKm2QA5.avif 768w, /assets/images/entomon4_mFORKm2QA5.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/entomon4_mFORKm2QA5.webp 768w, /assets/images/entomon4_mFORKm2QA5.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/entomon4_mFORKm2QA5.jpeg 768w, /assets/images/entomon4_mFORKm2QA5.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#d7d1c1">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/entomon4_mFORKm2QA5.avif 768w, /assets/images/entomon4_mFORKm2QA5.avif 1280w" 
+          width="768"
+          height="855"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/entomon4_mFORKm2QA5.webp 768w, /assets/images/entomon4_mFORKm2QA5.webp 1280w" 
+          width="768"
+          height="855"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/entomon4_mFORKm2QA5.jpeg 768w, /assets/images/entomon4_mFORKm2QA5.jpeg 1280w" 
+          width="768"
+          height="855"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/entomon4_mFORKm2QA5.jpeg"
         width="768"
         height="855"
-        alt="some alt text"
+        alt="A human insect hybrid face generated by styleGAN2"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;</h2>
@@ -359,63 +395,31 @@
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
-                                        Link to curated collection
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Curated collection
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                                     <a class="case-links__item external-link" href=https://vimeo.com/683741589 rel="noopener noreferrer" target="_blank">
                                         Latent space walks
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -428,76 +432,128 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-left visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.avif 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.webp 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.jpeg 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#a89be">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.avif 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.avif 1280w" 
+          width="768"
+          height="859"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.webp 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.webp 1280w" 
+          width="768"
+          height="859"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/breathingsoftspace1_FyZ4ep448r.jpeg 768w, /assets/images/breathingsoftspace1_FyZ4ep448r.jpeg 1280w" 
+          width="768"
+          height="859"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/breathingsoftspace1_FyZ4ep448r.jpeg"
         width="768"
         height="859"
-        alt="some alt text"
+        alt="A person standing in a room touching floating fabric on the ceiling"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-right visual--width-2/3" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.avif 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.webp 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.jpeg 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#a89be">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.avif 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.avif 1280w" 
+          width="768"
+          height="615"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.webp 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.webp 1280w" 
+          width="768"
+          height="615"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/breathingsoftspace2_ZLcSjSGRhV.jpeg 768w, /assets/images/breathingsoftspace2_ZLcSjSGRhV.jpeg 1280w" 
+          width="768"
+          height="615"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/breathingsoftspace2_ZLcSjSGRhV.jpeg"
         width="768"
         height="615"
-        alt="some alt text"
+        alt="A close up of woven fabric with loose threats hanging out"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-center visual--width-1/2" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.avif 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.webp 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.jpeg 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#a89be">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.avif 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.avif 1280w" 
+          width="768"
+          height="410"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.webp 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.webp 1280w" 
+          width="768"
+          height="410"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/breathingsoftspace3_LOVO5MdTQ0.jpeg 768w, /assets/images/breathingsoftspace3_LOVO5MdTQ0.jpeg 1280w" 
+          width="768"
+          height="410"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/breathingsoftspace3_LOVO5MdTQ0.jpeg"
         width="768"
         height="410"
-        alt="some alt text"
+        alt="Two people sitting on the floor, the woven textile installation on the ceiling is slowly coming closer."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
                                 class="case__visual visual visual--alignment-center visual--width-1/1" 
-                                data-page-animation-visual>
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.avif 768w, /assets/images/breathingsoftspace4_HSys61B3qm.avif 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.webp 768w, /assets/images/breathingsoftspace4_HSys61B3qm.webp 1280w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.jpeg 768w, /assets/images/breathingsoftspace4_HSys61B3qm.jpeg 1280w" sizes="(min-width: 768px) 50vw, 100vw">
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#a89be">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.avif 768w, /assets/images/breathingsoftspace4_HSys61B3qm.avif 1280w" 
+          width="768"
+          height="483"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.webp 768w, /assets/images/breathingsoftspace4_HSys61B3qm.webp 1280w" 
+          width="768"
+          height="483"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/breathingsoftspace4_HSys61B3qm.jpeg 768w, /assets/images/breathingsoftspace4_HSys61B3qm.jpeg 1280w" 
+          width="768"
+          height="483"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/breathingsoftspace4_HSys61B3qm.jpeg"
         width="768"
         height="483"
-        alt="some alt text"
+        alt="A person touching the loose threts hanging out of the woven textile on the ceiling"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;</h2>
@@ -506,63 +562,31 @@
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://www.behance.net/gallery/106630681/Breathing-Softspace rel="noopener noreferrer" target="_blank">
-                                        Link to case
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Case Study
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                                     <a class="case-links__item external-link" href=https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/ rel="noopener noreferrer" target="_blank">
                                         At Vienna Design Week
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -615,111 +639,147 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sasu1_jRthug5RgV.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sasu1_jRthug5RgV.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sasu1_jRthug5RgV.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#02449b">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sasu1_jRthug5RgV.avif 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sasu1_jRthug5RgV.webp 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sasu1_jRthug5RgV.jpeg 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sasu1_jRthug5RgV.jpeg"
         width="590"
         height="645"
-        alt="some alt text"
+        alt="A photo of a girl standing on a squre balance board. In front of her a Portrait Screen with a colorful underwater game environment."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-center visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sasu2_UquzioZ8hL.avif 576w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sasu2_UquzioZ8hL.webp 576w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sasu2_UquzioZ8hL.jpeg 576w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-center visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#74dafb">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sasu2_UquzioZ8hL.avif 576w" 
+          width="576"
+          height="784"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sasu2_UquzioZ8hL.webp 576w" 
+          width="576"
+          height="784"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sasu2_UquzioZ8hL.jpeg 576w" 
+          width="576"
+          height="784"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sasu2_UquzioZ8hL.jpeg"
         width="576"
         height="784"
-        alt="some alt text"
+        alt="An image of a 3D underwater world with vivid blue colors and salmon colored plants populating the floor."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-right visual--width-2/3">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sasu3_P9K97lYuxu.avif 641w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sasu3_P9K97lYuxu.webp 641w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sasu3_P9K97lYuxu.jpeg 641w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-right visual--width-2/3" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#2a30b2">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sasu3_P9K97lYuxu.avif 641w" 
+          width="641"
+          height="427"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sasu3_P9K97lYuxu.webp 641w" 
+          width="641"
+          height="427"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sasu3_P9K97lYuxu.jpeg 641w" 
+          width="641"
+          height="427"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sasu3_P9K97lYuxu.jpeg"
         width="641"
         height="427"
-        alt="some alt text"
+        alt="A 3D created diver in a cute style. They are floating underwater and trying to touch a gemstone."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sasu4_IQU0IF27Eo.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sasu4_IQU0IF27Eo.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sasu4_IQU0IF27Eo.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#fa7c5b">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sasu4_IQU0IF27Eo.avif 590w" 
+          width="590"
+          height="686"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sasu4_IQU0IF27Eo.webp 590w" 
+          width="590"
+          height="686"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sasu4_IQU0IF27Eo.jpeg 590w" 
+          width="590"
+          height="686"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sasu4_IQU0IF27Eo.jpeg"
         width="590"
         height="686"
-        alt="some alt text"
+        alt="A photo of two feet in white sneakers standing on a balance board which has a colorful animated Interface."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Sasu's<br />Mystical<br />Quest</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards. By shifting weight left & right and jumping up, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. Our intention for the users was to use their bodies to control their character. To accomplish this, we had to consider many challenges, including uncontrollable sunlight conditions, a wide range of users' ages and weights, building a plug-and-play system, being resistant to the vibrations, and needing to be up and running 24/7.</p></div>
+                            <div class="formatted-copy"><p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards we designed, developed and produced in-house. By shifting weight left and right in combination with jumping, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. The final set up was built on one of Royal Caribbeans Ships cruising the East China Sea.</p><p>My role involved art direction and interaction design of this endless swimmer game. I was involved from the early stage concepts and character design as well as in game engine environment building (Unity) and UI design. My responsibility involved client contact and quality assurance within the creative team.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://demodern.de/projekte/sasus-mystical-quest rel="noopener noreferrer" target="_blank">
-                                        Link to case
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Case Study
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -732,111 +792,147 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sap1__RHOPLWjoB.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sap1__RHOPLWjoB.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sap1__RHOPLWjoB.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#8384dd">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sap1__RHOPLWjoB.avif 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sap1__RHOPLWjoB.webp 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sap1__RHOPLWjoB.jpeg 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sap1__RHOPLWjoB.jpeg"
         width="590"
         height="645"
-        alt="some alt text"
+        alt="An image of various Interface elements all belonging to the same application."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-center visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sap2_78jPufc12c.avif 549w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sap2_78jPufc12c.webp 549w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sap2_78jPufc12c.jpeg 549w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-center visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#aeb9bf">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sap2_78jPufc12c.avif 549w" 
+          width="549"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sap2_78jPufc12c.webp 549w" 
+          width="549"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sap2_78jPufc12c.jpeg 549w" 
+          width="549"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sap2_78jPufc12c.jpeg"
         width="549"
         height="432"
-        alt="some alt text"
+        alt="An illustration of an orange fish eating a piece of plastic floating in the ocean."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-right visual--width-2/3">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sap3_wh_mk5aMRs.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sap3_wh_mk5aMRs.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sap3_wh_mk5aMRs.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-right visual--width-2/3" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#f8f9fb">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sap3_wh_mk5aMRs.avif 768w" 
+          width="768"
+          height="440"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sap3_wh_mk5aMRs.webp 768w" 
+          width="768"
+          height="440"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sap3_wh_mk5aMRs.jpeg 768w" 
+          width="768"
+          height="440"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sap3_wh_mk5aMRs.jpeg"
         width="768"
         height="440"
-        alt="some alt text"
+        alt="An illustration of three scientists in the antarctic taking water probes"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/sap4_UKtlgh3BLA.avif 595w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/sap4_UKtlgh3BLA.webp 595w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/sap4_UKtlgh3BLA.jpeg 595w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#60a4de">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/sap4_UKtlgh3BLA.avif 595w" 
+          width="595"
+          height="571"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/sap4_UKtlgh3BLA.webp 595w" 
+          width="595"
+          height="571"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/sap4_UKtlgh3BLA.jpeg 595w" 
+          width="595"
+          height="571"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/sap4_UKtlgh3BLA.jpeg"
         width="595"
         height="571"
-        alt="some alt text"
+        alt="An illustration of a person sitting on aa laptop, an interface of an incoming call popping up next to him"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>SAP<br />Soft<br />ware &nbsp;<br />demo</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
+                            <div class="formatted-copy"><p><b>A web experience communicating the benefits of SAP’s latest Human Experience Management software suite.</b></p><p>We as a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> decided to leave the world of typical software communications, and tell a rather interesting story centering around a vibrant and diverse antarctic research team facing the same modern day problems as the businesses and people within SAP’s target audience. Users were solving work-related challenges such as workload stress, lack of motivation, or career path adjustments while scrolling through the narrative. Throughout we integrated interactive pieces of the real software to give a realistic impression.</p><p>Our visual style was focusing on <b>hand-illustrated graphics and frame-by-frame animations</b> first created in 3D using basic movements. We then used these as the basis for our hand-drawn animations, adding background and foreground elements to create the parallax scrolling effect.</p><p>I was responsible for the art direction and UI design of this project. Since the software solutions from SAP where being developed in parallel it was a challenge to work together with the client team and produce a showcase as realistic as possible. My role involved client contact and quality assurance within the creative team.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
-                                        Link to case
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Case Study
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -849,111 +945,147 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/ifa1_CGR6OcFveQ.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/ifa1_CGR6OcFveQ.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/ifa1_CGR6OcFveQ.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#f0198f">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/ifa1_CGR6OcFveQ.avif 768w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/ifa1_CGR6OcFveQ.webp 768w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/ifa1_CGR6OcFveQ.jpeg 768w" 
+          width="768"
+          height="839"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/ifa1_CGR6OcFveQ.jpeg"
         width="768"
         height="839"
-        alt="some alt text"
+        alt="A photo of an installation with a huge portrait screen with a racing game exhibited at a Telekom trade fair booth."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-center visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/ifa2_Z2F-ULr8YH.avif 609w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/ifa2_Z2F-ULr8YH.webp 609w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/ifa2_Z2F-ULr8YH.jpeg 609w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-center visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#a00021">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/ifa2_Z2F-ULr8YH.avif 609w" 
+          width="609"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/ifa2_Z2F-ULr8YH.webp 609w" 
+          width="609"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/ifa2_Z2F-ULr8YH.jpeg 609w" 
+          width="609"
+          height="432"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/ifa2_Z2F-ULr8YH.jpeg"
         width="609"
         height="432"
-        alt="some alt text"
+        alt="A photo of many visitors at the Telekom booth playing a game on a big screen"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-right visual--width-2/3">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/ifa3_ALJxCBRf3O.avif 653w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/ifa3_ALJxCBRf3O.webp 653w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/ifa3_ALJxCBRf3O.jpeg 653w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-right visual--width-2/3" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#60a4de">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/ifa3_ALJxCBRf3O.avif 653w" 
+          width="653"
+          height="309"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/ifa3_ALJxCBRf3O.webp 653w" 
+          width="653"
+          height="309"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/ifa3_ALJxCBRf3O.jpeg 653w" 
+          width="653"
+          height="309"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/ifa3_ALJxCBRf3O.jpeg"
         width="653"
         height="309"
-        alt="some alt text"
+        alt="A screenshot of the game showing a futuristic city with a magenta racing track."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-2/3">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/ifa4_SDZUbnYGh_.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/ifa4_SDZUbnYGh_.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/ifa4_SDZUbnYGh_.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-2/3" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#beb2bb">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/ifa4_SDZUbnYGh_.avif 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/ifa4_SDZUbnYGh_.webp 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/ifa4_SDZUbnYGh_.jpeg 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/ifa4_SDZUbnYGh_.jpeg"
         width="768"
         height="456"
-        alt="some alt text"
+        alt="A closeup photo of people using their phones as a controller for the racing game."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />active &nbsp;<br />Games<br />IFA</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
+                            <div class="formatted-copy"><p><b>Interactive games to highlight Deutsche Telekoms' products (who would have guessed by the magenta coloured imagery) during IFA.</b></p><p>The 3000m² hall was designed by Meiré und Meiré whereas we as a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> took over two of the digital installations. We 3D designed and modeled the virtual world, enriched with elements that were part of the IFA booth design in order to create a consistent and immersive representation with the real environment. I was part of the project team working on a drone race through a futuristic city highlighting the advantages of 5G. By reading the gyroscope sensor on the connected smartphone, <b>players were able to navigate the drones through the virtual world with an application by tilting their phone.</b></p><p>It was a challenge to establish a coherent visual language throughout all applications with that many stakeholders involved. I was part of the early game concepts, art direction, UI design and in game engine (Unity) environment building. My role involved client contact and quality assurance within the creative team.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
-                                        Link to case
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Case Study
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>
@@ -966,111 +1098,147 @@
                 <div class="content-wrapper">
                     <div class="case">
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/draeger1_l0D4irdazt.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/draeger1_l0D4irdazt.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/draeger1_l0D4irdazt.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#8fa6b6">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/draeger1_l0D4irdazt.avif 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/draeger1_l0D4irdazt.webp 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/draeger1_l0D4irdazt.jpeg 590w" 
+          width="590"
+          height="645"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/draeger1_l0D4irdazt.jpeg"
         width="590"
         height="645"
-        alt="some alt text"
+        alt="A screenshot of a VR game showing the user looking at their hands."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-center visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/draeger2_nBlznSgNJg.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/draeger2_nBlznSgNJg.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/draeger2_nBlznSgNJg.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-center visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#c5c7cf">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/draeger2_nBlznSgNJg.avif 590w" 
+          width="590"
+          height="708"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/draeger2_nBlznSgNJg.webp 590w" 
+          width="590"
+          height="708"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/draeger2_nBlznSgNJg.jpeg 590w" 
+          width="590"
+          height="708"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/draeger2_nBlznSgNJg.jpeg"
         width="590"
         height="708"
-        alt="some alt text"
+        alt="A screenshot of a VR game showing the right side of an helicopter approaching an oil rig"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-right visual--width-2/3">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/draeger3_tKxGEIZRws.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/draeger3_tKxGEIZRws.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/draeger3_tKxGEIZRws.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-right visual--width-2/3" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#bcbeca">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/draeger3_tKxGEIZRws.avif 590w" 
+          width="590"
+          height="406"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/draeger3_tKxGEIZRws.webp 590w" 
+          width="590"
+          height="406"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/draeger3_tKxGEIZRws.jpeg 590w" 
+          width="590"
+          height="406"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/draeger3_tKxGEIZRws.jpeg"
         width="590"
         height="406"
-        alt="some alt text"
+        alt="An over the shoulder photo of a person holding an ipad for controlling the VR game, in the background a person with VR glasses playing"
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
-                            
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-left visual--width-1/2">
-                                <picture>
-    <source type="image/avif" srcset="/assets/images/draeger4_Uu_MXHoERt.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/draeger4_Uu_MXHoERt.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/draeger4_Uu_MXHoERt.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+                                class="case__visual visual visual--alignment-left visual--width-1/2" 
+                                data-page-animation-visual data-in-view-amount="0.5"
+                                data-visual-type="image"
+                                style="--placeholder-color:#343637">
+                                
+                                    
+                                    <picture>
+    <source type="image/avif" srcset="/assets/images/draeger4_Uu_MXHoERt.avif 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/draeger4_Uu_MXHoERt.webp 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/draeger4_Uu_MXHoERt.jpeg 768w" 
+          width="768"
+          height="456"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/draeger4_Uu_MXHoERt.jpeg"
         width="768"
         height="456"
-        alt="some alt text"
+        alt="A screenshot of the ingame view of the player showing the oil rig in a first person perspective."
         loading="lazy"
         decoding="async">
     </picture>
+                                
                             </div>
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Off<br />shore &nbsp;<br />VR Ex<br />perience &nbsp;</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p></div>
+                            <div class="formatted-copy"><p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. <b>We set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. <b>Additional to the game we developed a moderator app</b> to monitor and control the progress and support the user.</p><p>I was responsible for the art direction and UI design of the VR experience. I worked closely together with development while designing the crucial interactions directly in the game engine (Unity). Additionally I was part of the on-site installation of the showcase. My role involved client contact and quality assurance within the creative team.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience rel="noopener noreferrer" target="_blank">
-                                        Link to case
-                                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
+                                        Case Study
+                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="26.514" height="29.029" />
+    </clipPath>
+  </defs>
+  <g transform="translate(16.65) rotate(35)" clip-path="url(#clip-path)">
+    <path d="M6.018,28.544A208.716,208.716,0,0,0,17.673,2.329a.98.98,0,0,0-1.427-1.1C11.2,4.875,5.817,8.008.438,11.129l.981,1.677,15.4-10.98-1.427-.581c.523,1.632.344,3.38.941,5a25.685,25.685,0,0,0,2.438,4.5l5.914,9.591c.655,1.062,2.337.087,1.678-.981l-5.748-9.321a25.337,25.337,0,0,1-2.409-4.31c-.6-1.617-.418-3.369-.942-5A.98.98,0,0,0,15.839.148L.438,11.129c-1,.713-.121,2.317.981,1.677,5.379-3.12,10.76-6.254,15.807-9.9L15.8,1.812A205.071,205.071,0,0,1,4.341,27.564c-.585,1.1,1.091,2.087,1.677.981" transform="translate(0 0)" />
+  </g>
+</svg>
                                     </a>
                                 
                             </div>

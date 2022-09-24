@@ -60,6 +60,7 @@
 .page-intro__title .char {
     display: inline-block;
     opacity: 0;
+    transform-origin: top left;
 }
 
 .no-js .page-intro__title .char {

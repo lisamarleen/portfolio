@@ -15,7 +15,7 @@ pageDescription: "Hello"
     <nav class="page-intro__content intro-nav" data-page-animation-content>
         <ul>
             {% for navigationItem in home.navigation %}
-                <li>
+                <li style="--animation-delay:{{ loop.index }}">
                     <a href={{navigationItem.link}}>
                         {{navigationItem.label}}
                         {% if navigationItem.isSkipLink %}{% include "icon-arrow-down-scribbled.njk" %}{% endif %}
@@ -26,8 +26,8 @@ pageDescription: "Hello"
     </nav>
 </section>
 
-<section id="about" class="short-bio" data-page-animation-fade-in-view>
-    <div class="short-bio__main-content content-wrapper">
+<section id="about" class="short-bio">
+    <div class="short-bio__main-content content-wrapper" data-page-animation-fade-in-view>
         <h2 class="short-bio-title">{{home.shortBio.title}}</h2>
     </div>
     <div class="short-bio__image" data-page-animation-visual>
@@ -35,8 +35,8 @@ pageDescription: "Hello"
         {% set shortBioDetailImageSrc = "./src/assets/images/" +  home.shortBio.image.detailFileName %}
         {%  imageWithDetail shortBioImageSrc, home.shortBio.image.alt, "(min-width: 768px) 50vw, 100vw", shortBioDetailImageSrc, "(max-width: 767px)", "100vw" %}
     </div>
-    <p class="short-bio__copy" data-page-animation-fade-in-view>
-        {{home.shortBio.copy}}
+    <p class="short-bio__copy formatted-copy" data-page-animation-fade-in-view>
+        {{home.shortBio.copy | safe}}
     </p>
 </section>
 

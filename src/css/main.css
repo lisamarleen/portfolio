@@ -37,31 +37,12 @@ html {
 
   --z-layer-above: 10;
 
-  --ease-linear: cubic-bezier(0.25,0.25,0.75,0.75);
-  --ease-in-sine: cubic-bezier(0.47,0,0.745,0.715);
-  --ease-out-sine: cubic-bezier(0.39,0.575,0.565,1);
-  --ease-in-out-sine: cubic-bezier(0.445,0.05,0.55,0.95);
-  --ease-in-quad: cubic-bezier(0.55,0.085,0.68,0.53);
-  --ease-out-quad: cubic-bezier(0.25,0.46,0.45,0.94);
-  --ease-in-out-quad: cubic-bezier(0.455,0.03,0.515,0.955);
-  --ease-in-cubic: cubic-bezier(0.55,0.055,0.675,0.19);
-  --ease-out-cubic: cubic-bezier(0.215,0.61,0.355,1);
-  --ease-in-out-cubic: cubic-bezier(0.645,0.045,0.355,1);
-  --ease-in-quart: cubic-bezier(0.895,0.03,0.685,0.22);
-  --ease-out-quart: cubic-bezier(0.165,0.84,0.44,1);
-  --ease-in-out-quart: cubic-bezier(0.77,0,0.175,1);
-  --ease-in-quint: cubic-bezier(0.755,0.05,0.855,0.06);
-  --ease-out-quint: cubic-bezier(0.23,1,0.32,1);
-  --ease-in-out-quint: cubic-bezier(0.86,0,0.07,1);
-  --ease-in-expo: cubic-bezier(0.95,0.05,0.795,0.035);
-  --ease-out-expo: cubic-bezier(0.19,1,0.22,1);
-  --ease-in-out-expo: cubic-bezier(1,0,0,1);
-  --ease-in-circ: cubic-bezier(0.6,0.04,0.98,0.335);
-  --ease-out-circ: cubic-bezier(0.075,0.82,0.165,1);
-  --ease-in-out-circ: cubic-bezier(0.785,0.135,0.15,0.86);
-  --ease-in-back: cubic-bezier(0.6,-0.28,0.735,0.045);
-  --ease-out-back: cubic-bezier(0.25,2,0.5,0.9);
-  --ease-in-out-back: cubic-bezier(0.68,-0.55,0.265,1.55);
+  --ease-in: cubic-bezier(0.49,0.025,0.65,0.65);
+  --ease-out: cubic-bezier(0.28,0.44,0.49,1);
+  --ease-in-out: cubic-bezier(0.49,0.025,0.49,1);
+  --ease-in-smooth: cubic-bezier(0.49,0.025,0.685,1);
+  --ease-out-smooth: cubic-bezier(0.28,0,0.49,1);
+  --ease-in-out-smooth: cubic-bezier(0.72,0,0.28,1);
 
   --hover-default-transiton-duration: 300ms;
 }
@@ -125,6 +106,10 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
+main {
+  overflow-x: hidden;
+}
+
 ul {
   padding: 0;
 }
@@ -145,7 +130,7 @@ nav li a[href^="#"] svg  {
   width: 32px;
   height: 32px;
   opacity: 0;
-  transition: opacity var(--hover-default-transiton-duration, 300ms);
+  transition: opacity var(--hover-default-transiton-duration) var(--ease-in-smooth);
 }
 
 nav li a[href^="#"]:hover svg {
@@ -202,7 +187,7 @@ nav li a[href^="#"]:hover svg {
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-m);
   color: var(--color-white);
-  transition: color var(--hover-default-transiton-duration) var(--ease-in-back);
+  transition: color var(--hover-default-transiton-duration) var(--ease-in-smooth);
 }
 
 .exit-nav-list__item a:hover {
@@ -217,7 +202,8 @@ nav li a[href^="#"]:hover svg {
 .formatted-copy a {
   color: var(--color-white);
   font-family: var(--font-copy-bold);
-  text-decoration-thickness: 2px;
+  text-decoration: none;
+  box-shadow: 0 0 #0000, 0 0 #0000, inset 0 -.35em 0 0 var(--color-highlight);
 }
 
 .formatted-copy b {

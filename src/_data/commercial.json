@@ -3,180 +3,212 @@
     {
       "id": "sasu",
       "title": "Sasu's<br />Mystical<br />Quest",
-      "description": "<p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards. By shifting weight left & right and jumping up, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. Our intention for the users was to use their bodies to control their character. To accomplish this, we had to consider many challenges, including uncontrollable sunlight conditions, a wide range of users' ages and weights, building a plug-and-play system, being resistant to the vibrations, and needing to be up and running 24/7.</p>",
+      "description": "<p><b>An interactive game, where the game controllers are part of the scenography.</b></p><p></b>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we created the main character Sasu, who needs help to navigate through four underwater worlds. Users control Sasu via custom-built LED balance boards we designed, developed and produced in-house. By shifting weight left and right in combination with jumping, it’s a competition to collect gems and earn the highest score while avoiding obstacles and interacting with helpful magical creatures. The final set up was built on one of Royal Caribbeans Ships cruising the East China Sea.</p><p>My role involved art direction and interaction design of this endless swimmer game. I was involved from the early stage concepts and character design as well as in game engine environment building (Unity) and UI design. My responsibility involved client contact and quality assurance within the creative team.</p>",
       "images": [
         {
           "src": "sasu1.png",
-          "alt": "some alt text",
+          "alt": "A photo of a girl standing on a squre balance board. In front of her a Portrait Screen with a colorful underwater game environment.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#02449b"
         },
         {
           "src": "sasu2.png",
-          "alt": "some alt text",
+          "alt": "An image of a 3D underwater world with vivid blue colors and salmon colored plants populating the floor.",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#74dafb"
         },
         {
           "src": "sasu3.png",
-          "alt": "some alt text",
+          "alt": "A 3D created diver in a cute style. They are floating underwater and trying to touch a gemstone.",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#2a30b2"
         },
         {
           "src": "sasu4.png",
-          "alt": "some alt text",
+          "alt": "A photo of two feet in white sneakers standing on a balance board which has a colorful animated Interface.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#fa7c5b"
         }
       ],
       "links": [
         {
           "link": "https://demodern.de/projekte/sasus-mystical-quest",
-          "label": "Link to case"
+          "label": "Case Study"
         }
       ]
     },
     {
       "id": "sap",
       "title": "SAP<br />Soft<br />ware &nbsp;<br />demo",
-      "description": "<p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p>",
+      "description": "<p><b>A web experience communicating the benefits of SAP’s latest Human Experience Management software suite.</b></p><p>We as a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> decided to leave the world of typical software communications, and tell a rather interesting story centering around a vibrant and diverse antarctic research team facing the same modern day problems as the businesses and people within SAP’s target audience. Users were solving work-related challenges such as workload stress, lack of motivation, or career path adjustments while scrolling through the narrative. Throughout we integrated interactive pieces of the real software to give a realistic impression.</p><p>Our visual style was focusing on <b>hand-illustrated graphics and frame-by-frame animations</b> first created in 3D using basic movements. We then used these as the basis for our hand-drawn animations, adding background and foreground elements to create the parallax scrolling effect.</p><p>I was responsible for the art direction and UI design of this project. Since the software solutions from SAP where being developed in parallel it was a challenge to work together with the client team and produce a showcase as realistic as possible. My role involved client contact and quality assurance within the creative team.</p>",
       "images": [
         {
           "src": "sap1.png",
-          "alt": "some alt text",
+          "alt": "An image of various Interface elements all belonging to the same application.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#8384dd"
         },
         {
           "src": "sap2.png",
-          "alt": "some alt text",
+          "alt": "An illustration of an orange fish eating a piece of plastic floating in the ocean.",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#aeb9bf"
         },
         {
           "src": "sap3.png",
-          "alt": "some alt text",
+          "alt": "An illustration of three scientists in the antarctic taking water probes",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#f8f9fb"
         },
         {
           "src": "sap4.png",
-          "alt": "some alt text",
+          "alt": "An illustration of a person sitting on aa laptop, an interface of an incoming call popping up next to him",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#60a4de"
         }
       ],
       "links": [
         {
           "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-          "label": "Link to case"
+          "label": "Case Study"
         }
       ]
     },
     {
       "id": "ifa",
       "title": "Inter<br />active &nbsp;<br />Games<br />IFA",
-      "description": "<p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p>",
+      "description": "<p><b>Interactive games to highlight Deutsche Telekoms' products (who would have guessed by the magenta coloured imagery) during IFA.</b></p><p>The 3000m² hall was designed by Meiré und Meiré whereas we as a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> took over two of the digital installations. We 3D designed and modeled the virtual world, enriched with elements that were part of the IFA booth design in order to create a consistent and immersive representation with the real environment. I was part of the project team working on a drone race through a futuristic city highlighting the advantages of 5G. By reading the gyroscope sensor on the connected smartphone, <b>players were able to navigate the drones through the virtual world with an application by tilting their phone.</b></p><p>It was a challenge to establish a coherent visual language throughout all applications with that many stakeholders involved. I was part of the early game concepts, art direction, UI design and in game engine (Unity) environment building. My role involved client contact and quality assurance within the creative team.</p>",
       "images": [
         {
           "src": "ifa1.png",
-          "alt": "some alt text",
+          "alt": "A photo of an installation with a huge portrait screen with a racing game exhibited at a Telekom trade fair booth.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#f0198f"
         },
         {
           "src": "ifa2.png",
-          "alt": "some alt text",
+          "alt": "A photo of many visitors at the Telekom booth playing a game on a big screen",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#a00021"
         },
         {
           "src": "ifa3.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of the game showing a futuristic city with a magenta racing track.",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#60a4de"
         },
         {
           "src": "ifa4.png",
-          "alt": "some alt text",
+          "alt": "A closeup photo of people using their phones as a controller for the racing game.",
           "largeView": {
             "width": "2/3",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#beb2bb"
         }
       ],
       "links": [
         {
           "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-          "label": "Link to case"
+          "label": "Case Study"
         }
       ]
     },
     {
       "id": "draeger",
       "title": "Off<br />shore &nbsp;<br />VR Ex<br />perience &nbsp;",
-      "description": "<p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. With the team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> <b>we set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at Demodern we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. All the elements then, from platform objects to escaping procedures, have been modelled following real-life models and paths, ensuring the user to personally experience how detection products work and how they ensure life protection as in everyday situations.</p>",
+      "description": "<p><b>An an engaging virtual reality experience around a selection of Dräger’s safety products.</b></p><p>The experience lets you dive into a character visiting the oil-rig, pushed in a race against time to escape from a gas leak: using safety tools, a way to detect and avoid hazards, equip oneself with safety tools, and reach the safe area before time runs out. Great attention was given to the creation of a story about the character and the events happening throughout the experience. <b>We set up the narrative in order to have an increasing climax</b>, useful in maintaining the attention of the participant.</p><p>As a team at <a href='https://demodern.de/' rel='noopener noreferrer' target='_blank'>Demodern</a> we made a deep research regarding the emergency programs and the use of the detection kits in collaboration with experts in the sector. <b>Additional to the game we developed a moderator app</b> to monitor and control the progress and support the user.</p><p>I was responsible for the art direction and UI design of the VR experience. I worked closely together with development while designing the crucial interactions directly in the game engine (Unity). Additionally I was part of the on-site installation of the showcase. My role involved client contact and quality assurance within the creative team.</p>",
       "images": [
         {
           "src": "draeger1.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of a VR game showing the user looking at their hands.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#8fa6b6"
         },
         {
           "src": "draeger2.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of a VR game showing the right side of an helicopter approaching an oil rig",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#c5c7cf"
         },
         {
           "src": "draeger3.png",
-          "alt": "some alt text",
+          "alt": "An over the shoulder photo of a person holding an ipad for controlling the VR game, in the background a person with VR glasses playing",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#bcbeca"
         },
         {
           "src": "draeger4.png",
-          "alt": "some alt text",
+          "alt": "A screenshot of the ingame view of the player showing the oil rig in a first person perspective.",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#343637"
         }
       ],
       "links": [
         {
           "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-          "label": "Link to case"
+          "label": "Case Study"
         }
       ]
     }

@@ -74,7 +74,7 @@
 
   <style>
     .off-the-grid-section__content{display:flex;flex-direction:column}.off-the-grid__visual{z-index:1}
-    .page-header{font-family:var(--font-headline-bold);font-size:var(--font-size-m, 2rem);text-transform:uppercase;line-height:var(--font-line-height-m, 2rem);position:absolute;top:var(--spacing-m,8px);left:var(--spacing-m,8px);z-index:var(--z-layer-above,10);color:var(--color-white,#fff)}.page-header__home-link{color:inherit;text-decoration:none}.page-header__home-link .word{display:inline-block;overflow:hidden}.page-header__home-link .char{display:inline-block}.page-header__home-link .word .char:not(:first-child){transform:translateX(-100%);opacity:0}.page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{position:relative;font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-m 2rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-intro__title{top:-4px;font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-header{top:40px;left:48px}.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
+    .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
     document.documentElement.classList.remove("no-js");
@@ -86,26 +86,6 @@
 </head>
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
-
-  <header class="page-header">
-    <a class="page-header__home-link" href="/">
-      <span class="word">
-        <span class="char">L</span>
-        <span class="char">i</span>
-        <span class="char">s</span>
-        <span class="char">a</span>
-      </span>
-      <span class="word">
-        <span class="char">M</span>
-        <span class="char">a</span>
-        <span class="char">r</span>
-        <span class="char">l</span>
-        <span class="char">e</span>
-        <span class="char">e</span>
-        <span class="char">n</span>
-      </span>
-    </a>
-  </header>
 
   <main>
    
@@ -121,13 +101,22 @@
                 class="off-the-grid__visual visual visual--alignment-center visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#641e02">
                 
                     
                     <picture>
-    <source type="image/avif" srcset="/assets/images/entomon_9Y5HSfkIK6.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/entomon_9Y5HSfkIK6.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/entomon_9Y5HSfkIK6.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+    <source type="image/avif" srcset="/assets/images/entomon_9Y5HSfkIK6.avif 590w" 
+          width="590"
+          height="816"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/entomon_9Y5HSfkIK6.webp 590w" 
+          width="590"
+          height="816"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/entomon_9Y5HSfkIK6.jpeg 590w" 
+          width="590"
+          height="816"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/entomon_9Y5HSfkIK6.jpeg"
         width="590"
@@ -140,7 +129,7 @@
 
                 
                     <a class="visual__link" href=https://www.instagram.com/p/CXZUSumtZlq/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -152,18 +141,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -171,75 +150,22 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-1/2" 
-                data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
-                
-                    
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/darkmatter_gx2f3Ny7d_.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/darkmatter_gx2f3Ny7d_.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/darkmatter_gx2f3Ny7d_.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/darkmatter_gx2f3Ny7d_.jpeg"
-        width="590"
-        height="743"
-        alt="A 3D animation of dark matter. Spheres of dark, reflective fluid are rising up before a bright backgound."
-        loading="lazy"
-        decoding="async">
-    </picture>
-                
-
-                
-                    <a class="visual__link" href=https://www.instagram.com/p/B_dNpQ9IQyw/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
-                    </a>
-                
-            </div>
-        
-            <div 
-                class="off-the-grid__visual visual visual--alignment-center visual--width-1/2" 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-3/5" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="lazy-video"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#f4d9ff">
                 
                     
                     
-  <video autoplay muted loop playsinline width="2560" height="1440">
-  <source data-src="/assets/videos/offthegrid/1.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/offthegrid/swirl.webm" type="video/webm">
 </video>
     
                 
 
                 
-                    <a class="visual__link" href=https://www.instagram.com/p/CXZUSumtZlq/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                    <a class="visual__link" href=https://www.instagram.com/p/B_dNpQ9IQyw/ rel="noopener noreferrer" target="_blank">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -251,18 +177,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -273,13 +189,22 @@
                 class="off-the-grid__visual visual visual--alignment-left visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#a9b7fe">
                 
                     
                     <picture>
-    <source type="image/avif" srcset="/assets/images/hackaton_6baAtX8ISe.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/hackaton_6baAtX8ISe.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/hackaton_6baAtX8ISe.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
+    <source type="image/avif" srcset="/assets/images/hackaton_6baAtX8ISe.avif 590w" 
+          width="590"
+          height="590"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/hackaton_6baAtX8ISe.webp 590w" 
+          width="590"
+          height="590"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/hackaton_6baAtX8ISe.jpeg 590w" 
+          width="590"
+          height="590"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/hackaton_6baAtX8ISe.jpeg"
         width="590"
@@ -292,7 +217,7 @@
 
                 
                     <a class="visual__link" href=https://www.youtube.com/watch?v=L5nYjfHaNMM rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -304,18 +229,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -323,16 +238,25 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-3/4" 
+                class="off-the-grid__visual visual visual--alignment-center visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#fd3b00">
                 
                     
                     <picture>
-    <source type="image/avif" srcset="/assets/images/medium_rD2Pb9_2S6.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/medium_rD2Pb9_2S6.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/medium_rD2Pb9_2S6.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+    <source type="image/avif" srcset="/assets/images/medium_rD2Pb9_2S6.avif 768w" 
+          width="768"
+          height="426"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/medium_rD2Pb9_2S6.webp 768w" 
+          width="768"
+          height="426"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/medium_rD2Pb9_2S6.jpeg 768w" 
+          width="768"
+          height="426"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/medium_rD2Pb9_2S6.jpeg"
         width="768"
@@ -345,7 +269,7 @@
 
                 
                     <a class="visual__link" href=https://medium.com/@lisamarleen/jenesuispasunvirus-7a8b5ab73f4a rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -357,18 +281,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -376,29 +290,22 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-2/3" 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#5bd0d4">
                 
                     
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/handzero_KGo4J6j21B.avif 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/handzero_KGo4J6j21B.webp 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/handzero_KGo4J6j21B.jpeg 587w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/handzero_KGo4J6j21B.jpeg"
-        width="587"
-        height="738"
-        alt="A 3D rendered hand floating over the ground forming an 'o' with thumb and pointing finger. The hand is made of glossy, colorful reflective material."
-        loading="lazy"
-        decoding="async">
-    </picture>
+                    
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/offthegrid/handzero.webm" type="video/webm">
+</video>
+    
                 
 
                 
                     <a class="visual__link" href=https://www.instagram.com/p/B8WPLzkombp/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -410,18 +317,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -429,29 +326,22 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-left visual--width-2/3" 
+                class="off-the-grid__visual visual visual--alignment-left visual--width-3/5" 
                 data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#fcb9b9">
                 
                     
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/handthree_QyxgCwXla3.avif 589w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/handthree_QyxgCwXla3.webp 589w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/handthree_QyxgCwXla3.jpeg 589w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/handthree_QyxgCwXla3.jpeg"
-        width="589"
-        height="738"
-        alt="A 3D rendered hand floating over the ground showing three fingers as it was counting. The hand is made of glossy, colorful reflective material. In a looping animation pink smoke is covering the hand from time to time."
-        loading="lazy"
-        decoding="async">
-    </picture>
+                    
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/offthegrid/handthree.webm" type="video/webm">
+</video>
+    
                 
 
                 
                     <a class="visual__link" href=https://www.instagram.com/p/B4IL6oHoQva/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -463,18 +353,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -482,29 +362,22 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-2/3" 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#d7ecd4">
                 
                     
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/klaaar_rOvzFszDj4.avif 589w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/klaaar_rOvzFszDj4.webp 589w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/klaaar_rOvzFszDj4.jpeg 589w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/klaaar_rOvzFszDj4.jpeg"
-        width="589"
-        height="593"
-        alt="Three colorful soap bubbles intersecting wiith each other, particles are floating inside. Behind there is a font reading 'klaaar'."
-        loading="lazy"
-        decoding="async">
-    </picture>
+                    
+  <video autoplay muted loop playsinline width="1920" height="1920">
+  <source data-src="/assets/videos/offthegrid/klaaar.webm" type="video/webm">
+</video>
+    
                 
 
                 
                     <a class="visual__link" href=https://www.instagram.com/p/Begu6i3h4yZ/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -516,18 +389,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -535,29 +398,22 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-center visual--width-2/3" 
+                class="off-the-grid__visual visual visual--alignment-center visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#b4edff">
                 
                     
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/handtwo_keYbOwIpLZ.avif 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/handtwo_keYbOwIpLZ.webp 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/handtwo_keYbOwIpLZ.jpeg 587w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/handtwo_keYbOwIpLZ.jpeg"
-        width="587"
-        height="737"
-        alt="A 3D rendered hand floating over the ground showing two fingers as it was counting. The hand is made of glossy, dark material. In a looping animation a yellow fluid is circling around it."
-        loading="lazy"
-        decoding="async">
-    </picture>
+                    
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/offthegrid/handtwo.webm" type="video/webm">
+</video>
+    
                 
 
                 
                     <a class="visual__link" href=https://www.instagram.com/p/B40SlkNorJd/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -569,189 +425,140 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
-                
-            </div>
-        
-            <div 
-                class="off-the-grid__visual visual visual--alignment-left visual--width-2/3" 
-                data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
-                
-                    
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/handone_-Bz2IiZfNv.avif 588w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/handone_-Bz2IiZfNv.webp 588w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/handone_-Bz2IiZfNv.jpeg 588w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/handone_-Bz2IiZfNv.jpeg"
-        width="588"
-        height="737"
-        alt="A 3D rendered hand floating over the ground showing one finger as it was counting. The hand is made of glossy material."
-        loading="lazy"
-        decoding="async">
-    </picture>
-                
-
-                
-                    <a class="visual__link" href=https://www.instagram.com/p/B7tZRh_oSQH/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
-                    </a>
-                
-            </div>
-        
-            <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-2/3" 
-                data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
-                
-                    
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/mouth_w90jyo_ZHG.avif 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/mouth_w90jyo_ZHG.webp 587w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/mouth_w90jyo_ZHG.jpeg 587w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/mouth_w90jyo_ZHG.jpeg"
-        width="587"
-        height="589"
-        alt="An animation of illustrated mouths opening and coming towards the camera. In each mouth there is a rotating spiral revealing another mouth. An endless loop."
-        loading="lazy"
-        decoding="async">
-    </picture>
-                
-
-                
-                    <a class="visual__link" href=https://www.instagram.com/p/Bd3cDJXBG6O/ rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
-  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
-    <defs>
-      <clipPath id="clip-path">
-        <rect width="22.31" height="24.426" />
-      </clipPath>
-    </defs>
-    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
-      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
-    </g>
-  </svg>
-
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
-  </svg>
-</span>
-                    </a>
-                
-            </div>
-        
-            <div 
-                class="off-the-grid__visual visual visual--alignment-left visual--width-2/3" 
-                data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
-                
-                    
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/fuckoff_S9QPQwgT85.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/fuckoff_S9QPQwgT85.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/fuckoff_S9QPQwgT85.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/fuckoff_S9QPQwgT85.jpeg"
-        width="590"
-        height="443"
-        alt="A small, blue 3D character trying to catch a floating ballon. When failing it is getting angry and showing the finger into the camera."
-        loading="lazy"
-        decoding="async">
-    </picture>
-                
-
-                
-            </div>
-        
-            <div 
-                class="off-the-grid__visual visual visual--alignment-right visual--width-1/3" 
-                data-page-animation-visual data-in-view-amount="0.2"
-                data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
-                
-                    
-                    <picture>
-    <source type="image/avif" srcset="/assets/images/demodern_8q0Hjfh6Sa.avif 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/demodern_8q0Hjfh6Sa.webp 590w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/demodern_8q0Hjfh6Sa.jpeg 590w" sizes="(min-width: 768px) 50vw, 100vw">
-      <img
-        src="/assets/images/demodern_8q0Hjfh6Sa.jpeg"
-        width="590"
-        height="588"
-        alt="An illustrated logo with the letters 'dmdrn' and a hexagon shape in the background."
-        loading="lazy"
-        decoding="async">
-    </picture>
-                
-
                 
             </div>
         
             <div 
                 class="off-the-grid__visual visual visual--alignment-left visual--width-1/2" 
                 data-page-animation-visual data-in-view-amount="0.2"
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#ecfedb">
+                
+                    
+                    
+  <video autoplay muted loop playsinline width="1080" height="1350">
+  <source data-src="/assets/videos/offthegrid/handone.webm" type="video/webm">
+</video>
+    
+                
+
+                
+                    <a class="visual__link" href=https://www.instagram.com/p/B7tZRh_oSQH/ rel="noopener noreferrer" target="_blank">
+                        <span class="icon-link icon-link--primary">
+  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
+    <defs>
+      <clipPath id="clip-path">
+        <rect width="22.31" height="24.426" />
+      </clipPath>
+    </defs>
+    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
+      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
+    </g>
+  </svg>
+
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
+  </svg>
+</span>
+                    </a>
+                
+            </div>
+        
+            <div 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-3/5" 
+                data-page-animation-visual data-in-view-amount="0.2"
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#00e2ff">
+                
+                    
+                    
+  <video autoplay muted loop playsinline width="1920" height="1920">
+  <source data-src="/assets/videos/offthegrid/mouth.webm" type="video/webm">
+</video>
+    
+                
+
+                
+                    <a class="visual__link" href=https://www.instagram.com/p/Bd3cDJXBG6O/ rel="noopener noreferrer" target="_blank">
+                        <span class="icon-link icon-link--primary">
+  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
+    <defs>
+      <clipPath id="clip-path">
+        <rect width="22.31" height="24.426" />
+      </clipPath>
+    </defs>
+    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path)">
+      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
+    </g>
+  </svg>
+
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
+  </svg>
+</span>
+                    </a>
+                
+            </div>
+        
+            <div 
+                class="off-the-grid__visual visual visual--alignment-left visual--width-1/2" 
+                data-page-animation-visual data-in-view-amount="0.2"
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#f2d779">
+                
+                    
+                    
+  <video autoplay muted loop playsinline width="800" height="600">
+  <source data-src="/assets/videos/offthegrid/fuckoff.webm" type="video/webm">
+</video>
+    
+                
+
+                
+            </div>
+        
+            <div 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-3/5" 
+                data-page-animation-visual data-in-view-amount="0.2"
+                data-visual-type="lazy-video"
+                style="--placeholder-color:#9c33ff">
+                
+                    
+                    
+  <video autoplay muted loop playsinline width="1920" height="1920">
+  <source data-src="/assets/videos/offthegrid/demosplash.webm" type="video/webm">
+</video>
+    
+                
+
+                
+            </div>
+        
+            <div 
+                class="off-the-grid__visual visual visual--alignment-left visual--width-2/3" 
+                data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#eaeaea">
                 
                     
                     <picture>
-    <source type="image/avif" srcset="/assets/images/tung_7ktIKs7BMH.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/tung_7ktIKs7BMH.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/tung_7ktIKs7BMH.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+    <source type="image/avif" srcset="/assets/images/tung_7ktIKs7BMH.avif 768w" 
+          width="768"
+          height="768"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/tung_7ktIKs7BMH.webp 768w" 
+          width="768"
+          height="768"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/tung_7ktIKs7BMH.jpeg 768w" 
+          width="768"
+          height="768"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/tung_7ktIKs7BMH.jpeg"
         width="768"
@@ -764,7 +571,7 @@
 
                 
                     <a class="visual__link" href=https://www.behance.net/gallery/25483669/Vinyl-record-cover-tunng rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -776,18 +583,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>
@@ -795,16 +592,25 @@
             </div>
         
             <div 
-                class="off-the-grid__visual visual visual--alignment-center visual--width-1/2" 
+                class="off-the-grid__visual visual visual--alignment-right visual--width-2/3" 
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="image"
-                style="--placeholder-color:var(--color-grey1)">
+                style="--placeholder-color:#c0a796">
                 
                     
                     <picture>
-    <source type="image/avif" srcset="/assets/images/scanner_Hb9wpwODk3.avif 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/scanner_Hb9wpwODk3.webp 768w" sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/scanner_Hb9wpwODk3.jpeg 768w" sizes="(min-width: 768px) 50vw, 100vw">
+    <source type="image/avif" srcset="/assets/images/scanner_Hb9wpwODk3.avif 768w" 
+          width="768"
+          height="1054"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/webp" srcset="/assets/images/scanner_Hb9wpwODk3.webp 768w" 
+          width="768"
+          height="1054"
+          sizes="(min-width: 768px) 50vw, 100vw">
+<source type="image/jpeg" srcset="/assets/images/scanner_Hb9wpwODk3.jpeg 768w" 
+          width="768"
+          height="1054"
+          sizes="(min-width: 768px) 50vw, 100vw">
       <img
         src="/assets/images/scanner_Hb9wpwODk3.jpeg"
         width="768"
@@ -817,7 +623,7 @@
 
                 
                     <a class="visual__link" href=https://www.behance.net/gallery/24232029/Synthetic rel="noopener noreferrer" target="_blank">
-                        <span class="icon-link">
+                        <span class="icon-link icon-link--primary">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
     <defs>
       <clipPath id="clip-path">
@@ -829,18 +635,8 @@
     </g>
   </svg>
 
-
-  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.669" height="63.641" viewBox="0 0 60.669 63.641">
-    <defs>
-      <clipPath id="clip-path-circle">
-        <rect width="46.502" height="51.296" />
-      </clipPath>
-    </defs>
-    <g transform="translate(16.7) rotate(19)">
-      <g transform="translate(0 0)" clip-path="url(#clip-path-circle)">
-        <path d="M21.839.008C11.355,1.344,4.346,10.973,1.474,20.467-.238,26.129-.84,32.5,1.778,37.992c2.4,5.036,7.23,8.459,12.329,10.4a44.227,44.227,0,0,0,9.357,2.273,36.2,36.2,0,0,0,8.783.537,11.793,11.793,0,0,0,7.486-3.33,24.362,24.362,0,0,0,4.492-7.519,26.333,26.333,0,0,0,2.248-9.1,26.584,26.584,0,0,0-1.127-8.9,25.323,25.323,0,0,0-8.376-12.6A18.806,18.806,0,0,0,23.382,5.658a17.6,17.6,0,0,0-11.895,6.126,14.541,14.541,0,0,0-1.839,2.93c-.451.961.979,1.8,1.432.837a14.683,14.683,0,0,1,9.543-7.7A16.881,16.881,0,0,1,33.31,9.3c8.9,4.9,13.37,16.585,10.837,26.279a33.737,33.737,0,0,1-3.325,7.963c-1.327,2.353-3.068,4.444-5.687,5.366a18.2,18.2,0,0,1-7.729.582,59.149,59.149,0,0,1-8.744-1.428C13.5,46.78,8.434,44.4,5.067,40.146c-3.482-4.4-3.946-10.156-2.921-15.5A35.365,35.365,0,0,1,7.911,10.925a22.264,22.264,0,0,1,10.6-8.473,16.925,16.925,0,0,1,3.326-.785c1.045-.133,1.058-1.794,0-1.659" transform="translate(0 0)" />
-      </g>
-    </g>
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
   </svg>
 </span>
                     </a>

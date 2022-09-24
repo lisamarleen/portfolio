@@ -3,49 +3,60 @@
     {
       "id": "borrowedlimbs",
       "title": "Bor<br />rowed &nbsp;<br /> limbs",
-      "description": "<p><b>This experimental short film is reflecting on the possibility of the embodiment of AI and the means of communication with an AI as a new species.</p><p></b>The plot is centered around an AI main character who uses the human body as a sensing device to gain a physical understanding of their surroundings. Influenced by posthuman thinkers, the work aims to provoke a discussion about Cartesian notions of disembodied intelligence. The work was produced by integrating different generative Machine learning techniques into a coherent narrative.<br />The main part of the film was produced with a machine-learning-backed process called “<b>CLIP guided diffusion</b>”. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. In a way, the practical processes involved in producing the film reflect the speculative idea of an ongoing dialogue found in the narrative. The work resulted in a modular design pipeline for controlled image synthesis using AI tools as a design appropriation to communicate speculative concepts.</p><p>It was created as a team effort with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> and part of the Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a> - Cologne International School of Design (Faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>TH Köln</a>).</p>",
+      "description": "<p><b>This is my most recent project with focus on designing in collaboration with AI. It was part of my Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a>, faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>Cologne University of Applied Science</a>, and created and published February 2022 as a team effort together with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a>.</b><br /></p><p>The work was produced by integrating different generative Machine Learning techniques into a coherent narrative and visual language. Main part of the film was produced with a machine-learning-backed process called <b>“CLIP guided diffusion”</b>. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. The work resulted in a <b>modular design pipeline for controlled image synthesis</b> using AI tools to generate, interpolate and upscale moving images to communicate speculative concepts. A detailed documentation can be found in our research paper which is an excerpt from our master thesis with the Title “Synthesising Meaning”.<br /></p><p>“Borrowed Limbs” was showcased this year at <a href='https://ars.electronica.art/planetb/en/welcome-to-planetb/' rel='noopener noreferrer' target='_blank'>Ars Electronica</a>, <a href='https://site.gardening.nu/en/event/gardening' rel='noopener noreferrer' target='_blank'>GARDENING Amelisweerd exhibition</a> in Utrecht, Re:publica 2022 and featured in the <a href='https://page-online.de/branche-karriere/ki-bei-bewusstsein/' rel='noopener noreferrer' target='_blank'>PAGE magazine in July</a>. It will be screening at Ars Electronica Festival in Linz in September and the Animation Festival on Tour as well as shown at the Museum of Applied Arts Cologne in the context of the Cologne Design Prize in November.</p>",
       "images": [
         {
-          "src": "borrowedlimbs1.png",
-          "alt": "some alt text",
+          "src": "borrowedlimbs",
+          "formats": ["webm"],
+          "alt": "An AI generated, looping video sequence of a Human portrait shot",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "video",
+          "width": "1080",
+          "height": "1350",
+          "placeholderColor": "#ffe7c8"
         },
         {
           "src": "borrowedlimbs2.png",
-          "alt": "some alt text",
+          "alt": "An AI generated, looping video sequence of a human hand turning upside down",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#bef7ff"
         },
         {
           "src": "borrowedlimbs3.png",
-          "alt": "some alt text",
+          "alt": "An AI generated image of a human hand reaching for a fruit hanging on a tree",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#ff9966"
         },
         {
           "src": "borrowedlimbs4.png",
-          "alt": "some alt text",
+          "alt": "An AI generated portrait image of a human AI hybrid looking into the camera",
           "largeView": {
             "width": "1/1",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#ffe7c8"
         }
       ],
       "links": [
         {
           "link": "https://vimeo.com/682432232",
-          "label": "Link to film"
+          "label": "Borrowed Limbs"
         },
         {
           "link": "https://th-koeln.sciebo.de/s/tqnLlhU750JIvNg",
-          "label": "Link to research paper"
+          "label": "Research paper"
         }
       ]
     },
@@ -56,41 +67,49 @@
       "images": [
         {
           "src": "entomon1.png",
-          "alt": "some alt text",
+          "alt": "A human insect hybrid face generated by styleGAN2",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#11bfcd"
         },
         {
           "src": "entomon2.png",
-          "alt": "some alt text",
+          "alt": "A human insect hybrid face generated by styleGAN2",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#f38f7a"
         },
         {
           "src": "entomon3.png",
-          "alt": "some alt text",
+          "alt": "A human insect hybrid face generated by styleGAN2",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#d7e26f"
         },
         {
           "src": "entomon4.png",
-          "alt": "some alt text",
+          "alt": "A human insect hybrid face generated by styleGAN2",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#d7d1c1"
         }
       ],
       "links": [
         {
           "link": "https://vimeo.com/682432232",
-          "label": "Link to curated collection"
+          "label": "Curated collection"
         },
         {
           "link": "https://vimeo.com/683741589",
@@ -105,41 +124,49 @@
       "images": [
         {
           "src": "breathingsoftspace1.png",
-          "alt": "some alt text",
+          "alt": "A person standing in a room touching floating fabric on the ceiling",
           "largeView": {
             "width": "1/2",
             "alignment": "left"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#a89be"
         },
         {
           "src": "breathingsoftspace2.png",
-          "alt": "some alt text",
+          "alt": "A close up of woven fabric with loose threats hanging out",
           "largeView": {
             "width": "2/3",
             "alignment": "right"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#a89be"
         },
         {
           "src": "breathingsoftspace3.png",
-          "alt": "some alt text",
+          "alt": "Two people sitting on the floor, the woven textile installation on the ceiling is slowly coming closer.",
           "largeView": {
             "width": "1/2",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#a89be"
         },
         {
           "src": "breathingsoftspace4.png",
-          "alt": "some alt text",
+          "alt": "A person touching the loose threts hanging out of the woven textile on the ceiling",
           "largeView": {
             "width": "1/1",
             "alignment": "center"
-          }
+          },
+          "srcType": "image",
+          "placeholderColor": "#a89be"
         }
       ],
       "links": [
         {
           "link": "https://www.behance.net/gallery/106630681/Breathing-Softspace",
-          "label": "Link to case"
+          "label": "Case Study"
         },
         {
           "link": "https://www.viennadesignweek.at/archiv/2020/breathing-softspace-an-interactive-textile-installation/",

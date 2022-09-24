@@ -25,11 +25,18 @@ pageDescription: "Hello"
                 <div class="content-wrapper">
                     <div class="case">
                         {% for caseImage in caseItem.images %}
-                            {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
                                 class="case__visual visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}" 
-                                data-page-animation-visual>
-                                {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                                data-page-animation-visual data-in-view-amount="{{ 0.2 if caseImage.srcType === 'video' else 0.5 }}"
+                                data-visual-type="{{ 'lazy-video' if caseImage.srcType === 'video' else 'image' }}"
+                                style="--placeholder-color:{{ caseImage.placeholderColor | default('var(--color-grey1)') }}">
+                                {% if caseImage.srcType === "image" %}
+                                    {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
+                                    {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                                {% elseif caseImage.srcType === "video" %}
+                                    {% set computedSrc = "/assets/videos/" + caseItem.id + "/" + caseImage.src %}
+                                    {%  lazyVideo computedSrc, caseImage.formats, caseImage.width, caseImage.height %}
+                                {% endif %}
                             </div>
                         {% endfor %}
                         <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
@@ -55,7 +62,7 @@ pageDescription: "Hello"
                     <li class="exit-nav-list__item">
                         <a href={{navigationItem.link}}>
                             {{navigationItem.label}}
-                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled.njk" %}{% endif %}
+                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled-primary.njk" %}{% endif %}
                         </a>
                     </li>
                 {% endfor %}
@@ -69,11 +76,18 @@ pageDescription: "Hello"
                 <div class="content-wrapper">
                     <div class="case">
                         {% for caseImage in caseItem.images %}
-                            {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
                             <div 
-                                data-page-animation-visual
-                                class="visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}">
-                                {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                                class="case__visual visual visual--alignment-{{ caseImage.largeView.alignment | default('left') }} visual--width-{{ caseImage.largeView.width | default('1/1') }}" 
+                                data-page-animation-visual data-in-view-amount="{{ 0.2 if caseImage.srcType === 'video' else 0.5 }}"
+                                data-visual-type="{{ 'lazy-video' if caseImage.srcType === 'video' else 'image' }}"
+                                style="--placeholder-color:{{ caseImage.placeholderColor | default('var(--color-grey1)') }}">
+                                {% if caseImage.srcType === "image" %}
+                                    {% set computedSrc = "./src/assets/images/" + caseItem.id + "/" + caseImage.src  %}
+                                    {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
+                                {% elseif caseImage.srcType === "video" %}
+                                    {% set computedSrc = "/assets/videos/" + caseItem.id + "/" + caseImage.src %}
+                                    {%  lazyVideo computedSrc, caseImage.formats, caseImage.width, caseImage.height %}
+                                {% endif %}
                             </div>
                         {% endfor %}
                         <h2 class="case__title" data-page-animation-fade-in-view>{{ caseItem.title | safe }}</h2>
@@ -99,7 +113,7 @@ pageDescription: "Hello"
                     <li class="exit-nav-list__item">
                         <a href={{navigationItem.link}}>
                             {{navigationItem.label}}
-                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled.njk" %}{% endif %}
+                            {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled-primary.njk" %}{% endif %}
                         </a>
                     </li>
                 {% endfor %}

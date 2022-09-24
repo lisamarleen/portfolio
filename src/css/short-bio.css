@@ -28,8 +28,8 @@
 
 .short-bio__image picture img {
   width: 100%;
+  height: auto;
   object-fit: cover;
-  transform: scale(1.1);
 }
 
 .short-bio__copy {
@@ -93,7 +93,7 @@
     margin: 0;
   }
 
-  .short-bio__image picture {
+  .short-bio__image picture img {
     overflow: hidden;
     position: absolute;
     width: 100%;

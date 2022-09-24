@@ -20,6 +20,14 @@
   box-sizing: border-box;
   padding: var(--spacing-m, 16px) 0;
   border-bottom: 1px solid var(--color-grey1, #626262);
+  animation: moveInFromYAndFadeIn 700ms var(--ease-in-smooth) forwards;
+  animation-delay: calc(var(--animation-delay) * 100ms + 2300ms);
+  opacity: 0;
+}
+
+.no-js .intro-nav li {
+  opacity: 1;
+  animation: none;
 }
 
 .intro-nav li:last-child {
@@ -69,7 +77,7 @@
 }
 
 .intro__video--with-fade.intro__video--loaded {
-  animation: fadeIn 3000ms 1000ms ease-in forwards;
+  animation: fadeIn 3000ms 300ms ease-in forwards;
 }
 
 @media (min-width: 768px) {

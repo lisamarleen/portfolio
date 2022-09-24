@@ -1,11 +1,4 @@
-import {
-  animate,
-  scroll,
-  ScrollOffset,
-  stagger,
-  timeline,
-  inView,
-} from "motion";
+import { animate, inView, scroll, stagger, timeline } from "motion";
 import Splitting from "splitting";
 
 function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
@@ -29,9 +22,12 @@ function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
   return response;
 }
 
-const EaseOutSine = getCSSCustomProp("--ease-out-sine");
-const EaseinQuad = getCSSCustomProp("--ease-in-quad");
-const EaseOutCubic = getCSSCustomProp("--ease-out-cubic");
+const EaseIn = getCSSCustomProp("--ease-in");
+const EaseOut = getCSSCustomProp("--ease-out");
+const EaseInOut = getCSSCustomProp("--ease-in-out");
+const EaseInSmooth = getCSSCustomProp("--ease-in-smooth");
+const EaseOutSmooth = getCSSCustomProp("--ease-out-smooth");
+const EaseInOutSmooth = getCSSCustomProp("--ease-in-out-smooth");
 
 function setCssCustomProp(propKey, element, value) {
   element.style.setProperty(propKey, value);
@@ -91,12 +87,19 @@ function initPageAnimations() {
   if (title) {
     sequence.push([
       shuffle(chars),
-      { y: ["100%", 0], opacity: [0, 1] },
       {
-        duration: 0.7,
-        delay: stagger(0.02, {
-          easing: EaseOutCubic,
-        }),
+        rotateY: [25, 0],
+        opacity: [0, 1],
+        color: [
+          getCSSCustomProp("--color-dark-blue"),
+          getCSSCustomProp("--color-white"),
+        ],
+        filter: ["blur(2px)", "blur(0)"],
+      },
+      {
+        duration: 1.2,
+        delay: stagger(0.05),
+        easing: EaseInSmooth,
       },
     ]);
   }
@@ -107,7 +110,11 @@ function initPageAnimations() {
     sequence.push([
       content,
       { opacity: [0, 1] },
-      { easing: EaseOutCubic, at: "-0.25", duration: 1 },
+      {
+        easing: EaseOutSmooth,
+        at: "-0.25",
+        duration: 1,
+      },
     ]);
   }
 
@@ -210,7 +217,7 @@ function initImageAnimations() {
             {
               opacity: 1,
             },
-            { duration: 0.7, easing: EaseOutSine },
+            { duration: 0.7, easing: EaseOutSmooth },
           ],
           [
             container,
@@ -220,12 +227,12 @@ function initImageAnimations() {
                 "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
               ],
             },
-            { duration: 1.2, easing: EaseOutSine, at: "-0.6" },
+            { duration: 1.2, easing: EaseOutSmooth, at: "-0.6" },
           ],
         ];
 
         if (visualType === "lazy-video") {
-          const video = document.querySelectorAll("video");
+          const video = container.querySelectorAll("video");
           initLazyVideo(video[0]);
         } else {
           animations.push([
@@ -233,7 +240,7 @@ function initImageAnimations() {
             {
               scale: [1.1, 1],
             },
-            { easing: EaseOutSine, duration: 1.2, at: "-1.2" },
+            { easing: EaseOutSmooth, duration: 1.2, at: "-1.2" },
           ]);
         }
 

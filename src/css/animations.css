@@ -6,30 +6,50 @@
   opacity: 1;
 }
 
-[data-page-animation-visual], [data-page-animation-fade-in-view] {
+[data-page-animation-visual],
+[data-page-animation-fade-in-view] {
   opacity: 0;
 }
 
-.no-js [data-page-animation-visual], .no-js [data-page-animation-fade-in-view] {
+.no-js [data-page-animation-visual],
+.no-js [data-page-animation-fade-in-view] {
   opacity: 1;
 }
 
 @keyframes svgStroke {
-    0% {
-        stroke-dashoffset: 1;
-    }
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1;
+  }
 
-    100% {
-        stroke-dashoffset: 0;
-    }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromYAndFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}

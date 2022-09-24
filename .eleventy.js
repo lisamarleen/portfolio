@@ -4,7 +4,6 @@ const Image = require("@11ty/eleventy-img");
 const esbuild = require("esbuild");
 const fs = require("fs");
 
-
 function minifyCSS(source, output_path) {
   if (
     !output_path ||
@@ -35,12 +34,13 @@ function imageFileName({ src, id, format }) {
   return `${name}_${id}.${format}`;
 }
 
-async function lazyVideo(src, width, height) {
-  const srcType = src.substr(src.indexOf(".") + 1);
-
+async function lazyVideo(filename, srcTypes = ["webm"], width, height) {
   return `
   <video autoplay muted loop playsinline width="${width}" height="${height}">
-  <source data-src="${src}" type="video/${srcType}">
+  ${srcTypes.map(
+    (srcType) =>
+      `<source data-src="${filename}.${srcType}" type="video/${srcType}">`
+  )}
 </video>
     `;
 }
@@ -103,6 +103,8 @@ async function imageWithDetailShortcode(
               .map((entry) => `/${entry.srcset}`)
               .join(", ")}"
             media="${detailMedia}"
+            width="${imageFormat[0].width}"
+            height="${imageFormat[0].height}"
             sizes="${detailSizes}">`;
         })
         .join("\n")
@@ -116,7 +118,10 @@ async function imageWithDetailShortcode(
           imageFormat[0].sourceType
         }" srcset="${imageFormat
           .map((entry) => `/${entry.srcset}`)
-          .join(", ")}" sizes="${imageAttributes.sizes}">`;
+          .join(", ")}" 
+          width="${imageFormat[0].width}"
+          height="${imageFormat[0].height}"
+          sizes="${imageAttributes.sizes}">`;
       })
       .join("\n");
 
