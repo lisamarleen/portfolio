@@ -266,7 +266,6 @@ function initLazyVideo(videoElem) {
 }
 
 function initHomeLink() {
-  let isAnimatedIn = false;
   const elem = document.querySelector(".page-header");
   const chars = document.querySelectorAll(".page-header__home-link .char");
   const animatedChars = shuffle(
@@ -276,27 +275,16 @@ function initHomeLink() {
   const options = {
     duration: 0.4,
     delay: stagger(0.02, {
-      easing: EaseOutCubic,
+      easing: EaseOutSmooth,
     }),
   };
 
-  elem.addEventListener("mouseover", async () => {
-    if (!isAnimatedIn) {
-      await animate(
-        animatedChars,
-        { y: ["-100%", 0], opacity: [0, 1] },
-        options
-      );
-      console.log("now");
-      isAnimatedIn = true;
-    }
+  elem.addEventListener("mouseenter", () => {
+    animate(animatedChars, { y: ["-100%", 0], opacity: [0, 1] }, options);
   });
 
-  elem.addEventListener("mouseout", async () => {
-    if (isAnimatedIn) {
-      animate(animatedChars, { y: [0, "100%"], opacity: [1, 0] }, options);
-      isAnimatedIn = false;
-    }
+  elem.addEventListener("mouseleave", () => {
+    animate(animatedChars, { y: [0, "100%"], opacity: [1, 0] }, options);
   });
 }
 
