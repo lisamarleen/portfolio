@@ -52,7 +52,7 @@
 }
 
 .social-list__link.social-list__link--highlighted:hover svg path {
-  animation: svgStroke 700ms var(--ease-out-circ) forwards;
+  animation: svgStroke 700ms var(--ease-out-smooth) forwards;
 }
 
 @media (min-width: 768px) {

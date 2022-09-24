@@ -6,7 +6,7 @@
 }
 
 a:hover > .icon-link .icon-link__circle path {
-    animation: svgStroke 700ms var(--ease-out-circ) forwards;
+    animation: svgStroke 700ms var(--ease-out-smooth) forwards;
 }
 
 a:hover > .icon-link svg {
@@ -15,7 +15,7 @@ a:hover > .icon-link svg {
 
 .icon-link svg {
     fill: var(--color-white);
-    transition: fill var(--hover-default-transiton-duration) var(--ease-out-circ);
+    transition: fill var(--hover-default-transiton-duration) var(--ease-out-smooth);
 }
 
 .icon-link.icon-link--primary svg {

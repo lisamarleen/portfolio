@@ -22,10 +22,12 @@ function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
   return response;
 }
 
-const EaseOutSine = getCSSCustomProp("--ease-out-sine");
-const EaseinQuad = getCSSCustomProp("--ease-in-quad");
-const EaseInSine = getCSSCustomProp("--ease-in-sine");
-const EaseOutCubic = getCSSCustomProp("--ease-out-cubic");
+const EaseIn = getCSSCustomProp("--ease-in");
+const EaseOut = getCSSCustomProp("--ease-out");
+const EaseInOut = getCSSCustomProp("--ease-in-out");
+const EaseInSmooth = getCSSCustomProp("--ease-in-smooth");
+const EaseOutSmooth = getCSSCustomProp("--ease-out-smooth");
+const EaseInOutSmooth = getCSSCustomProp("--ease-in-out-smooth");
 
 function setCssCustomProp(propKey, element, value) {
   element.style.setProperty(propKey, value);
@@ -97,7 +99,7 @@ function initPageAnimations() {
       {
         duration: 1.2,
         delay: stagger(0.05),
-        easing: EaseInSine,
+        easing: EaseInSmooth,
       },
     ]);
   }
@@ -109,7 +111,7 @@ function initPageAnimations() {
       content,
       { opacity: [0, 1] },
       {
-        easing: EaseOutCubic,
+        easing: EaseOutSmooth,
         at: "-0.25",
         duration: 1,
       },
@@ -215,7 +217,7 @@ function initImageAnimations() {
             {
               opacity: 1,
             },
-            { duration: 0.7, easing: EaseOutSine },
+            { duration: 0.7, easing: EaseOutSmooth },
           ],
           [
             container,
@@ -225,7 +227,7 @@ function initImageAnimations() {
                 "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
               ],
             },
-            { duration: 1.2, easing: EaseOutSine, at: "-0.6" },
+            { duration: 1.2, easing: EaseOutSmooth, at: "-0.6" },
           ],
         ];
 
@@ -238,7 +240,7 @@ function initImageAnimations() {
             {
               scale: [1.1, 1],
             },
-            { easing: EaseOutSine, duration: 1.2, at: "-1.2" },
+            { easing: EaseOutSmooth, duration: 1.2, at: "-1.2" },
           ]);
         }
 

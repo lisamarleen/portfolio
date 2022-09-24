@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: var(--spacing-l) 0;
-  transition: opacity 700ms var(--animation-delay) var(--ease-in-circ);
+  transition: opacity 700ms var(--animation-delay) var(--ease-in-smooth);
 }
 
 .listing-item:before, .listing-item:last-child:after {
@@ -31,7 +31,7 @@
   background: var(--color-grey1);
   opacity: 0;
   transform: scaleX(0.7);
-  transition: all 700ms calc(100ms + var(--animation-delay)) var(--ease-in-circ);
+  transition: all 700ms calc(100ms + var(--animation-delay)) var(--ease-in-smooth);
 }
 
 .listing-item:after {
@@ -95,7 +95,7 @@
 }
 
 .listing.listing--in-view .listing-item-current-hint svg path {
-  animation: svgStroke 700ms 300ms var(--ease-out-circ) forwards;
+  animation: svgStroke 700ms 300ms var(--ease-out-smooth) forwards;
 }
 
 .listing-item-current-hint svg:last-child {
@@ -117,5 +117,5 @@
 }
 
 .listing.listing--in-view + .listing-item-current-label {
-  animation: fadeIn 700ms 2400ms var(--ease-out-circ) forwards;
+  animation: fadeIn 700ms 2400ms var(--ease-out-smooth) forwards;
 }
