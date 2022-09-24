@@ -125,6 +125,10 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
+main {
+  overflow-x: hidden;
+}
+
 ul {
   padding: 0;
 }
