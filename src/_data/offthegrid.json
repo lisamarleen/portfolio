@@ -16,13 +16,15 @@
       "placeholderColor": "#641e02"
     },
     {
-      "src": "swirl.webm",
+      "src": "swirl",
+      "formats": ["webm", "mp4"],
       "alt": "A 3D rendered video of fluid spheres floating up into a pink sky.",
       "link": "https://www.instagram.com/p/B_dNpQ9IQyw/",
       "largeView": {
         "width": "3/5",
         "alignment": "right"
       },
+
       "srcType": "video",
       "width": 1080,
       "height": 1350,
@@ -55,7 +57,8 @@
       "placeholderColor": "#fd3b00"
     },
     {
-      "src": "handzero.webm",
+      "src": "handzero",
+      "formats": ["webm"],
       "alt": "A 3D rendered hand floating over the ground forming an 'o' with thumb and pointing finger. The hand is made of glossy, colorful reflective material.",
       "link": "https://www.instagram.com/p/B8WPLzkombp/",
       "largeView": {
@@ -68,7 +71,8 @@
       "placeholderColor": "#5bd0d4"
     },
     {
-      "src": "handthree.webm",
+      "src": "handthree",
+      "formats": ["webm"],
       "alt": "A 3D rendered hand floating over the ground showing three fingers as it was counting. The hand is made of glossy, colorful reflective material. In a looping animation pink smoke is covering the hand from time to time.",
       "link": "https://www.instagram.com/p/B4IL6oHoQva/",
       "largeView": {
@@ -81,7 +85,8 @@
       "placeholderColor": "#fcb9b9"
     },
     {
-      "src": "klaaar.webm",
+      "src": "klaaar",
+      "formats": ["webm"],
       "alt": "Three colorful soap bubbles intersecting wiith each other, particles are floating inside. Behind there is a font reading 'klaaar'.",
       "link": "https://www.instagram.com/p/Begu6i3h4yZ/",
       "largeView": {
@@ -94,7 +99,8 @@
       "placeholderColor": "#d7ecd4"
     },
     {
-      "src": "handtwo.webm",
+      "src": "handtwo",
+      "formats": ["webm"],
       "alt": "A 3D rendered hand floating over the ground showing two fingers as it was counting. The hand is made of glossy, dark material. In a looping animation a yellow fluid is circling around it.",
       "link": "https://www.instagram.com/p/B40SlkNorJd/",
       "largeView": {
@@ -107,7 +113,8 @@
       "placeholderColor": "#b4edff"
     },
     {
-      "src": "handone.webm",
+      "src": "handone",
+      "formats": ["webm"],
       "alt": "A 3D rendered hand floating over the ground showing one finger as it was counting. The hand is made of glossy material.",
       "link": "https://www.instagram.com/p/B7tZRh_oSQH/",
       "largeView": {
@@ -120,7 +127,8 @@
       "placeholderColor": "#ecfedb"
     },
     {
-      "src": "mouth.webm",
+      "src": "mouth",
+
       "alt": "An animation of illustrated mouths opening and coming towards the camera. In each mouth there is a rotating spiral revealing another mouth. An endless loop.",
       "link": "https://www.instagram.com/p/Bd3cDJXBG6O/",
       "largeView": {
@@ -133,7 +141,7 @@
       "placeholderColor": "#00e2ff"
     },
     {
-      "src": "fuckoff.webm",
+      "src": "fuckoff",
       "alt": "A small, blue 3D character trying to catch a floating ballon. When failing it is getting angry and showing the finger into the camera.",
       "largeView": {
         "width": "1/2",
@@ -145,7 +153,7 @@
       "placeholderColor": "#f2d779"
     },
     {
-      "src": "demosplash.webm",
+      "src": "demosplash",
       "alt": "An illustrated logo with the letters 'dmdrn' and a hexagon shape in the background.",
       "largeView": {
         "width": "3/5",

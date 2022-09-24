@@ -35,7 +35,7 @@ pageDescription: "Hello"
                                     {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                                 {% elseif caseImage.srcType === "video" %}
                                     {% set computedSrc = "/assets/videos/" + caseItem.id + "/" + caseImage.src %}
-                                    {%  lazyVideo computedSrc, caseImage.width, caseImage.height %}
+                                    {%  lazyVideo computedSrc, caseImage.formats, caseImage.width, caseImage.height %}
                                 {% endif %}
                             </div>
                         {% endfor %}
@@ -86,7 +86,7 @@ pageDescription: "Hello"
                                     {%  imageWithDetail computedSrc, caseImage.alt, "(min-width: 768px) 50vw, 100vw" %}
                                 {% elseif caseImage.srcType === "video" %}
                                     {% set computedSrc = "/assets/videos/" + caseItem.id + "/" + caseImage.src %}
-                                    {%  lazyVideo computedSrc, caseImage.width, caseImage.height %}
+                                    {%  lazyVideo computedSrc, caseImage.formats, caseImage.width, caseImage.height %}
                                 {% endif %}
                             </div>
                         {% endfor %}

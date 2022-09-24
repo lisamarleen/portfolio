@@ -22,8 +22,8 @@ pageDescription: "Hello"
                     {% set computedSrc = "./src/assets/images/offthegrid/" + visual.src %}
                     {%  imageWithDetail computedSrc, visual.alt, "(min-width: 768px) 50vw, 100vw" %}
                 {% elseif visual.srcType === "video" %}
-                    {% set computedSrc = "/assets/videos/offthegrid/" + visual.src %}
-                    {%  lazyVideo computedSrc, visual.width, visual.height %}
+                    {% set filename = "/assets/videos/offthegrid/" + visual.src %}
+                    {%  lazyVideo filename, visual.formats, visual.width, visual.height %}
                 {% endif %}
 
                 {% if visual.link %}
