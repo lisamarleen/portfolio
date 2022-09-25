@@ -7,7 +7,7 @@
       "images": [
         {
           "src": "borrowedlimbs",
-          "formats": ["webm"],
+          "formats": ["webm", "mp4"],
           "alt": "An AI generated, looping video sequence of a Human portrait shot",
           "largeView": {
             "width": "1/2",

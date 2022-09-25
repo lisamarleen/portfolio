@@ -16,7 +16,7 @@
       "placeholderColor": "#641e02"
     },
     {
-      "src": "swirl",
+      "src": "swirlgroup",
       "formats": ["webm", "mp4"],
       "alt": "A 3D rendered video of fluid spheres floating up into a pink sky.",
       "link": "https://www.instagram.com/p/B_dNpQ9IQyw/",
@@ -72,7 +72,7 @@
     },
     {
       "src": "handthree",
-      "formats": ["webm"],
+      "formats": ["webm", "mp4"],
       "alt": "A 3D rendered hand floating over the ground showing three fingers as it was counting. The hand is made of glossy, colorful reflective material. In a looping animation pink smoke is covering the hand from time to time.",
       "link": "https://www.instagram.com/p/B4IL6oHoQva/",
       "largeView": {
@@ -86,7 +86,7 @@
     },
     {
       "src": "klaaar",
-      "formats": ["webm"],
+      "formats": ["webm", "mp4"],
       "alt": "Three colorful soap bubbles intersecting wiith each other, particles are floating inside. Behind there is a font reading 'klaaar'.",
       "link": "https://www.instagram.com/p/Begu6i3h4yZ/",
       "largeView": {
@@ -100,7 +100,7 @@
     },
     {
       "src": "handtwo",
-      "formats": ["webm"],
+      "formats": ["webm", "mp4"],
       "alt": "A 3D rendered hand floating over the ground showing two fingers as it was counting. The hand is made of glossy, dark material. In a looping animation a yellow fluid is circling around it.",
       "link": "https://www.instagram.com/p/B40SlkNorJd/",
       "largeView": {
@@ -114,7 +114,7 @@
     },
     {
       "src": "handone",
-      "formats": ["webm"],
+      "formats": ["webm", "mp4"],
       "alt": "A 3D rendered hand floating over the ground showing one finger as it was counting. The hand is made of glossy material.",
       "link": "https://www.instagram.com/p/B7tZRh_oSQH/",
       "largeView": {
@@ -128,7 +128,7 @@
     },
     {
       "src": "mouth",
-
+      "formats": ["webm", "mp4"],
       "alt": "An animation of illustrated mouths opening and coming towards the camera. In each mouth there is a rotating spiral revealing another mouth. An endless loop.",
       "link": "https://www.instagram.com/p/Bd3cDJXBG6O/",
       "largeView": {
@@ -142,6 +142,7 @@
     },
     {
       "src": "fuckoff",
+      "formats": ["webm", "mp4"],
       "alt": "A small, blue 3D character trying to catch a floating ballon. When failing it is getting angry and showing the finger into the camera.",
       "largeView": {
         "width": "1/2",
@@ -154,6 +155,7 @@
     },
     {
       "src": "demosplash",
+      "formats": ["webm", "mp4"],
       "alt": "An illustrated logo with the letters 'dmdrn' and a hexagon shape in the background.",
       "largeView": {
         "width": "3/5",
