@@ -265,32 +265,8 @@ function initLazyVideo(videoElem) {
   videoElem.load();
 }
 
-function initHomeLink() {
-  const elem = document.querySelector(".page-header");
-  const chars = document.querySelectorAll(".page-header__home-link .char");
-  const animatedChars = shuffle(
-    Array.from(chars).filter((c, index) => index !== 0 && index !== 4)
-  );
-
-  const options = {
-    duration: 0.4,
-    delay: stagger(0.02, {
-      easing: EaseOutSmooth,
-    }),
-  };
-
-  elem.addEventListener("mouseenter", () => {
-    animate(animatedChars, { y: ["-100%", 0], opacity: [0, 1] }, options);
-  });
-
-  elem.addEventListener("mouseleave", () => {
-    animate(animatedChars, { y: [0, "100%"], opacity: [1, 0] }, options);
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
-  // initHomeLink();
   initPageAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();
