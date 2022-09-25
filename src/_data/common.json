@@ -30,11 +30,6 @@
         "link": "https://twitter.com/lizamarleen"
       },
       {
-        "label": "hi@lisamarleen.de",
-        "link": "mailto:hi@lisamarleen.de",
-        "highlighted": true
-      },
-      {
         "label": "Behance",
         "link": "https://medium.com/@lisamarleen"
       },
@@ -46,7 +41,11 @@
         "label": "Stateofthedeep.art",
         "link": "https://stateofthedeep.art/"
       }
-    ]
+    ],
+    "email": {
+      "label": "hi@lisamarleen.de",
+      "link": "mailto:hi@lisamarleen.de"
+    }
   },
   "footer": {
     "copyright": "© Lisa Marleen Mantel 2022",

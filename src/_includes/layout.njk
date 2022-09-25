@@ -120,17 +120,25 @@
               <li class="social-list__item">
                 <a 
                   href={{ socialItem.link }} 
-                  class="social-list__link{% if socialItem.highlighted %} social-list__link--highlighted{% endif %} external-link" 
+                  class="social-list__link external-link" 
                   rel="noopener noreferrer" 
                   target="_blank">
                   {{ socialItem.label }}
-                  {% if socialItem.highlighted %} 
-                    {% include "underline-deco.njk" %}
-                  {% endif %}
                 </a>
               </li>
             {% endfor %}
           </ul>
+          <div class="social-content__email">
+            <a 
+              href={{ common.social.email.link }} 
+              class="social-list__link external-link" 
+              rel="noopener noreferrer" 
+              target="_blank">
+              {{ common.social.email.label }}
+              {% include "underline-deco.njk" %}
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
