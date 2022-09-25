@@ -1,8 +1,8 @@
 .off-the-grid-section__content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .off-the-grid__visual {
-    z-index: 1;
+  z-index: 1;
 }
