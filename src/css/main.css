@@ -204,6 +204,13 @@ nav li a[href^="#"]:hover svg {
   color: var(--color-white);
   font-family: var(--font-copy-bold);
   text-decoration: none;
+  box-shadow: 0 0 #0000, 0 0 #0000, inset 0 -0.05em 0 0 var(--color-highlight);
+}
+
+.formatted-copy a:hover {
+  color: var(--color-white);
+  font-family: var(--font-copy-bold);
+  text-decoration: none;
   box-shadow: 0 0 #0000, 0 0 #0000, inset 0 -0.5em 0 0 var(--color-highlight);
 }
 
