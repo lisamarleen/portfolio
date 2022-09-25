@@ -73,8 +73,8 @@
     />
 
   <style>
-    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-m,16px) 0;border-bottom:1px solid var(--color-grey1,#626262)}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{position:relative;text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m);transition:color var(--hover-default-transiton-duration, 300ms)}.intro-nav li a:hover{color:var(--color-primary,#4961fe)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s .3s ease-in forwards}@media (min-width:768px){.intro-nav li{border:none;padding:var(--spacing-s,8px) 0}}@media (min-width:1280px){.intro-title__line{display:inline;white-space:normal}}
-    .page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-intro__title{font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
+    .intro{position:relative;height:100vh;height:100dvh;display:flex;justify-content:space-between;flex-direction:column;box-sizing:border-box}.intro-nav ul{margin:0;padding:0;list-style-type:none}.intro-nav li{position:relative;display:block;box-sizing:border-box;padding:var(--spacing-m,16px) 0;border-bottom:1px solid var(--color-grey1,#626262);animation:moveInFromYAndFadeIn .7s var(--ease-in-smooth) forwards;animation-delay:calc(var(--animation-delay) * 100ms + 2300ms);opacity:0}.no-js .intro-nav li{opacity:1;animation:none}.intro-nav li:last-child{border-bottom:none}.intro-nav li a{position:relative;text-decoration:none;letter-spacing:.7px;color:var(--color-white,#fff);text-transform:uppercase;font-family:var(--font-headline-bold);font-size:var(--font-size-m);transition:color var(--hover-default-transiton-duration, 300ms)}.intro-nav li a:hover{color:var(--color-primary,#4961fe)}.intro-title{align-self:flex-end;text-align:right;max-width:17ch}.intro-title__line{display:block;white-space:nowrap}.intro__video{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.intro__video--with-fade{opacity:0}.intro__video--with-fade.intro__video--loaded{animation:fadeIn 3s .3s ease-in forwards}@media (min-width:768px){.intro-nav li{border:none;padding:var(--spacing-s,8px) 0}}@media (min-width:1280px){.intro-title__line{display:inline;white-space:normal}}
+    .page-header{font-family:var(--font-headline-bold);font-size:var(--font-size-m, 2rem);text-transform:uppercase;line-height:var(--font-line-height-m, 2rem);position:absolute;top:40px;left:48px;z-index:var(--z-layer-above,10);color:var(--color-white,#fff)}.page-header__home-link{display:none;color:inherit;text-decoration:none}.page-header__home-link{position:relative;display:none}.page-intro{padding:var(--spacing-m,8px);background:var(--color-black,#030110)}.page-intro__title{position:relative;font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right;white-space:nowrap}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2.25rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-header__home-link{display:block;width:160px;height:auto}.page-header__home-link span{transition:opacity .7s var(--ease-in-out-smooth)}.page-header__home-link:hover span{opacity:.3}.page-header__home-link svg{position:absolute;top:12px;left:12px}.page-header__home-link line,.page-header__home-link path,.page-header__home-link polyline{fill:none;stroke:#4961fd;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;opacity:0;stroke-dasharray:1;stroke-dashoffset:1}.page-header__home-link:hover line,.page-header__home-link:hover path,.page-header__home-link:hover polyline{animation:svgStroke .7s var(--ease-out-smooth) forwards}.page-intro__title{top:-4px;font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-header{top:40px}.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
     document.documentElement.classList.remove("no-js");
@@ -88,6 +88,34 @@
 
 <body style="background-color: #030110; margin: 0; padding: 0;">
 
+  <header class="page-header">
+    <a class="page-header__home-link" href="/">
+      <span>  
+      LM
+      </span>
+      <svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.12 44.64">
+        <path pathLength="1" d="M3.42,5.61L1.5,41.36s19.53-3.35,20.99-6.18"/>
+        <path pathLength="1" d="M27.93,11.84s1.06,27.95,3.06,28.67"/>
+        <path pathLength="1" d="M46.44,9.84s-11.16,4.99-11.29,16.03c0,0,1.44-2.62,7.99-3.47s9.43,7.32,7.99,12.2-10.5,6.73-11.27,4.95"/>
+        <path pathLength="1" d="M58.51,38.28l6.79-27.82s5.07,24.62,8.68,28.51"/>
+        <path pathLength="1" d="M58.51,28.66s21.12-3.17,20.99-2.92"/>
+        <path pathLength="1" d="M98.94,41.05s2.18-6.06,2.62-13.39,1.82-20.74,1.63-20.53,9.43,20.25,9.43,20.25l10.3-21.1,.04,35.06"/>
+        <path pathLength="1" d="M129.65,41.81c.25-.35,6.62-23.97,7.98-25.86s2.51,20.9,7.53,24.32"/>
+        <path pathLength="1" d="M146.5,30.93s-9.53,2.08-12.72,1.87"/>
+        <path pathLength="1" d="M156.64,43.14s-2.96-17.28-3.29-21.04,4.73-6.79,10.07-4.35-5.04,7.07-5.04,7.07c0,0,5.03,10.44,15.12,11.7"/>
+        <polyline pathLength="1" points="180.44 12.83 182.39 39.78 196.5 37.34"/>
+        <polyline pathLength="1" points="205 16.34 205 39.75 219.22 37.25"/>
+        <line pathLength="1" x1="220.72" y1="13.08" x2="206.45" y2="18.17"/>
+        <line pathLength="1" x1="216.87" y1="21.83" x2="202.45" y2="26.28"/>
+        <path pathLength="1" d="M226.18,16.56s-1.03,21.45,.87,21.62,12.45-3.85,12.45-3.85"/>
+        <line pathLength="1" x1="240.02" y1="12.45" x2="228.2" y2="17.57"/>
+        <line pathLength="1" x1="236.4" y1="22.13" x2="224.2" y2="27.37"/>
+        <path pathLength="1" d="M246.75,41.34c.25-1-1.67-26.07,.29-30.03s12.79,24.6,12.79,24.6c0,0,6.99-19.26,4.08-34.41"/>
+      </svg>
+      <span class="sr-only">Back to start!</span>
+    </a>
+  </header>
+
   <main>
    
 <section class="page-intro intro" data-page-animation-container>
@@ -100,21 +128,21 @@
     <nav class="page-intro__content intro-nav" data-page-animation-content>
         <ul>
             
-                <li>
+                <li style="--animation-delay:1">
                     <a href=/cases>
                         Selected Cases
                         
                     </a>
                 </li>
             
-                <li>
+                <li style="--animation-delay:2">
                     <a href=/off-the-grid>
                         Off the grid
                         
                     </a>
                 </li>
             
-                <li>
+                <li style="--animation-delay:3">
                     <a href=#about>
                         About
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.37" height="38.987" viewBox="0 0 38.37 38.987">
@@ -180,7 +208,7 @@
         decoding="async">
     </picture>
     </div>
-    <p class="short-bio__copy" data-page-animation-fade-in-view>
+    <p class="short-bio__copy formatted-copy" data-page-animation-fade-in-view>
         I’m passionate about the design and UX of intelligent digital tools since they also shape us in return as we shape them. One of my main objectives is to enable new perspectives with research through design. My multidisciplinary experience derives from 5+ years of working in the field of creative technologies ranging from tangible interfaces, gamified experiences, virtual and augmented realities, interactive exhibitions, facilitating workshops, and teaching university courses. I love working with a diverse group of people and being the glue between the disciplines. It is interesting for me to empathize with new situations repeatedly and develop meaningful experiences in dialogue with all stakeholders.
     </p>
 </section>
@@ -717,7 +745,6 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   LinkedIn
-                  
                 </a>
               </li>
             
@@ -728,7 +755,6 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   Instagram
-                  
                 </a>
               </li>
             
@@ -739,22 +765,6 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   Twitter
-                  
-                </a>
-              </li>
-            
-              <li class="social-list__item">
-                <a 
-                  href=mailto:hi@lisamarleen.de 
-                  class="social-list__link social-list__link--highlighted external-link" 
-                  rel="noopener noreferrer" 
-                  target="_blank">
-                  hi@lisamarleen.de
-                   
-                    <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
-    <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
-</svg>
-                  
                 </a>
               </li>
             
@@ -765,7 +775,6 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   Behance
-                  
                 </a>
               </li>
             
@@ -776,7 +785,6 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   Medium
-                  
                 </a>
               </li>
             
@@ -787,11 +795,23 @@
                   rel="noopener noreferrer" 
                   target="_blank">
                   Stateofthedeep.art
-                  
                 </a>
               </li>
             
           </ul>
+          <div class="social-content__email">
+            <a 
+              href=mailto:hi@lisamarleen.de 
+              class="social-list__link external-link" 
+              rel="noopener noreferrer" 
+              target="_blank">
+              hi@lisamarleen.de
+              <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
+    <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
+</svg>
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
