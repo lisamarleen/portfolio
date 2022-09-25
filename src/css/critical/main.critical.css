@@ -36,7 +36,7 @@
 
 .page-intro__subtitle {
     font-family: var(--font-headline-bold);
-    font-size: var(--font-size-m 2rem);
+    font-size: var(--font-size-l, 2.25rem);
     text-transform: uppercase;
     line-height: var(--font-line-height-l, 2.25rem);
     text-align: right;
