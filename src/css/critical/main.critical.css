@@ -82,14 +82,6 @@
     height: auto;
   }
 
-  .page-header__home-link span {
-    transition: opacity 700ms var(--ease-in-out-smooth);
-  }
-
-  .page-header__home-link:hover span {
-    opacity: 0.3;
-  }
-
   .page-header__home-link svg {
     position: absolute;
     top: 12px;
