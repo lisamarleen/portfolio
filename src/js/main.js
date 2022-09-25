@@ -290,7 +290,7 @@ function initHomeLink() {
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
-  initHomeLink();
+  // initHomeLink();
   initPageAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();
