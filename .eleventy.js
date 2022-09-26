@@ -35,12 +35,16 @@ function imageFileName({ src, id, format }) {
 }
 
 async function lazyVideo(filename, srcTypes = ["webm"], width, height) {
+  const sources = srcTypes
+    .map(
+      (srcType) =>
+        `<source data-src="${filename}.${srcType}" type="video/${srcType}">`
+    )
+    .join("");
+
   return `
   <video autoplay muted loop playsinline width="${width}" height="${height}">
-  ${srcTypes.map(
-    (srcType) =>
-      `<source data-src="${filename}.${srcType}" type="video/${srcType}">`
-  )}
+  ${sources}
 </video>
     `;
 }
