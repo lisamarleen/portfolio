@@ -10,7 +10,6 @@
   gap: var(--spacing-l);
   padding: var(--spacing-m) 0;
   background-color: var(--color-black);
-  
   --scroll-progress: 0;
 }
 
@@ -122,11 +121,9 @@
   }
 }
 
-
 @media (min-width: 1280px) {
   .short-bio-title {
     font-size: 130px;
     line-height: 130px;
   }
-
 }
