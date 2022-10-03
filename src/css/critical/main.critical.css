@@ -4,8 +4,8 @@
   text-transform: uppercase;
   line-height: var(--font-line-height-m, 2rem);
   position: absolute;
-  top: 40px;
-  left: 48px;
+  top: var(--spacing-m);
+  left: var(--spacing-m);
   z-index: var(--z-layer-above, 10);
   color: var(--color-white, #fff);
 }
@@ -22,7 +22,7 @@
 }
 
 .page-intro {
-  padding: var(--spacing-m, 8px);
+  padding: var(--spacing-m, 16px);
   background: var(--color-black, #030110);
 }
 
@@ -88,7 +88,9 @@
     left: 12px;
   }
 
-  .page-header__home-link path, .page-header__home-link line, .page-header__home-link polyline {
+  .page-header__home-link path,
+  .page-header__home-link line,
+  .page-header__home-link polyline {
     fill: none;
     stroke: #4961fd;
     stroke-linecap: round;
@@ -99,7 +101,9 @@
     stroke-dashoffset: 1;
   }
 
-  .page-header__home-link:hover path, .page-header__home-link:hover line, .page-header__home-link:hover polyline {
+  .page-header__home-link:hover path,
+  .page-header__home-link:hover line,
+  .page-header__home-link:hover polyline {
     animation: svgStroke 700ms var(--ease-out-smooth) forwards;
   }
 
@@ -119,6 +123,7 @@
 @media (min-width: 1280px) {
   .page-header {
     top: 40px;
+    left: 48px;
   }
 
   .page-intro__title {
