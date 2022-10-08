@@ -2,7 +2,7 @@
 layout: layout.njk
 pageId: offthegrid
 pageTitle: "Lisa Marleen — Off the Grid"
-pageDescription: "Hello"
+pageDescription: "Visual playground of fun side projects"
 ---
 
 <div class="page-intro" data-page-animation-container>
@@ -13,8 +13,8 @@ pageDescription: "Hello"
 <section class="page-content off-the-grid-section">
     <div class="off-the-grid-section__content content-wrapper content-wrapper--small">
         {% for visual in offthegrid.items %}
-            <div 
-                class="off-the-grid__visual visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}" 
+            <div
+                class="off-the-grid__visual visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}"
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="{{ 'lazy-video' if visual.srcType === 'video' else 'image' }}"
                 style="--placeholder-color:{{ visual.placeholderColor | default('var(--color-grey1)') }}; --aspect-ratio:{{ visual.width | int | default(16)  }} / {{ visual.height | int | default(9) }}">
