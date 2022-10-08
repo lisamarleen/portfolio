@@ -200,6 +200,11 @@ nav li a[href^="#"]:hover svg {
   line-height: var(--font-line-height-xs);
 }
 
+.formatted-copy h2 {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-s);
+}
+
 .formatted-copy a {
   color: var(--color-white);
   font-family: var(--font-copy-bold);
