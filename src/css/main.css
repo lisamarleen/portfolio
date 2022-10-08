@@ -122,12 +122,12 @@ nav li a[href^="#"] {
 }
 
 nav li a[href^="#"] svg {
-  transform: rotate(122deg);
   top: 4px;
   position: absolute;
   right: -32px;
   width: 32px;
   height: 32px;
+  fill: var(--color-highlight);
   opacity: 0;
   transition: opacity var(--hover-default-transiton-duration)
     var(--ease-in-smooth);
