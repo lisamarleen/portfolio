@@ -16,6 +16,14 @@
   opacity: 1;
 }
 
+[data-page-animation-scroll-text-reveal] .word {
+    opacity: 0.1;
+}
+
+.no-js [data-page-animation-scroll-text-reveal] .word {
+    opacity: 1;
+}
+
 @keyframes svgStroke {
   0% {
     opacity: 0;

@@ -1,4 +1,11 @@
-import { animate, inView, scroll, stagger, timeline } from "motion";
+import {
+  animate,
+  inView,
+  scroll,
+  ScrollOffset,
+  stagger,
+  timeline,
+} from "motion";
 import Splitting from "splitting";
 
 function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
@@ -151,7 +158,7 @@ function intiScrollProgressAnimations() {
       },
       {
         target: container,
-        offset: ["center end", "end end"],
+        offset: ScrollOffset.Enter,
       }
     );
   });
@@ -171,6 +178,49 @@ function initFadeInViewAnimations() {
         animate(info.target, { opacity: [0, 1] }, { duration: 2 });
       },
       { amount }
+    );
+  });
+}
+
+function initScrollTextRevealAnimations() {
+  const allAnimations = Array.from(
+    document.querySelectorAll("[data-page-animation-scroll-text-reveal]")
+  );
+
+  Array.from(allAnimations).map((text) => {
+    const [splittedText] = Splitting({ target: text, by: "words" });
+    const scrollContainerSelector = text.getAttribute("data-scroll-container");
+    const container = scrollContainerSelector
+      ? document.querySelector(scrollContainerSelector)
+      : text;
+
+    const singleWordThreshold = Math.round(100 / splittedText.words.length);
+    const scrollThresholds = splittedText.words.map(
+      (_, index) => index * singleWordThreshold
+    );
+
+    const onScrollUpdate = observe(scrollThresholds, (index) => {
+      if (index > 0) {
+        const matching = splittedText.words.slice(0, index + 1);
+        animate(
+          matching,
+          {
+            opacity: 1,
+          },
+          { duration: 1 }
+        );
+      }
+    });
+
+    scroll(
+      ({ y }) => {
+        const progressPercentage = Math.round(y.progress * 100);
+        onScrollUpdate(progressPercentage);
+      },
+      {
+        target: container,
+        offset: ["start end", "end end"],
+      }
     );
   });
 }
@@ -268,8 +318,31 @@ function initLazyVideo(videoElem) {
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initPageAnimations();
+  initScrollTextRevealAnimations();
   intiScrollProgressAnimations();
   initFadeInViewAnimations();
   initCustomClassAnimations();
   initImageAnimations();
 });
+
+/// HELPER
+function observe(values, onMatching) {
+  let unobserve = [];
+
+  return (value) => {
+    const isMatchingIndex = values.indexOf(value);
+
+    if (
+      value > values[values.length - 1] &&
+      !unobserve.includes(values.length - 1)
+    ) {
+      onMatching(values.length - 1);
+      unobserve = [...values.map((_, index) => index), values.length - 1];
+    }
+
+    if (~isMatchingIndex && !unobserve.includes(isMatchingIndex)) {
+      onMatching(isMatchingIndex);
+      unobserve = values.slice(0, isMatchingIndex + 1).map((_, index) => index);
+    }
+  };
+}
