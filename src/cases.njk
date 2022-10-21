@@ -12,11 +12,15 @@ pageDescription: "My experience derives from 7+ years of working in the field of
     <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
         <li class="tabs-list__item">
             <a class="tabs-list__link" href="#independent">{{ cases.tabs.leftTitle }}</a>
-            {% include "underline-deco.njk" %}
+            <span class="tabs-list__hover-highlight tabs-list__hover-highlight--underline">
+                {% include "underline-deco.njk" %}
+            </span>
         </li>
         <li class="tabs-list__item">
             <a class="tabs-list__link" href="#incommision">{{ cases.tabs.rightTitle }}</a>
-            {% include "underline-deco.njk" %}
+            <span class="tabs-list__hover-highlight tabs-list__hover-highlight--underline">
+                {% include "underline-deco.njk" %}
+            </span>
         </li>
     </ul>
     <section class="tabs-panel" id="independent">
@@ -140,13 +144,11 @@ pageDescription: "My experience derives from 7+ years of working in the field of
         </p>
     </a>
     <ul class="case-archive-teaser__list">
-    {% for archiveItem in archive.items %}
-        {% if archiveItem.includeInTeaser %}
-            {% set computedSrc = "./src/assets/images/archive/" + archiveItem.src %}
-            <li class="case-archive-teaser__list-item" style="--position: {{ loop.index - 3 }};">
-                {%  imageWithDetail computedSrc, archiveItem.alt, "(min-width: 768px) 50vw, 100vw" %}
-            </li>
-        {% endif %}
+    {% for archiveItem in archive.teaser %}
+        {% set computedSrc = "./src/assets/images/archive/" + archiveItem %}
+        <li class="case-archive-teaser__list-item" style="--position: {{ loop.index - 3 }};">
+            {%  imageWithDetail computedSrc, archiveItem.alt, "(min-width: 768px) 50vw, 100vw" %}
+        </li>
     {% endfor %}
     </ul>
 </section>

@@ -2,27 +2,47 @@
   background-color: var(--color-black);
 }
 
-.tabs-list__link + svg {
+.tabs-list__hover-highlight {
   display: none;
   position: absolute;
-  width: 180px;
-  height: auto;
-  transform: translate(-16px, -8px);
+  pointer-events: none;
 }
 
-.tabs-list__link + svg path {
+.tabs-list__link[aria-selected] + .tabs-list__hover-highlight,
+.tabs-list__link:hover + .tabs-list__hover-highlight {
+  display: block;
+}
+
+.tabs-list__hover-highlight svg path {
   opacity: 0;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
 }
 
-.tabs-list__link[aria-selected] + svg,
-.tabs-list__link:hover + svg {
-  display: block;
+.tabs-list__hover-highlight.tabs-list__hover-highlight--underline svg {
+  width: 180px;
+  height: auto;
+  transform: translate(-16px, -8px);
 }
 
-.tabs-list__link[aria-selected] + svg path,
-.tabs-list__link:hover + svg path {
+.tabs-list__hover-highlight.tabs-list__hover-highlight--circle {
+  top: -24px;
+  left: -10px;
+}
+
+.tabs-list__hover-highlight.tabs-list__hover-highlight--circle svg {
+  width: 60px;
+  height: auto;
+}
+
+.tabs-list__hover-highlight.tabs-list__hover-highlight--circle svg path {
+  fill: none;
+  stroke: var(--color-highlight);
+  stroke-width: 3px;
+}
+
+.tabs-list__link[aria-selected] + .tabs-list__hover-highlight svg path,
+.tabs-list__link:hover + .tabs-list__hover-highlight svg path {
   animation: svgStroke 700ms var(--ease-out-smooth) forwards;
 }
 
@@ -42,6 +62,7 @@
 }
 
 .tabs-list__item {
+  position: relative;
   text-transform: uppercase;
 }
 
@@ -61,7 +82,7 @@
 @media (min-width: 768px) {
   .tabs-list {
     justify-content: flex-end;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-l);
   }
 
   .tabs-list.tabs-list--sticky {
