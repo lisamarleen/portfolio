@@ -5,27 +5,57 @@
     {
       "src": "test.png",
       "includeInTeaser": true,
-      "alt": "Some alt text"
+      "client": "Cool client",
+      "tags": ["tag1", "tag2", "tag3"],
+      "year": "2015",
+      "link": {
+        "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+        "label": "Case Study"
+      }
     },
     {
       "src": "test.png",
       "includeInTeaser": true,
-      "alt": "Some alt text"
+      "client": "Cool client",
+      "tags": ["tag1", "tag2", "tag3"],
+      "year": "2015",
+      "link": {
+        "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+        "label": "Case Study"
+      }
     },
     {
       "src": "test.png",
       "includeInTeaser": true,
-      "alt": "Some alt text"
+      "client": "Cool client",
+      "tags": ["tag1", "tag2", "tag3"],
+      "year": "2015",
+      "link": {
+        "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+        "label": "Case Study"
+      }
     },
     {
       "src": "test.png",
       "includeInTeaser": true,
-      "alt": "Some alt text"
+      "client": "Cool client",
+      "tags": ["tag1", "tag2", "tag3"],
+      "year": "2015",
+      "link": {
+        "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+        "label": "Case Study"
+      }
     },
     {
       "src": "test.png",
       "includeInTeaser": true,
-      "alt": "Some alt text"
+      "client": "Cool client",
+      "tags": ["tag1", "tag2", "tag3"],
+      "year": "2015",
+      "link": {
+        "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+        "label": "Case Study"
+      }
     }
   ]
 }

@@ -1,0 +1,46 @@
+---
+layout: layout.njk
+pageId: archive
+pageTitle: "Lisa Marleen — Archive"
+---
+
+<div class="page-intro" data-page-animation-container>
+    <h1 class="page-intro__title" data-page-animation-title>Case <br/> Archive</h1>
+</div>
+
+<section class="page-content">
+    <div class="content-wrapper">
+    {% for archiveItem in archive.items %}
+        <div class="case-archive-item" data-page-animation-fade-in-view>
+            <div class="case-archive-item__image">
+                {% set computedSrc = "./src/assets/images/archive/" + archiveItem.src %}
+                {%  imageWithDetail computedSrc, archiveItem.alt, "(min-width: 768px) 50vw, 100vw" %}
+            </div>
+            <div class="case-archive-item__content">
+                <h2 class="case-archive-item-title">Title</h2>
+                <div class="case-archive-item-link">
+                    <a class="external-link" href={{ archiveItem.link.link }} rel="noopener noreferrer" target="_blank">
+                        {{ archiveItem.link.label }}
+                        {% include "icon-link.njk" %}
+                    </a>
+                </div>
+                <p class="case-archive-item-meta">{{ archiveItem.client }}</p>
+                <p class="case-archive-item-meta">{{ archiveItem.tags.join(", ") }}</p>
+                <p class="case-archive-item-meta"><b>{{ archiveItem.year }}</b></p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</section>
+
+<nav class="exit-nav">
+    <div class="content-wrapper">
+        <ul class="exit-nav-list" data-page-animation-fade-in-view>
+        {% for navigationItem in common.navigation %}
+            <li class="exit-nav-list__item">
+                <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</nav>
