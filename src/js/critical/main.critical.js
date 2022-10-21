@@ -44,7 +44,12 @@ function initTab() {
     e.preventDefault();
 
     let currentTab = tablist.querySelector("[aria-selected]");
-    let newTab = tablist.querySelector("[tabindex]");
+    let newTab = tablist.querySelector(
+      `[href$="${window.location.hash.substring(
+        1,
+        window.location.hash.length
+      )}"]`
+    );
 
     if (newTab !== currentTab) {
       switchTab(currentTab, newTab);
