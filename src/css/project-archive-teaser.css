@@ -1,0 +1,96 @@
+.project-archive-teaser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  row-gap: var(--spacing-m);
+  position: relative;
+  padding: var(--spacing-xxl) var(--spacing-m);
+  background-color: var(--color-dark-blue);
+  --x-rotation-strength: 0.6;
+  --x-offset-strength: 0.3;
+  --y-offset-strength: 0.5;
+}
+
+.project-archive-teaser__content {
+  display: flex;
+  gap: var(--spacing-s);
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.project-archive-teaser-title {
+  text-transform: uppercase;
+  font-size: var(--font-size-xxl);
+  line-height: var(--font-line-height-xxl);
+  font-family: var(--font-headline-bold);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.project-archive-teaser-subtitle {
+  text-transform: uppercase;
+  font-family: var(--font-headline-bold);
+  font-size: var(--font-size-l);
+  line-height: var(--font-line-height-l);
+}
+
+.project-archive-teaser-subtitle svg path {
+    opacity: 0;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.project-archive-teaser--in-view .project-archive-teaser-subtitle svg path {
+    animation: svgStroke 700ms 300ms var(--ease-out-smooth) forwards;
+}
+
+.project-archive-teaser-subtitle.project-archive-teaser-subtitle--last {
+  justify-self: flex-end;
+}
+
+.project-archive-teaser__list {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-archive-teaser__list-item {
+  position: relative;
+  flex: 1;
+  transform: translateY(calc(var(--y-offset-strength) * 10% * var(--position)))
+    translateX(calc(-100% * var(--x-offset-strength) * var(--position)))
+    rotateZ(calc(10deg * var(--x-rotation-strength) * var(--position)));
+  transform-origin: center center;
+  transition: transform 300ms ease-out;
+  pointer-events: none;
+}
+
+.project-archive-teaser img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 768px) {
+  .project-archive-teaser {
+    padding: 128px 0;
+    --x-rotation-strength: 0.5;
+    --x-offset-strength: 1;
+    --y-offset-strength: 0.5;
+  }
+
+  .project-archive-teaser__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    position: absolute;
+    width: auto;
+  }
+}

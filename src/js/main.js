@@ -146,7 +146,7 @@ function initPageAnimations() {
   timeline(sequence);
 }
 
-function intiScrollProgressAnimations() {
+function initScrollProgressAnimations() {
   const scrollProgressContainer = document.querySelectorAll(
     "[data-page-animation-scroll-progress]"
   );
@@ -161,6 +161,28 @@ function intiScrollProgressAnimations() {
         offset: ScrollOffset.Enter,
       }
     );
+  });
+}
+
+function initMousemoveStrength() {
+  const allAnimations = document.querySelectorAll(
+    "[data-page-animation-mousemove-strength]"
+  );
+
+  Array.from(allAnimations).map((container) => {
+    const targetClientRect = container.getBoundingClientRect();
+
+    container.addEventListener("mousemove", (event) => {
+      const normalizedX = (event.offsetX / targetClientRect.width) * 2 - 1;
+      const normalizedY = (event.offsetY / targetClientRect.height) * 2 - 1;
+      container.style.setProperty("--x-offset-strength", 1 - normalizedX / 20);
+      container.style.setProperty("--y-offset-strength", 1 - normalizedY / 50);
+    });
+
+    container.addEventListener("mouseleave", () => {
+      container.style.setProperty("--x-offset-strength", 1);
+      container.style.setProperty("--y-offset-strength", 0.5);
+    });
   });
 }
 
@@ -236,7 +258,6 @@ function initCustomClassAnimations() {
     );
 
     container.classList.add(`${baseCls}--not-in-view`);
-
     inView(
       container,
       (info) => {
@@ -319,7 +340,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initPageAnimations();
   initScrollTextRevealAnimations();
-  intiScrollProgressAnimations();
+  initScrollProgressAnimations();
+  initMousemoveStrength();
   initFadeInViewAnimations();
   initCustomClassAnimations();
   initImageAnimations();
@@ -345,4 +367,8 @@ function observe(values, onMatching) {
       unobserve = values.slice(0, isMatchingIndex + 1).map((_, index) => index);
     }
   };
+}
+
+function clampNumber(num, a, b) {
+  Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));
 }

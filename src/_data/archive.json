@@ -1,0 +1,31 @@
+{
+  "title": "Project Archive",
+  "startYear": "2015",
+  "items": [
+    {
+      "src": "test.png",
+      "includeInTeaser": true,
+      "alt": "Some alt text"
+    },
+    {
+      "src": "test.png",
+      "includeInTeaser": true,
+      "alt": "Some alt text"
+    },
+    {
+      "src": "test.png",
+      "includeInTeaser": true,
+      "alt": "Some alt text"
+    },
+    {
+      "src": "test.png",
+      "includeInTeaser": true,
+      "alt": "Some alt text"
+    },
+    {
+      "src": "test.png",
+      "includeInTeaser": true,
+      "alt": "Some alt text"
+    }
+  ]
+}
