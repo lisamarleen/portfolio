@@ -10,10 +10,10 @@ pageTitle: "Lisa Marleen – Archive"
 
 <div class="tabs">
     <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
-        {% for year, archiveItemByYear in archive.itemsByYear %}
+        {% for archiveItemByYear in archive.itemsByYear %}
         <li class="tabs-list__item">
-            <a class="tabs-list__link" href="#{{ year }}">
-                {% if loop.index0 %}{{ "/" + year.substr(2,4) }}{% else %}{{ year }}{% endif %}
+            <a class="tabs-list__link" href="#{{ archiveItemByYear.year }}">
+                {% if loop.index0 %}{{ "/" + archiveItemByYear.year.substr(2,4) }}{% else %}{{ archiveItemByYear.year }}{% endif %}
             </a>
             <span class="tabs-list__hover-highlight tabs-list__hover-highlight--circle">
                 {% include "small-circle-highlight.njk" %}
@@ -21,8 +21,8 @@ pageTitle: "Lisa Marleen – Archive"
         </li>
         {% endfor %}
     </ul>
-    {% for year, archiveItemByYear in archive.itemsByYear %}
-    <section class="tabs-panel" id="{{ year }}">
+    {% for archiveItemByYear in archive.itemsByYear %}
+    <section class="tabs-panel" id="{{ archiveItemByYear.year }}">
         <div class="content-wrapper">
         {% for archiveItem in archiveItemByYear.items %}
             <div class="case-archive-item" data-page-animation-fade-in-view>
@@ -41,7 +41,7 @@ pageTitle: "Lisa Marleen – Archive"
                     </div>
                     <p class="case-archive-item-meta">{{ archiveItem.client }}</p>
                     <p class="case-archive-item-meta">{{ archiveItem.tags.join(", ") }}</p>
-                    <p class="case-archive-item-meta"><b>{{ year }}</b></p>
+                    <p class="case-archive-item-meta"><b>{{ archiveItemByYear.year }}</b></p>
                 </div>
             </div>
         {% endfor %}

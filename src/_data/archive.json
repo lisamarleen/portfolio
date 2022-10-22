@@ -1,8 +1,9 @@
 {
   "title": "Project Archive",
   "teaser": ["test.png", "test.png", "test.png", "test.png", "test.png"],
-  "itemsByYear": {
-    "2022": {
+  "itemsByYear": [
+    {
+      "year": "2022",
       "items": [
         {
           "src": "test.png",
@@ -26,7 +27,8 @@
         }
       ]
     },
-    "2021": {
+    {
+      "year": "2021",
       "items": [
         {
           "src": "test.png",
@@ -50,7 +52,8 @@
         }
       ]
     },
-    "2020": {
+    {
+      "year": "2020",
       "items": [
         {
           "src": "test.png",
@@ -74,7 +77,8 @@
         }
       ]
     },
-    "2019": {
+    {
+      "year": "2019",
       "items": [
         {
           "src": "test.png",
@@ -98,7 +102,8 @@
         }
       ]
     },
-    "2018": {
+    {
+      "year": "2018",
       "items": [
         {
           "src": "test.png",
@@ -122,7 +127,8 @@
         }
       ]
     },
-    "2017": {
+    {
+      "year": "2017",
       "items": [
         {
           "src": "test.png",
@@ -146,7 +152,8 @@
         }
       ]
     },
-    "2016": {
+    {
+      "year": "2016",
       "items": [
         {
           "src": "test.png",
@@ -170,5 +177,5 @@
         }
       ]
     }
-  }
+  ]
 }
