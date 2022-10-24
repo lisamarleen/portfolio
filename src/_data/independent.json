@@ -108,7 +108,7 @@
       ],
       "links": [
         {
-          "link": "https://vimeo.com/682432232",
+          "link": "https://stateofthedeep.art/",
           "label": "Curated collection"
         },
         {
@@ -119,7 +119,7 @@
     },
     {
       "id": "breathingsoftspace",
-      "title": "Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;",
+      "title": "Breath<br />ing soft<br />space &nbsp;",
       "description": "<p><b>Breathing Softspace adapts to the visitors’ behavior through shapes, lights, and sounds.</b><p></p>The interactive installation was a team effort with <b>textile artist <a href='http://marieschumann.de/' rel='noopener noreferrer' target='_blank'>Marie Schumann</a></b> and <b>creative technologist <a href='https://matthiasrosenthal.de/blog_2017/' rel='noopener noreferrer' target='_blank'>Matthias Rosenthal</a></b> and creates a space to discover dimensionality, movement, and the play of material of woven textiles. Loose threads add dimension to the textile while motion enhances the optical volume and gives the textile the ability to grow and shrink and, due to that, change the space around them.</p><p><b>Shy or bold? Near or far?</b> The user interaction is subdivided by six states mirroring the visitors behavior. Nine electronic winches fixed to the ceiling controlled the textile dynamically via a DMX interface. Moreover, LED lights and a fan were connected to the DMX network. A Unity-3D application simulates the room, the textile, and the connected hardware, such as light colors and sound, on the PC in real-time.</p>",
       "images": [
         {

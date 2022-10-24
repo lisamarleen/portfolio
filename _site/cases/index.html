@@ -77,10 +77,9 @@
     .page-header{font-family:var(--font-headline-bold);font-size:var(--font-size-m, 2rem);text-transform:uppercase;line-height:var(--font-line-height-m, 2rem);position:absolute;top:var(--spacing-m);left:var(--spacing-m);z-index:var(--z-layer-above,10);color:var(--color-white,#fff)}.page-header__home-link{display:none;color:inherit;text-decoration:none}.page-header__home-link{position:relative;display:none}.page-intro{padding:var(--spacing-m,16px);background:var(--color-black,#030110)}.page-intro__title{position:relative;font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right;white-space:nowrap}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2.25rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-header__home-link{display:block;width:160px;height:auto}.page-header__home-link svg{position:absolute;top:12px;left:12px}.page-header__home-link line,.page-header__home-link path,.page-header__home-link polyline{fill:none;stroke:#4961fd;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;opacity:0;stroke-dasharray:1;stroke-dashoffset:1}.page-header__home-link:hover line,.page-header__home-link:hover path,.page-header__home-link:hover polyline{animation:svgStroke .7s var(--ease-out-smooth) forwards}.page-intro__title{top:-4px;font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-header{top:40px;left:48px}.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
-    document.documentElement.classList.remove("no-js");
+    document.documentElement.classList.remove("no-js"),document.addEventListener("DOMContentLoaded",()=>{document.querySelector(".tabs")&&initTab()});function initTab(){const d=document.querySelector(".tabs"),n=d.querySelector("ul"),i=n.querySelectorAll("a"),a=d.querySelectorAll(".tabs-panel"),c=window.location.hash?Array.from(i).findIndex(t=>t.getAttribute("href")===window.location.hash):0,s=(t,r)=>{r.focus(),r.removeAttribute("tabindex"),r.setAttribute("aria-selected","true"),t.removeAttribute("aria-selected"),t.setAttribute("tabindex","-1");let e=Array.prototype.indexOf.call(i,r),o=Array.prototype.indexOf.call(i,t);a[o].hidden=!0,a[e].hidden=!1,window.scrollTo({top:r.offsetTop,left:0,behavior:"smooth"})};window.addEventListener("hashchange",t=>{t.preventDefault();let r=n.querySelector("[aria-selected]"),e=n.querySelector(`[href$="${window.location.hash.substring(1,window.location.hash.length)}"]`);e!==r&&s(r,e)}),n.setAttribute("role","tablist"),Array.prototype.forEach.call(i,(t,r)=>{t.setAttribute("role","tab"),t.setAttribute("id","tab"+(r+1)),t.setAttribute("tabindex","-1"),t.parentNode.setAttribute("role","presentation"),t.addEventListener("click",e=>{e.preventDefault();let o=n.querySelector("[aria-selected]");e.currentTarget!==o&&(window.location.hash=e.currentTarget.getAttribute("href"))}),t.addEventListener("keydown",e=>{let o=Array.prototype.indexOf.call(i,e.currentTarget),l=e.which===37?o-1:e.which===39?o+1:e.which===40?"down":null;l!==null&&(e.preventDefault(),l==="down"?a[r].focus():i[l]&&s(e.currentTarget,i[l]))})}),Array.prototype.forEach.call(a,(t,r)=>{t.setAttribute("role","tabpanel"),t.setAttribute("tabindex","-1");let e=t.getAttribute("id");t.setAttribute("aria-labelledby",i[r].id),t.hidden=!0}),i[c].removeAttribute("tabindex"),i[c].setAttribute("aria-selected","true"),a[c].hidden=!1}
 
-    document.addEventListener("DOMContentLoaded",()=>{initTab()});function initTab(){const c=document.querySelector(".tabs"),n=c.querySelector("ul"),i=n.querySelectorAll("a"),a=c.querySelectorAll(".tabs-panel"),d=window.location.hash?Array.from(i).findIndex(t=>t.getAttribute("href")===window.location.hash):0,s=(t,r)=>{r.focus(),r.removeAttribute("tabindex"),r.setAttribute("aria-selected","true"),t.removeAttribute("aria-selected"),t.setAttribute("tabindex","-1");let e=Array.prototype.indexOf.call(i,r),o=Array.prototype.indexOf.call(i,t);a[o].hidden=!0,a[e].hidden=!1,window.scrollTo({top:r.offsetTop,left:0,behavior:"smooth"})};window.addEventListener("hashchange",t=>{t.preventDefault();let r=n.querySelector("[aria-selected]"),e=n.querySelector("[tabindex]");e!==r&&s(r,e)}),n.setAttribute("role","tablist"),Array.prototype.forEach.call(i,(t,r)=>{t.setAttribute("role","tab"),t.setAttribute("id","tab"+(r+1)),t.setAttribute("tabindex","-1"),t.parentNode.setAttribute("role","presentation"),t.addEventListener("click",e=>{e.preventDefault();let o=n.querySelector("[aria-selected]");e.currentTarget!==o&&(window.location.hash=e.currentTarget.getAttribute("href"))}),t.addEventListener("keydown",e=>{let o=Array.prototype.indexOf.call(i,e.currentTarget),l=e.which===37?o-1:e.which===39?o+1:e.which===40?"down":null;l!==null&&(e.preventDefault(),l==="down"?a[r].focus():i[l]&&s(e.currentTarget,i[l]))})}),Array.prototype.forEach.call(a,(t,r)=>{t.setAttribute("role","tabpanel"),t.setAttribute("tabindex","-1");let e=t.getAttribute("id");t.setAttribute("aria-labelledby",i[r].id),t.hidden=!0}),i[d].removeAttribute("tabindex"),i[d].setAttribute("aria-selected","true"),a[d].hidden=!1}
-
+    
   </script>
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/main.js" defer></script>
@@ -125,15 +124,19 @@
     <ul class="tabs-list tabs-list--sticky" data-page-animation-content>
         <li class="tabs-list__item">
             <a class="tabs-list__link" href="#independent">Independent</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
+            <span class="tabs-list__hover-highlight tabs-list__hover-highlight--underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
     <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
 </svg>
+            </span>
         </li>
         <li class="tabs-list__item">
             <a class="tabs-list__link" href="#incommision">In Commision</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
+            <span class="tabs-list__hover-highlight tabs-list__hover-highlight--underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="295" height="23.1587" viewBox="0 0 295 23.1587">
     <path style="stroke: var(--color-highlight); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; fill: none;" pathLength="1" d="M1.5,8.1667s5.3333-3,12.6667-2.6667,22.3333,8,28.6667,7.3333c6.3333-.6667,20.6667-4,28.3333-4.3333s27.6667,1.6667,34.3333,1c6.6667-.6667,20-2.3333,24-2.3333s15.6667,2.3333,28.6667,.6667S207.5,1.5,233.8333,1.5s59.6667,5,59.6667,5c0,0-22.3333,3-35.3333,3.3333-13,.3333-31,.3333-31,.3333l10.6667-2s-37,1-53,1.6667c-16,.6667-41.3333,1.6667-41.3333,1.6667,0,0,18.6667-2.3333,19.6667-3s-19,0-25.6667,1c-6.6667,1-20.6667,1.6667-33.3333,3.6667-12.6667,2-35.6667,5.3333-35.6667,5.3333,0,0-2.3333,0,.6667-2.3333s13-6.3333,13-6.3333c0,0-28.6667,6-36.3333,7.3333-7.6667,1.3333-19.3333,5.3333-21.6667,4.3333s.6667-6.3333-3-8.3333-7.3333-1-11.6667,2"/>
 </svg>
+            </span>
         </li>
     </ul>
     <section class="tabs-panel" id="independent">
@@ -252,7 +255,7 @@
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Bor<br />rowed &nbsp;<br /> limbs</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>This is my most recent project with focus on designing in collaboration with AI. It was part of my Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a>, faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>Cologne University of Applied Science</a>, and created and published February 2022 as a team effort together with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a>.</b><br /></p><p>The work was produced by integrating different generative Machine Learning techniques into a coherent narrative and visual language. Main part of the film was produced with a machine-learning-backed process called <b>“CLIP guided diffusion”</b>. This method enables image synthesis based on language prompts. Prompts are carefully refined in a human-machine communication loop. The work resulted in a <b>modular design pipeline for controlled image synthesis</b> using AI tools to generate, interpolate and upscale moving images to communicate speculative concepts. A detailed documentation can be found in our research paper which is an excerpt from our master thesis with the Title “Synthesising Meaning”.<br /></p><p>“Borrowed Limbs” was showcased this year at <a href='https://ars.electronica.art/planetb/en/welcome-to-planetb/' rel='noopener noreferrer' target='_blank'>Ars Electronica</a>, <a href='https://site.gardening.nu/en/event/gardening' rel='noopener noreferrer' target='_blank'>GARDENING Amelisweerd exhibition</a> in Utrecht, Re:publica 2022 and featured in the <a href='https://page-online.de/branche-karriere/ki-bei-bewusstsein/' rel='noopener noreferrer' target='_blank'>PAGE magazine in July</a>. It will be screening at Ars Electronica Festival in Linz in September and the Animation Festival on Tour as well as shown at the Museum of Applied Arts Cologne in the context of the Cologne Design Prize in November.</p></div>
+                            <div class="formatted-copy"><p><b>This is my most recent project with focus on designing in collaboration with AI. It was part of my Master Research at <a href='https://kisd.de/projects/borrowed-limbs-short-film/' rel='noopener noreferrer' target='_blank'>KISD</a>, faculty of <a href='https://www.th-koeln.de/en/homepage_26.php' rel='noopener noreferrer' target='_blank'>Cologne University of Applied Science</a>, and created and published February 2022 as a team effort together with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a>.</b><br /></p><p>In times of ubiquitous computing, artificial intelligence, and virtual humans, it seems like an obvious next step for techno-optimists to see their chance for immortality in technological advancements. These future narratives are almost exclusively based on cartesian notions of disembodied intelligence. Influenced by <b>posthuman theorists</b>, such as Rosi Braidotti, Donna Haraway, and Katherine Hayles, transhumanist approaches that envision the human body enhanced and augmented with machine parts are not only questioned but appropriated and inverted.</p><p> The short film “Borrowed Limbs” aims to emphasize the mediating role <b>speculative design</b> has in the face of disruptive technological advancements, as it allows for the exploration and simulation of ethical issues and provokes discussion about current developments and how they will influence our future way of life. The theoretical work results in a short film created with a designerly appropriation of AI tools. The suggested production pipeline, developed in the process, uses a myriad of AI tools. The main part of the footage was produced with a novel machine-learning-backed process called <b>“CLIP guided diffusion”</b> that allows for image synthetization based on language prompts that are carefully refined in a human-machine loop of communication. In a way, the practical processes involved in making the film reflect on the speculative ideas conveyed in it: the protagonist is an AI that utilizes a human body to gain an embodied understanding of its environment, a result of consequent machine-human hybridization – a posthuman being.<br /></p><p>“Borrowed Limbs” was screening this year at <a href='https://ars.electronica.art/planetb/en/welcome-to-planetb/' rel='noopener noreferrer' target='_blank'>Ars Electronica Festival</a> in Linz, <a href='https://site.gardening.nu/en/event/gardening' rel='noopener noreferrer' target='_blank'>GARDENING Amelisweerd exhibition</a> in Utrecht, <a href='https://www.bethanien.de/en/exhibitions/borrowed-limbs/' rel='noopener noreferrer' target='_blank'>Phantom Horizon Series</a> at Künstlerhaus Bethanien in Berlin and featured in the <a href='https://page-online.de/branche-karriere/ki-bei-bewusstsein/' rel='noopener noreferrer' target='_blank'>PAGE magazine in July</a>.</p></div>
                             <div class="case-links">
                                 
                                     <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
@@ -431,10 +434,10 @@
                         
                         <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
-                            <div class="formatted-copy"><p><b>“Entomon – Interspecies metamorphosis” was the result of a self initiated project with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> in our series of projects for the <a href='https://stateofthedeep.art/' rel='noopener noreferrer' target='_blank'>stateofthedeep.art</a> collective.</b></p><p>The results were visual experiments speculating on posthuman representation. A Generative Adversarial Network was trained with the StyleGAN2-ada-pytorch framework of NVlabs. We adapted a network that was originally trained on human faces, in transfer training it with our dataset of insect close-ups. The process of training a GAN on two incompatible datasets, produced phenotypes of human-insect hybrids. Insects and arachnids species are seen as disgusting, as vermins which shouldn‘t be part of the human habitat. A hybridization between human faces and features of unwanted bodies lets us discover alternatives to the humanist understanding of the „natural“. Exploring the latent space of bodily features between species helped us to think about possible posthuman forms of representation.<br /></p><p>How much will we need to reshape human bodies to detach from discriminating norms, from natural and artificial?</p></div>
+                            <div class="formatted-copy"><p><b>“Entomon – Interspecies metamorphosis” was the result of a self initiated project with <a href='https://lwgnr.de/index.html' rel='noopener noreferrer' target='_blank'>Laura Wagner</a> in our series of projects for the <a href='https://linktr.ee/stateofthedeep.art' rel='noopener noreferrer' target='_blank'>stateofthedeep.art</a> collective.</b></p><p>The results were visual experiments speculating on posthuman representation. A Generative Adversarial Network was trained with the StyleGAN2-ada-pytorch framework of NVlabs. We adapted a network that was originally trained on human faces, in transfer training it with our dataset of insect close-ups. The process of training a GAN on two incompatible datasets, produced phenotypes of human-insect hybrids. Insects and arachnids species are seen as disgusting, as vermins which shouldn‘t be part of the human habitat. A hybridization between human faces and features of unwanted bodies lets us discover alternatives to the humanist understanding of the „natural“. Exploring the latent space of bodily features between species helped us to think about possible posthuman forms of representation.<br /></p><p>How much will we need to reshape human bodies to detach from discriminating norms, from natural and artificial?</p></div>
                             <div class="case-links">
                                 
-                                    <a class="case-links__item external-link" href=https://vimeo.com/682432232 rel="noopener noreferrer" target="_blank">
+                                    <a class="case-links__item external-link" href=https://stateofthedeep.art/ rel="noopener noreferrer" target="_blank">
                                         Curated collection
                                         <span class="icon-link">
   <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
@@ -608,7 +611,7 @@
                                 
                             </div>
                         
-                        <h2 class="case__title" data-page-animation-fade-in-view>Inter<br />species &nbsp;<br />metamor<br />phosis &nbsp;</h2>
+                        <h2 class="case__title" data-page-animation-fade-in-view>Breath<br />ing soft<br />space &nbsp;</h2>
                         <div class="case__desc" data-page-animation-fade-in-view data-in-view-amount="0.5">
                             <div class="formatted-copy"><p><b>Breathing Softspace adapts to the visitors’ behavior through shapes, lights, and sounds.</b><p></p>The interactive installation was a team effort with <b>textile artist <a href='http://marieschumann.de/' rel='noopener noreferrer' target='_blank'>Marie Schumann</a></b> and <b>creative technologist <a href='https://matthiasrosenthal.de/blog_2017/' rel='noopener noreferrer' target='_blank'>Matthias Rosenthal</a></b> and creates a space to discover dimensionality, movement, and the play of material of woven textiles. Loose threads add dimension to the textile while motion enhances the optical volume and gives the textile the ability to grow and shrink and, due to that, change the space around them.</p><p><b>Shy or bold? Near or far?</b> The user interaction is subdivided by six states mirroring the visitors behavior. Nine electronic winches fixed to the ceiling controlled the textile dynamically via a DMX interface. Moreover, LED lights and a fan were connected to the DMX network. A Unity-3D application simulates the room, the textile, and the connected hardware, such as light colors and sound, on the PC in real-time.</p></div>
                             <div class="case-links">
@@ -1331,7 +1334,7 @@
                 </div>
             </div>
         
-        
+
         <nav class="exit-nav">
             <div class="content-wrapper">
                 <ul class="exit-nav-list" data-page-animation-fade-in-view>
@@ -1368,10 +1371,10 @@
     </section>
 </div>
 
-<section class="project-archive-teaser" data-page-animation-mousemove-strength data-page-animation-custom-class-in-view="project-archive-teaser">
-    <a href="/archive" class="project-archive-teaser__content">
-        <h2 class="project-archive-teaser-title">Project Archive</h2>
-        <p class="project-archive-teaser-subtitle project-archive-teaser-subtitle--first">
+<section class="case-archive-teaser" data-page-animation-mousemove-strength data-page-animation-custom-class-in-view="case-archive-teaser">
+    <a href="/archive" class="case-archive-teaser__content">
+        <h2 class="case-archive-teaser-title">Project Archive</h2>
+        <p class="case-archive-teaser-subtitle case-archive-teaser-subtitle--first">
             <span>2015</span>
             <span class="sr-only">until</span>
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="183.792" height="14.881" viewBox="0 0 183.792 14.881">
@@ -1379,146 +1382,136 @@
             </svg>
             <span>now</span>
         </p>
-        <p class="project-archive-teaser-subtitle project-archive-teaser-subtitle--last">
+        <p class="case-archive-teaser-subtitle case-archive-teaser-subtitle--last">
             There is more
         </p>
     </a>
-    <ul class="project-archive-teaser__list">
+    <ul class="case-archive-teaser__list">
     
         
-            
-            <li class="project-archive-teaser__list-item" style="--position: -2;">
-                <picture>
-    <source type="image/avif" srcset="/assets/images/test_4Yjo3FUFS-.avif 768w, /assets/images/test_4Yjo3FUFS-.avif 1280w" 
-          width="768"
-          height="861"
+        <li class="case-archive-teaser__list-item" style="--position: -2;">
+            <picture>
+    <source type="image/avif" srcset="/assets/images/ikeaVR_mP5gxA1sUA.avif 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/test_4Yjo3FUFS-.webp 768w, /assets/images/test_4Yjo3FUFS-.webp 1280w" 
-          width="768"
-          height="861"
+<source type="image/webp" srcset="/assets/images/ikeaVR_mP5gxA1sUA.webp 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/test_4Yjo3FUFS-.jpeg 768w, /assets/images/test_4Yjo3FUFS-.jpeg 1280w" 
-          width="768"
-          height="861"
+<source type="image/jpeg" srcset="/assets/images/ikeaVR_mP5gxA1sUA.jpeg 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
       <img
-        src="/assets/images/test_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="Some alt text"
+        src="/assets/images/ikeaVR_mP5gxA1sUA.jpeg"
+        width="388"
+        height="388"
+        alt="undefined"
         loading="lazy"
         decoding="async">
     </picture>
-            </li>
-        
+        </li>
     
         
-            
-            <li class="project-archive-teaser__list-item" style="--position: -1;">
-                <picture>
-    <source type="image/avif" srcset="/assets/images/test_4Yjo3FUFS-.avif 768w, /assets/images/test_4Yjo3FUFS-.avif 1280w" 
-          width="768"
-          height="861"
+        <li class="case-archive-teaser__list-item" style="--position: -1;">
+            <picture>
+    <source type="image/avif" srcset="/assets/images/royalStorybook_7jwXdmnXpv.avif 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/test_4Yjo3FUFS-.webp 768w, /assets/images/test_4Yjo3FUFS-.webp 1280w" 
-          width="768"
-          height="861"
+<source type="image/webp" srcset="/assets/images/royalStorybook_7jwXdmnXpv.webp 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/test_4Yjo3FUFS-.jpeg 768w, /assets/images/test_4Yjo3FUFS-.jpeg 1280w" 
-          width="768"
-          height="861"
+<source type="image/jpeg" srcset="/assets/images/royalStorybook_7jwXdmnXpv.jpeg 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
       <img
-        src="/assets/images/test_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="Some alt text"
+        src="/assets/images/royalStorybook_7jwXdmnXpv.jpeg"
+        width="388"
+        height="388"
+        alt="undefined"
         loading="lazy"
         decoding="async">
     </picture>
-            </li>
-        
+        </li>
     
         
-            
-            <li class="project-archive-teaser__list-item" style="--position: 0;">
-                <picture>
-    <source type="image/avif" srcset="/assets/images/test_4Yjo3FUFS-.avif 768w, /assets/images/test_4Yjo3FUFS-.avif 1280w" 
-          width="768"
-          height="861"
+        <li class="case-archive-teaser__list-item" style="--position: 0;">
+            <picture>
+    <source type="image/avif" srcset="/assets/images/SXSW_Z7pA1f2Jja.avif 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/test_4Yjo3FUFS-.webp 768w, /assets/images/test_4Yjo3FUFS-.webp 1280w" 
-          width="768"
-          height="861"
+<source type="image/webp" srcset="/assets/images/SXSW_Z7pA1f2Jja.webp 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/test_4Yjo3FUFS-.jpeg 768w, /assets/images/test_4Yjo3FUFS-.jpeg 1280w" 
-          width="768"
-          height="861"
+<source type="image/jpeg" srcset="/assets/images/SXSW_Z7pA1f2Jja.jpeg 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
       <img
-        src="/assets/images/test_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="Some alt text"
+        src="/assets/images/SXSW_Z7pA1f2Jja.jpeg"
+        width="388"
+        height="388"
+        alt="undefined"
         loading="lazy"
         decoding="async">
     </picture>
-            </li>
-        
+        </li>
     
         
-            
-            <li class="project-archive-teaser__list-item" style="--position: 1;">
-                <picture>
-    <source type="image/avif" srcset="/assets/images/test_4Yjo3FUFS-.avif 768w, /assets/images/test_4Yjo3FUFS-.avif 1280w" 
-          width="768"
-          height="861"
+        <li class="case-archive-teaser__list-item" style="--position: 1;">
+            <picture>
+    <source type="image/avif" srcset="/assets/images/gatorade2018_6Fn2t8Xvut.avif 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/test_4Yjo3FUFS-.webp 768w, /assets/images/test_4Yjo3FUFS-.webp 1280w" 
-          width="768"
-          height="861"
+<source type="image/webp" srcset="/assets/images/gatorade2018_6Fn2t8Xvut.webp 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/test_4Yjo3FUFS-.jpeg 768w, /assets/images/test_4Yjo3FUFS-.jpeg 1280w" 
-          width="768"
-          height="861"
+<source type="image/jpeg" srcset="/assets/images/gatorade2018_6Fn2t8Xvut.jpeg 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
       <img
-        src="/assets/images/test_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="Some alt text"
+        src="/assets/images/gatorade2018_6Fn2t8Xvut.jpeg"
+        width="388"
+        height="388"
+        alt="undefined"
         loading="lazy"
         decoding="async">
     </picture>
-            </li>
-        
+        </li>
     
         
-            
-            <li class="project-archive-teaser__list-item" style="--position: 2;">
-                <picture>
-    <source type="image/avif" srcset="/assets/images/test_4Yjo3FUFS-.avif 768w, /assets/images/test_4Yjo3FUFS-.avif 1280w" 
-          width="768"
-          height="861"
+        <li class="case-archive-teaser__list-item" style="--position: 2;">
+            <picture>
+    <source type="image/avif" srcset="/assets/images/airhockey_NDXXBnnLUq.avif 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/webp" srcset="/assets/images/test_4Yjo3FUFS-.webp 768w, /assets/images/test_4Yjo3FUFS-.webp 1280w" 
-          width="768"
-          height="861"
+<source type="image/webp" srcset="/assets/images/airhockey_NDXXBnnLUq.webp 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
-<source type="image/jpeg" srcset="/assets/images/test_4Yjo3FUFS-.jpeg 768w, /assets/images/test_4Yjo3FUFS-.jpeg 1280w" 
-          width="768"
-          height="861"
+<source type="image/jpeg" srcset="/assets/images/airhockey_NDXXBnnLUq.jpeg 388w" 
+          width="388"
+          height="388"
           sizes="(min-width: 768px) 50vw, 100vw">
       <img
-        src="/assets/images/test_4Yjo3FUFS-.jpeg"
-        width="768"
-        height="861"
-        alt="Some alt text"
+        src="/assets/images/airhockey_NDXXBnnLUq.jpeg"
+        width="388"
+        height="388"
+        alt="undefined"
         loading="lazy"
         decoding="async">
     </picture>
-            </li>
-        
+        </li>
     
     </ul>
 </section>

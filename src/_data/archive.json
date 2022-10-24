@@ -1,28 +1,28 @@
 {
   "title": "Project Archive",
-  "teaser": ["test.png", "test.png", "test.png", "test.png", "test.png"],
+  "teaser": ["ikeaVR.png", "royalStorybook.png", "SXSW.png", "gatorade2018.png", "airhockey.png"],
   "itemsByYear": [
     {
       "year": "2022",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "borrowedLimbs.png",
+          "title": "Borrowed Limbs",
+          "client": "Masterthesis Project",
+          "tags": ["image diffusion", "posthuman", "speculative design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-            "label": "Case Study"
+            "link": "https://vimeo.com/682432232",
+            "label": "Experimental short film"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "entomon.png",
+          "title": "Entomon",
+          "client": "Interspecies Metamorphosis",
+          "tags": ["styleGAN", "hybrid", "unwanted bodies"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-            "label": "Case Study"
+            "link": "https://stateofthedeep.art/",
+            "label": "Curated Collection"
           }
         }
       ]
@@ -31,22 +31,22 @@
       "year": "2021",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "airhockey.png",
+          "title": "AR Airhockey",
+          "client": "Demodern Project",
+          "tags": ["AR", "Interactive game", "Motion Design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/ar-airhockey-table",
             "label": "Case Study"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "SAP.png",
+          "title": "Software Demo",
+          "client": "Demodern Project",
+          "tags": ["storytelling", "interaction design", "art direction"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/sap-hxm-software-showcase",
             "label": "Case Study"
           }
         }
@@ -56,22 +56,12 @@
       "year": "2020",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "royalStorybook.png",
+          "title": "Interactive stories",
+          "client": "Demodern Project",
+          "tags": ["custom controller", "game design", "art direction"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
-            "label": "Case Study"
-          }
-        },
-        {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
-          "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/royal-caribbean-interactive-stories-1",
             "label": "Case Study"
           }
         }
@@ -81,22 +71,22 @@
       "year": "2019",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "sasu.png",
+          "title": "Balance Game",
+          "client": "Demodern Project",
+          "tags": ["endless swimmer", "Art direction", "game design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/sasus-mystical-quest",
             "label": "Case Study"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "SXSW.png",
+          "title": "Kinetic installation",
+          "client": "Demodern Project",
+          "tags": ["trivia game", "installation", "visual design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/capitol-one-kinetic-installation",
             "label": "Case Study"
           }
         }
@@ -106,22 +96,22 @@
       "year": "2018",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "telekom.png",
+          "title": "Interactive Games",
+          "client": "Demodern Project",
+          "tags": ["Multiplayer race", "art direction", "game design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/telekom-ifa-gamingstations",
             "label": "Case Study"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "gatorade2018.png",
+          "title": "Digital brand experience",
+          "client": "Demodern Project",
+          "tags": ["trade fair", "RFID bands", "Interactive games"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/gatorade",
             "label": "Case Study"
           }
         }
@@ -131,22 +121,32 @@
       "year": "2017",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "draeger.png",
+          "title": "VR training experience",
+          "client": "Demodern Project",
+          "tags": ["Virtual Reality", "art direction", "game design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/offshore-rig-virtual-reality-experience",
             "label": "Case Study"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "mazda.png",
+          "title": "VR configurator",
+          "client": "Demodern Project",
+          "tags": ["Virtual Reality", "art direction", "spatial UI"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/mazda-vr-experience",
+            "label": "Case Study"
+          }
+        },
+        {
+          "src": "gatorade2017.png",
+          "title": "Digital Brand Experience",
+          "client": "Demodern Project",
+          "tags": ["trade fair", "RFID bands", "Interactive games"],
+          "link": {
+            "link": "https://demodern.com/projects/gatorade-digital-brand-experience",
             "label": "Case Study"
           }
         }
@@ -156,22 +156,47 @@
       "year": "2016",
       "items": [
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "ikeaVR.png",
+          "title": "VR Showroom",
+          "client": "Demodern Project",
+          "tags": ["Interaction design", "UI design", "motion design"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/ikea-vr-showroom",
             "label": "Case Study"
           }
         },
         {
-          "src": "test.png",
-          "title": "supter title",
-          "client": "Cool client",
-          "tags": ["tag1", "tag2", "tag3"],
+          "src": "nike.png",
+          "title": "Shopping terminal",
+          "client": "Demodern Project",
+          "tags": ["UI design", "in-store experience", "digital advisor"],
           "link": {
-            "link": "https://demodern.de/blog/demodern-entwickelt-real-time-vr-experience",
+            "link": "https://demodern.com/projects/mix-and-match-shopping-terminal",
+            "label": "Case Study"
+          }
+        },
+        {
+          "src": "zeiss.png",
+          "title": "Virtual Product Showcase",
+          "client": "Demodern project",
+          "tags": ["Virtual Reality", "interactive showcase", "Trade fair"],
+          "link": {
+            "link": "https://demodern.com/projects/zeiss-vr-showcase",
+            "label": "Case Study"
+          }
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "items": [
+        {
+          "src": "hoax.png",
+          "title": "Software Concept",
+          "client": "Bachelorthesis Project",
+          "tags": ["combat data collection", "profile dilution", "speculative design"],
+          "link": {
+            "link": "https://www.behance.net/gallery/30100917/hoax",
             "label": "Case Study"
           }
         }

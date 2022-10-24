@@ -77,7 +77,7 @@
     .page-header{font-family:var(--font-headline-bold);font-size:var(--font-size-m, 2rem);text-transform:uppercase;line-height:var(--font-line-height-m, 2rem);position:absolute;top:var(--spacing-m);left:var(--spacing-m);z-index:var(--z-layer-above,10);color:var(--color-white,#fff)}.page-header__home-link{display:none;color:inherit;text-decoration:none}.page-header__home-link{position:relative;display:none}.page-intro{padding:var(--spacing-m,16px);background:var(--color-black,#030110)}.page-intro__title{position:relative;font-family:var(--font-headline-bold);font-size:var(--font-size-xxl, 6.875rem);text-transform:uppercase;line-height:var(--font-line-height-xxl, 5.625rem);text-align:right;white-space:nowrap}.page-intro__subtitle{font-family:var(--font-headline-bold);font-size:var(--font-size-l, 2.25rem);text-transform:uppercase;line-height:var(--font-line-height-l, 2.25rem);text-align:right;margin-top:var(--spacing-l,16px)}.page-intro__title .word{overflow:hidden;display:inline-block}.page-intro__title .char{display:inline-block;opacity:0;transform-origin:top left}.no-js .page-intro__title .char{opacity:1}.page-intro__background{position:absolute;left:0;top:0;bottom:0;right:0;width:100%;height:100%;object-fit:cover}.page-content{padding:var(--spacing-xl,48px) 0}@media (min-width:768px){.page-header__home-link{display:block;width:160px;height:auto}.page-header__home-link svg{position:absolute;top:12px;left:12px}.page-header__home-link line,.page-header__home-link path,.page-header__home-link polyline{fill:none;stroke:#4961fd;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;opacity:0;stroke-dasharray:1;stroke-dashoffset:1}.page-header__home-link:hover line,.page-header__home-link:hover path,.page-header__home-link:hover polyline{animation:svgStroke .7s var(--ease-out-smooth) forwards}.page-intro__title{top:-4px;font-size:var(--font-size-xxl, 8rem);line-height:var(--font-line-height-xxl, 7rem)}}@media (min-width:1024px){.page-content{padding:var(--spacing-3xl,128px) 0}}@media (min-width:1280px){.page-header{top:40px;left:48px}.page-intro__title{font-size:var(--font-size-3xl, 10rem);line-height:var(--font-line-height-3xl, 8rem)}.page-intro{padding:40px 48px}}
   </style>
   <script>
-    document.documentElement.classList.remove("no-js");
+    document.documentElement.classList.remove("no-js"),document.addEventListener("DOMContentLoaded",()=>{document.querySelector(".tabs")&&initTab()});function initTab(){const d=document.querySelector(".tabs"),n=d.querySelector("ul"),i=n.querySelectorAll("a"),a=d.querySelectorAll(".tabs-panel"),c=window.location.hash?Array.from(i).findIndex(t=>t.getAttribute("href")===window.location.hash):0,s=(t,r)=>{r.focus(),r.removeAttribute("tabindex"),r.setAttribute("aria-selected","true"),t.removeAttribute("aria-selected"),t.setAttribute("tabindex","-1");let e=Array.prototype.indexOf.call(i,r),o=Array.prototype.indexOf.call(i,t);a[o].hidden=!0,a[e].hidden=!1,window.scrollTo({top:r.offsetTop,left:0,behavior:"smooth"})};window.addEventListener("hashchange",t=>{t.preventDefault();let r=n.querySelector("[aria-selected]"),e=n.querySelector(`[href$="${window.location.hash.substring(1,window.location.hash.length)}"]`);e!==r&&s(r,e)}),n.setAttribute("role","tablist"),Array.prototype.forEach.call(i,(t,r)=>{t.setAttribute("role","tab"),t.setAttribute("id","tab"+(r+1)),t.setAttribute("tabindex","-1"),t.parentNode.setAttribute("role","presentation"),t.addEventListener("click",e=>{e.preventDefault();let o=n.querySelector("[aria-selected]");e.currentTarget!==o&&(window.location.hash=e.currentTarget.getAttribute("href"))}),t.addEventListener("keydown",e=>{let o=Array.prototype.indexOf.call(i,e.currentTarget),l=e.which===37?o-1:e.which===39?o+1:e.which===40?"down":null;l!==null&&(e.preventDefault(),l==="down"?a[r].focus():i[l]&&s(e.currentTarget,i[l]))})}),Array.prototype.forEach.call(a,(t,r)=>{t.setAttribute("role","tabpanel"),t.setAttribute("tabindex","-1");let e=t.getAttribute("id");t.setAttribute("aria-labelledby",i[r].id),t.hidden=!0}),i[c].removeAttribute("tabindex"),i[c].setAttribute("aria-selected","true"),a[c].hidden=!1}
 
     document.addEventListener("DOMContentLoaded",()=>{const d=document.querySelector(".intro__video");d.classList.add("intro__video--with-fade"),d.addEventListener("canplay",()=>d.classList.add("intro__video--loaded"))});
 
@@ -351,6 +351,15 @@
             
                 <li class="listing-item" style="--animation-delay: 200ms">
                     <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">New Species Interaction Design</h3>
+                        <h4 class="listing-item__sub-label">KISD Summerterm 22/23</h4>
+                        <h5 class="listing-item__meta">Collaboration project with the German Aerospace Center</h5>
+                    </div>
+                    
+                </li>
+            
+                <li class="listing-item" style="--animation-delay: 400ms">
+                    <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Synthesizing meaning</h3>
                         <h4 class="listing-item__sub-label">DHBW Ravensburg 2022</h4>
                         <h5 class="listing-item__meta">Expert Workshop – AI &amp; Design</h5>
@@ -377,7 +386,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 400ms">
+                <li class="listing-item" style="--animation-delay: 600ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Animation in x-Reality</h3>
                         <h4 class="listing-item__sub-label">Vilnius Tech Summerschool 2022</h4>
@@ -405,7 +414,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 600ms">
+                <li class="listing-item" style="--animation-delay: 800ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Borrowed Limbs</h3>
                         <h4 class="listing-item__sub-label">DHBW Ravensburg 2022</h4>
@@ -433,7 +442,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 800ms">
+                <li class="listing-item" style="--animation-delay: 1000ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Digital showcases</h3>
                         <h4 class="listing-item__sub-label">Jung von Matt Neckar 2018</h4>
@@ -442,7 +451,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 1000ms">
+                <li class="listing-item" style="--animation-delay: 1200ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">hoax</h3>
                         <h4 class="listing-item__sub-label">Z2X16 Festival der jungen Visionär:innen 2016</h4>
@@ -479,6 +488,34 @@
             
                 <li class="listing-item" style="--animation-delay: 200ms">
                     <div class="listing-item__main-content">
+                        <h3 class="listing-item__label">Künstlerhaus Bethanien</h3>
+                        <h4 class="listing-item__sub-label">Berlin 2022</h4>
+                        <h5 class="listing-item__meta">Borrowed limbs – experiental short film</h5>
+                    </div>
+                    
+                        <a class="listing-item__link" href=https://www.bethanien.de/en/exhibitions/borrowed-limbs/ rel="noopener noreferrer" target="_blank">
+                        <span class="icon-link">
+  <svg class="icon-link__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.285" height="32.805" viewBox="0 0 32.285 32.805">
+    <defs>
+      <clipPath id="clip-path-icon-link">
+        <rect width="22.31" height="24.426" />
+      </clipPath>
+    </defs>
+    <g transform="translate(14.01) rotate(35)" clip-path="url(#clip-path-icon-link)">
+      <path d="M5.064,24.017A175.618,175.618,0,0,0,14.87,1.959a.825.825,0,0,0-1.2-.923C9.423,4.1,4.895,6.738.368,9.364l.826,1.411L14.152,1.537l-1.2-.489c.44,1.373.289,2.844.792,4.21a21.612,21.612,0,0,0,2.051,3.79l4.976,8.07c.551.894,1.966.074,1.412-.825L17.347,8.449A21.319,21.319,0,0,1,15.32,4.823c-.506-1.361-.351-2.835-.792-4.209a.825.825,0,0,0-1.2-.489L.368,9.364c-.841.6-.1,1.949.826,1.411,4.526-2.626,9.054-5.262,13.3-8.327l-1.2-.923A172.551,172.551,0,0,1,3.652,23.192c-.493.929.918,1.756,1.411.825" transform="translate(0 0)" />
+    </g>
+  </svg>
+
+  <svg class="icon-link__circle" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+    <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
+  </svg>
+</span>
+                        </a>
+                    
+                </li>
+            
+                <li class="listing-item" style="--animation-delay: 400ms">
+                    <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Ars Electronica</h3>
                         <h4 class="listing-item__sub-label">Linz 2022</h4>
                         <h5 class="listing-item__meta">Borrowed limbs – experiental short film</h5>
@@ -505,7 +542,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 400ms">
+                <li class="listing-item" style="--animation-delay: 600ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">GARDENING Amelisweerd</h3>
                         <h4 class="listing-item__sub-label">Utrecht 2022</h4>
@@ -533,7 +570,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 600ms">
+                <li class="listing-item" style="--animation-delay: 800ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Re:publica</h3>
                         <h4 class="listing-item__sub-label">Gather Town 2022</h4>
@@ -542,7 +579,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 800ms">
+                <li class="listing-item" style="--animation-delay: 1000ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Attending to futures conference</h3>
                         <h4 class="listing-item__sub-label">Cologne 2021</h4>
@@ -570,7 +607,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 1000ms">
+                <li class="listing-item" style="--animation-delay: 1200ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Vienna Design week</h3>
                         <h4 class="listing-item__sub-label">Vienna 2020</h4>
@@ -598,7 +635,7 @@
                     
                 </li>
             
-                <li class="listing-item" style="--animation-delay: 1200ms">
+                <li class="listing-item" style="--animation-delay: 1400ms">
                     <div class="listing-item__main-content">
                         <h3 class="listing-item__label">Future award</h3>
                         <h4 class="listing-item__sub-label">Frankfurt 2015</h4>

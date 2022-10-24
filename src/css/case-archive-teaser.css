@@ -59,6 +59,7 @@
   list-style: none;
   justify-content: space-around;
   align-items: center;
+  opacity: 0.8;
 }
 
 .case-archive-teaser__list-item {
