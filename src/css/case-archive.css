@@ -32,7 +32,15 @@
 }
 
 .case-archive-item-meta {
+  font-size: var(--font-size-s);
+  color: var(--color-grey1);
   text-transform: uppercase;
+  font-family: var(--font-headline-bold);
+  letter-spacing: -0.2px;
+}
+
+.case-archive-item-meta.case-archive-item-meta--year {
+  color: var(--color-white);
 }
 
 @media (min-width: 768px) {
