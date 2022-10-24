@@ -40,7 +40,11 @@ pageTitle: "Lisa Marleen – Archive"
                         </a>
                     </div>
                     <p class="case-archive-item-meta">{{ archiveItem.client }}</p>
-                    <p class="case-archive-item-meta">{{ archiveItem.tags.join(", ") }}</p>
+                    <p class="case-archive-item-meta">
+                        {{ archiveItem.tags.splice(0, archiveItem.tags.length - 1).join(", ") }},
+                        <br />
+                        {{ archiveItem.tags[archiveItem.tags.length - 1] }}
+                    </p>
                     <p class="case-archive-item-meta case-archive-item-meta--year"><b>{{ archiveItemByYear.year }}</b></p>
                 </div>
             </div>
