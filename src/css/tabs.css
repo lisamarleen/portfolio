@@ -30,6 +30,15 @@
   left: -10px;
 }
 
+.tabs-list__item:first-child .tabs-list__hover-highlight--circle {
+  top: -30px;
+  left: -10px;
+}
+
+.tabs-list__item:first-child .tabs-list__hover-highlight--circle svg {
+  width: 70px;
+}
+
 .tabs-list__hover-highlight.tabs-list__hover-highlight--circle svg {
   width: 60px;
   height: auto;
