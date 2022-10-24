@@ -78,6 +78,12 @@
     "title": "teaching<br />& talks",
     "items": [
       {
+        "label": "New Species Interaction Design",
+        "subLabel": "KISD Summerterm 22/23",
+        "meta": "Collaboration project with the German Aerospace Center",
+        "link": ""
+      },
+      {
         "label": "Synthesizing meaning",
         "subLabel": "DHBW Ravensburg 2022",
         "meta": "Expert Workshop – AI & Design",
@@ -112,6 +118,12 @@
   "exhibitions": {
     "title": "exhibit<br />ions",
     "items": [
+      {
+        "label": "Künstlerhaus Bethanien",
+        "subLabel": "Berlin 2022",
+        "meta": "Borrowed limbs – experiental short film",
+        "link": "https://www.bethanien.de/en/exhibitions/borrowed-limbs/"
+      },
       {
         "label": "Ars Electronica",
         "subLabel": "Linz 2022",
