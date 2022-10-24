@@ -39,6 +39,10 @@
   letter-spacing: -0.2px;
 }
 
+.case-archive-item-meta:last-child {
+  justify-self: flex-end;
+}
+
 .case-archive-item-meta.case-archive-item-meta--year {
   color: var(--color-white);
 }
