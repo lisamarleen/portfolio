@@ -128,8 +128,8 @@ pageDescription: "My experience derives from 7+ years of working in the field of
     </section>
 </div>
 
-<section class="case-archive-teaser" data-page-animation-mousemove-strength data-page-animation-custom-class-in-view="case-archive-teaser">
-    <a href="/archive" class="case-archive-teaser__content">
+<a href="/archive"  class="case-archive-teaser" data-page-animation-mousemove-strength data-page-animation-custom-class-in-view="case-archive-teaser">
+    <div class="case-archive-teaser__content">
         <h2 class="case-archive-teaser-title">{{ archive.title }}</h2>
         <p class="case-archive-teaser-subtitle case-archive-teaser-subtitle--first">
             <span>2015</span>
@@ -142,8 +142,8 @@ pageDescription: "My experience derives from 7+ years of working in the field of
         <p class="case-archive-teaser-subtitle case-archive-teaser-subtitle--last">
             There is more
         </p>
-    </a>
-    <ul class="case-archive-teaser__list">
+    </div>
+    <ul class="case-archive-teaser__list" aria-hidden="true">
     {% for archiveItem in archive.teaser %}
         {% set computedSrc = "./src/assets/images/archive/" + archiveItem %}
         <li class="case-archive-teaser__list-item" style="--position: {{ loop.index - 3 }};">
@@ -151,4 +151,4 @@ pageDescription: "My experience derives from 7+ years of working in the field of
         </li>
     {% endfor %}
     </ul>
-</section>
+</a>
