@@ -2,7 +2,7 @@
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-m, 2rem);
   text-transform: uppercase;
-  line-height: var(--font-line-height-m, 2rem);
+  line-height: var(--font-line-height-m, 1);
   position: absolute;
   top: var(--spacing-m);
   left: var(--spacing-m);
@@ -29,9 +29,9 @@
 .page-intro__title {
   position: relative;
   font-family: var(--font-headline-bold);
-  font-size: var(--font-size-xxl, 6.875rem);
   text-transform: uppercase;
-  line-height: var(--font-line-height-xxl, 5.625rem);
+  font-size: var(--font-size-xxl, clamp(5.5rem, 24vw, 10rem));
+  line-height: var(--font-line-height-xxl);
   text-align: right;
   white-space: nowrap;
 }
@@ -40,7 +40,7 @@
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-l, 2.25rem);
   text-transform: uppercase;
-  line-height: var(--font-line-height-l, 2.25rem);
+  line-height: var(--font-line-height-l, 1); 
   text-align: right;
   margin-top: var(--spacing-l, 16px);
 }
@@ -106,12 +106,6 @@
   .page-header__home-link:hover polyline {
     animation: svgStroke 700ms var(--ease-out-smooth) forwards;
   }
-
-  .page-intro__title {
-    top: -4px;
-    font-size: var(--font-size-xxl, 8rem);
-    line-height: var(--font-line-height-xxl, 7rem);
-  }
 }
 
 @media (min-width: 1024px) {
@@ -124,11 +118,6 @@
   .page-header {
     top: 40px;
     left: 48px;
-  }
-
-  .page-intro__title {
-    font-size: var(--font-size-3xl, 10rem);
-    line-height: var(--font-line-height-3xl, 8rem);
   }
 
   .page-intro {
