@@ -60,6 +60,7 @@
   justify-content: space-around;
   align-items: center;
   opacity: 0.8;
+  max-width: 100rem;
 }
 
 .case-archive-teaser__list-item {
@@ -87,9 +88,6 @@
 @media (min-width: 768px) {
   .case-archive-teaser {
     padding: 128px 0;
-    --x-rotation-strength: 0.5;
-    --x-offset-strength: 1;
-    --y-offset-strength: 0.5;
   }
 
   .case-archive-teaser__content {
@@ -103,5 +101,11 @@
   .case-archive-teaser__list-item:nth-child(1),
   .case-archive-teaser__list-item:nth-child(5) {
     display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .case-archive-teaser {
+    padding: 160px 0;
   }
 }
