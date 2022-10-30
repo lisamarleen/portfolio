@@ -54,11 +54,12 @@
   animation: svgStroke 700ms var(--ease-out-smooth) forwards;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .social-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 96px 0;
+    column-gap: 120px;
   }
 
   .social-content__title {
@@ -83,12 +84,6 @@
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-  }
-}
-
-@media (min-width: 1024px) {
-  .social-content {
-    column-gap: 120px;
   }
 }
 
