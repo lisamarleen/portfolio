@@ -119,7 +119,7 @@ function initPageAnimations() {
       { opacity: [0, 1] },
       {
         easing: EaseOutSmooth,
-        at: "-0.25",
+        at: "-0.5",
         duration: 1,
       },
     ]);

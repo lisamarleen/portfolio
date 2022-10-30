@@ -21,7 +21,7 @@
   padding: var(--spacing-m, 16px) 0;
   border-bottom: 1px solid var(--color-grey1, #626262);
   animation: moveInFromYAndFadeIn 700ms var(--ease-in-smooth) forwards;
-  animation-delay: calc(var(--animation-delay) * 100ms + 2300ms);
+  animation-delay: calc(var(--animation-delay) * 100ms + 2000ms);
   opacity: 0;
 }
 
