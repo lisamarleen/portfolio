@@ -210,22 +210,24 @@ function initScrollTextRevealAnimations() {
   );
 
   Array.from(allAnimations).map((text) => {
-    const [splittedText] = Splitting({ target: text, by: "words" });
+    const [splittedText] = Splitting({ target: text, by: "lines" });
     const scrollContainerSelector = text.getAttribute("data-scroll-container");
     const container = scrollContainerSelector
       ? document.querySelector(scrollContainerSelector)
       : text;
 
-    const singleWordThreshold = Math.round(100 / splittedText.words.length);
+    const singleWordThreshold = Math.round(100 / splittedText.lines.length);
     const scrollThresholds = splittedText.words.map(
       (_, index) => index * singleWordThreshold
     );
 
+    console.log(singleWordThreshold);
+
     const onScrollUpdate = observe(scrollThresholds, (index) => {
       if (index > 0) {
-        const matching = splittedText.words.slice(0, index + 1);
+        const matching = splittedText.lines.slice(0, index + 1);
         animate(
-          matching,
+          matching.flat(),
           {
             opacity: 1,
           },
