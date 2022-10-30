@@ -21,8 +21,8 @@
 
 .case-archive-item-title {
   text-transform: uppercase;
-  font-size: var(--font-size-xxl);
-  line-height: var(--font-line-height-xxl);
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
   font-family: var(--font-headline-bold);
   max-width: 20ch;
 }
