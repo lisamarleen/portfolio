@@ -79,7 +79,7 @@
 .listing-item__link {
   position: relative;
   left: calc(var(--spacing-s) * 2);
-  top: calc(var(--spacing-s) * -2);
+  top: -6px;
 }
 
 .listing-item-current-hint {
