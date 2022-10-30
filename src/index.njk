@@ -153,13 +153,11 @@ pageDescription: "I’m Lisa Marleen (she/her), multidisciplinary designer, art 
             <h2 class="info__title info-title--secondary" data-page-animation-fade-in-view>{{home.awards.title }}</h2>
             <p class="info__block" data-page-animation-fade-in-view>
             {% for awardsItem in home.awards.items %}
-                <span>
-                    {{ awardsItem.label }}
-                    {% if awardsItem.count > 1 %}
-                        <sup>{{ awardsItem.count }}x</sup>
-                    {% endif %}
-                    {% if not loop.last %},&nbsp;{% endif %}
-                </span>
+                {{ awardsItem.label }}
+                {% if awardsItem.count > 1 %}
+                    <sup>{{ awardsItem.count }}x</sup>
+                {% endif %}
+                {% if not loop.last %},{% endif %}
             {% endfor %}
             </p>
         </div>
