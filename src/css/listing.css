@@ -70,11 +70,12 @@
 }
 
 .listing-item__time {
-  font-size: var(--font-size-m);
+  font-size: var(--font-sizes-s);
   color: var(--color-grey1);
   text-transform: uppercase;
   font-family: var(--font-headline-regular);
   letter-spacing: var(--font-letter-spacing-s);
+  white-space: nowrap;
 }
 
 .listing-item__link {
@@ -85,8 +86,8 @@
 
 .listing-item-current-hint {
   position: absolute;
-  left: -30px;
-  top: 0;
+  left: -40px;
+  top: 10px;
 }
 
 .listing-item-current-hint svg path {
@@ -119,4 +120,10 @@
 
 .listing.listing--in-view + .listing-item-current-label {
   animation: fadeIn 700ms 2400ms var(--ease-out-smooth) forwards;
+}
+
+@media (min-width: 1024px) {
+  .listing-item__time {
+    font-size: var(--font-size-m);
+  }
 }
