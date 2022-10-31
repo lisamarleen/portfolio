@@ -119,7 +119,7 @@ function initPageAnimations() {
       { opacity: [0, 1] },
       {
         easing: EaseOutSmooth,
-        at: "-0.5",
+        at: "-0.75",
         duration: 1,
       },
     ]);
@@ -220,8 +220,6 @@ function initScrollTextRevealAnimations() {
     const scrollThresholds = splittedText.words.map(
       (_, index) => index * singleWordThreshold
     );
-
-    console.log(singleWordThreshold);
 
     const onScrollUpdate = observe(scrollThresholds, (index) => {
       if (index > 0) {
