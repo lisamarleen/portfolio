@@ -8,9 +8,6 @@
 .info__title {
   font-family: var(--font-headline-bold);
   text-transform: uppercase;
-}
-
-.info__title:not(.info-title--secondary) {
   text-align: right;
   font-size: var(--font-size-xl);
   line-height: var(--font-line-height-xl);
@@ -47,11 +44,6 @@
   }
 
   .info__title {
-    font-size: var(--font-size-xxl);
-    line-height: var(--font-line-height-xxl);
-  }
-
-  .info__title {
     flex: 1;
   }
 
@@ -63,6 +55,12 @@
   .info__block {
     flex: 2;
     margin-top: 0;
+  }
+
+  .info__title.info-title--secondary {
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-height-xl);
+    text-align: right;
   }
 }
 
