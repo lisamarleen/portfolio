@@ -65,8 +65,8 @@
   .social-content__title {
     grid-column-start: 1;
     grid-column-end: 2;
-    font-size: var(--font-size-xxl);
-    line-height: var(--font-line-height-xxl);
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-height-xl);
     text-align: right;
   }
 
