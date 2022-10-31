@@ -7,6 +7,8 @@
   position: relative;
   padding: var(--spacing-xxl) var(--spacing-m);
   background-color: var(--color-dark-blue);
+  text-decoration: none;
+  color: var(--color-white);
   --x-rotation-strength: 0.6;
   --x-offset-strength: 0.7;
   --y-offset-strength: 0.5;
@@ -19,8 +21,6 @@
   position: relative;
   width: 100%;
   z-index: 1;
-  color: var(--color-white);
-  text-decoration: none;
 }
 
 .case-archive-teaser-title {
@@ -43,6 +43,7 @@
   opacity: 0;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
+  stroke: currentColor;
 }
 
 .case-archive-teaser--in-view .case-archive-teaser-subtitle svg path {
@@ -88,6 +89,9 @@
 @media (min-width: 768px) {
   .case-archive-teaser {
     padding: 128px 0;
+    --x-rotation-strength: 0.5;
+    --x-offset-strength: 1;
+    --y-offset-strength: 0.5;
   }
 
   .case-archive-teaser__content {
