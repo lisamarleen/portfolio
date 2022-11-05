@@ -116,6 +116,18 @@
   <main>
    {{ content | safe }}
 
+    <dialog class="main-menu" open>
+        <nav class="main-menu-nav">
+            <ul class="main-menu-nav__list">
+            {% for navigationItem in common.navigation %}
+                <li class="exit-nav-list__item">
+                    <a href={{navigationItem.link}} autofocus={{ "true" if loop.index0 }}>{{navigationItem.label}}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </nav>
+   </dialog>
+
     <section class="social">
       <div class="content-wrapper">
         <div class="social-content">
