@@ -1,9 +1,89 @@
 .main-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    height: 100dvh;
-    
+  --y-offset-strength: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent linear-gradient(180deg, #3a1ad9 0%, #030110 100%) 0%
+    0% no-repeat padding-box;
+  z-index: var(--z-layer-modal);
+  visibility: visible;
+  transition: visibility 0.3s linear;
+  opacity: 1;
+}
+
+.main-menu-open[aria-expanded="false"] + .main-menu  {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s var(--ease-in-out);
+
+  }
+
+.main-menu-open[aria-expanded="false"] + .main-menu .main-menu-nav {
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-in-out);
+}
+
+.main-menu-nav {
+  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100% - 140px);
+  padding: var(--spacing-m);
+  box-sizing: border-box;
+  opacity: 1;
+  transition: opacity 0.6s var(--ease-in-out);
+}
+
+.main-menu-nav-page-list__list-item {
+  padding: var(--spacing-m) 0;
+  border-bottom: 1px solid var(--color-grey1);
+}
+
+.main-menu-nav-link {
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-height-xl);
+  text-transform: uppercase;
+  font-family: var(--font-headline-bold);
+  color: var(--color-white);
+  transition: color var(--hover-default-transiton-duration) var(--ease-in-out);
+  text-decoration: none;
+}
+
+.main-menu-nav-link:hover {
+  color: var(--color-highlight);
+}
+
+.main-menu-nav-social-list {
+    margin-top: var(--spacing-l);
+}
+
+.main-menu-nav-social-list__list-item {
+  margin-bottom: var(--spacing-m);
+}
+
+.main-menu-close {
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.main-menu .main-menu-close {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.6s var(--ease-in-out) 300ms;
+
+  
+}
+
+.main-menu-open[aria-expanded="false"] + .main-menu .main-menu-close {
+    opacity: 0;
+    transform: translateY(160px);
 }
