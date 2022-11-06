@@ -26,32 +26,8 @@
   margin-bottom: 0;
 }
 
-.social-list__link {
-  position: relative;
-}
-
 .social-content__email {
-  color: var(--color-highlight);
   margin-bottom: 0;
-}
-
-.social-content__email svg {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  left: 0;
-  bottom: -14px;
-  top: auto;
-}
-
-.social-content__email svg path {
-  opacity: 0;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-}
-
-.social-content__email:hover svg path {
-  animation: svgStroke 700ms var(--ease-out-smooth) forwards;
 }
 
 @media (min-width: 1024px) {
