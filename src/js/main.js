@@ -124,9 +124,9 @@ function initScrollProgressAnimations() {
   });
 }
 
-function initMousemoveStrength() {
+function initPointermoveStrength() {
   const allAnimations = document.querySelectorAll(
-    "[data-page-animation-mousemove-strength]"
+    "[data-page-animation-pointermove-strength]"
   );
 
   Array.from(allAnimations).map((container) => {
@@ -137,14 +137,14 @@ function initMousemoveStrength() {
       y: getCSSCustomProp("--y-offset-strength", container) || 1,
     };
 
-    container.addEventListener("mousemove", (event) => {
+    container.addEventListener("pointermove", (event) => {
       const normalizedX = (event.offsetX / targetClientRect.width) * 2 - 1;
       const normalizedY = (event.offsetY / targetClientRect.height) * 2 - 1;
       container.style.setProperty("--x-offset-strength", 1 - normalizedX / 20);
       container.style.setProperty("--y-offset-strength", 1 - normalizedY / 50);
     });
 
-    container.addEventListener("mouseleave", () => {
+    container.addEventListener("pointerleave", () => {
       container.style.setProperty("--x-offset-strength", resetValue.x);
       container.style.setProperty("--y-offset-strength", resetValue.y);
     });
@@ -341,7 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initPageAnimations();
   initScrollTextRevealAnimations();
   initScrollProgressAnimations();
-  initMousemoveStrength();
+  initPointermoveStrength();
   initFadeInViewAnimations();
   initCustomClassAnimations();
   initImageAnimations();
