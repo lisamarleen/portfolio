@@ -40,6 +40,17 @@
   }
 }
 
+@keyframes svgStrokeWithoutOpacity {
+  0% {
+    stroke-dashoffset: 1;
+  }
+
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
