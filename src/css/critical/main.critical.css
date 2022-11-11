@@ -40,7 +40,7 @@
   font-family: var(--font-headline-bold);
   font-size: var(--font-size-l, 2.25rem);
   text-transform: uppercase;
-  line-height: var(--font-line-height-l, 1); 
+  line-height: var(--font-line-height-l, 1);
   text-align: right;
   margin-top: var(--spacing-l, 16px);
 }
@@ -57,7 +57,7 @@
 }
 
 .no-js .page-intro__title .char {
- animation: fadeIn 300ms 500ms;
+  animation: fadeIn 300ms 500ms;
 }
 
 .page-intro__background {
@@ -76,6 +76,16 @@
 }
 
 @media (min-width: 768px) {
+  .page-intro {
+    padding: var(--spacing-l, 32px);
+  }
+
+
+  .page-header {
+    top: var(--spacing-l);
+    left: var(--spacing-l);
+  }
+  
   .page-header__home-link {
     display: block;
     width: 160px;
