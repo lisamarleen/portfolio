@@ -34,8 +34,9 @@ html {
 
   --font-letter-spacing-s: 0.7px;
 
-  --z-layer-above: 10;
-  --z-layer-modal: 20;
+  --z-layer-xxl: 60;
+  --z-layer-xl: 50;
+  --z-layer-l: 40;
 
   --ease-in: cubic-bezier(0.49, 0.025, 0.65, 0.65);
   --ease-out: cubic-bezier(0.28, 0.44, 0.49, 1);

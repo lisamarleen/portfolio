@@ -65,7 +65,7 @@
 .tabs-list.tabs-list--sticky {
   position: sticky;
   top: 0;
-  z-index: var(--z-layer-above);
+  z-index: var(--z-layer-l);
   background-color: var(--color-black);
 }
 
@@ -100,7 +100,7 @@
   }
 
   .tabs-list.tabs-list--sticky {
-    top: var(--spacing-l);
+    top: 40px;
     background-color: transparent;
   }
 
