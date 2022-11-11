@@ -3,10 +3,10 @@
   font-size: var(--font-size-m, 2rem);
   text-transform: uppercase;
   line-height: var(--font-line-height-m, 1);
-  position: absolute;
+  position: fixed;
   top: var(--spacing-m);
   left: var(--spacing-m);
-  z-index: var(--z-layer-above, 10);
+  z-index: var(--z-layer-xxl, 60);
   color: var(--color-white, #fff);
 }
 
@@ -57,7 +57,7 @@
 }
 
 .no-js .page-intro__title .char {
-  opacity: 1;
+ animation: fadeIn 300ms 500ms;
 }
 
 .page-intro__background {
