@@ -15,26 +15,7 @@ const EaseInSmooth = getCSSCustomProp("--ease-in-smooth");
 const EaseOutSmooth = getCSSCustomProp("--ease-out-smooth");
 const EaseInOutSmooth = getCSSCustomProp("--ease-in-out-smooth");
 
-function setCssCustomProp(propKey, element, value) {
-  element.style.setProperty(propKey, value);
-}
-
-function shuffle(arr) {
-  let currentIndex = arr.length,
-    randomIndex;
-
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [arr[currentIndex], arr[randomIndex]] = [
-      arr[randomIndex],
-      arr[currentIndex],
-    ];
-  }
-
-  return arr;
-}
+let lastScrollOffet = window.pageYOffset || document.documentElement.scrollTop;
 
 function initNav() {
   const navigations = document.querySelectorAll("nav a");
@@ -339,6 +320,19 @@ function initMainMenu() {
   closeTrigger.addEventListener("click", () => {
     openTrigger.setAttribute("aria-expanded", false);
   });
+
+  window.addEventListener("scroll", () => {
+    const currentPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (lastScrollOffet > currentPosition) {
+      openTrigger.classList.add("main-menu-open--show");
+    } else {
+      openTrigger.classList.remove("main-menu-open--show");
+    }
+
+    lastScrollOffet = currentPosition;
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -354,6 +348,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /// HELPER
+function setCssCustomProp(propKey, element, value) {
+  element.style.setProperty(propKey, value);
+}
+
+function shuffle(arr) {
+  let currentIndex = arr.length,
+    randomIndex;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [arr[currentIndex], arr[randomIndex]] = [
+      arr[randomIndex],
+      arr[currentIndex],
+    ];
+  }
+
+  return arr;
+}
+
 function observe(values, onMatching) {
   let unobserve = [];
 

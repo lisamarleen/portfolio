@@ -113,11 +113,33 @@
         </a>
     </header>
 
-    <button class="main-menu-open" type="button" aria-expanded="false" aria-label="Main Navigation" aria-controls="main-nav">
-        <svg width="24" height="24" aria-hidden="true">
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
+    <button class="main-menu-open main-menu-trigger" aria-expanded="false" aria-label="Main Navigation" aria-controls="main-nav">
+        <span class="sr-only">Close main menu</span>
+        <svg class="main-menu-trigger__cirlce" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+            <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
+        </svg>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.782" height="97.944" viewBox="0 0 91.782 97.944">
+            <defs>
+                <clipPath id="clip-path">
+                <rect id="Rectangle_28" data-name="Rectangle 28" width="91.782" height="97.944" fill="none"/>
+                </clipPath>
+            </defs>
+            <g id="menu" transform="translate(-3127.609 4273.472)">
+                
+                <g id="Group_212" data-name="Group 212" transform="translate(1353.718 -4285.165)">
+                <g id="Group_144" data-name="Group 144" transform="translate(1797.178 34.932)">
+                    <g id="Group_213" data-name="Group 213" transform="translate(0 0)">
+                    <path id="Path_79" data-name="Path 79" d="M43.361.261A402.586,402.586,0,0,0,9.269,32.169Q4.693,36.98.279,41.94c-.9,1.011.587,2.509,1.492,1.492A402.909,402.909,0,0,1,34.789,10.414Q39.749,6,44.853,1.753C45.9.883,44.4-.6,43.361.261" transform="matrix(-0.719, -0.695, 0.695, -0.719, 23.659, 46.331)" />
+                    <path id="Path_95" data-name="Path 95" d="M43.361.261A305.867,305.867,0,0,0,13.585,28c-3.05,3.207-3.169,3.687-6.112,6.993-.9,1.011.587,2.509,1.492,1.492,10.358-11.63,14.189-15.717,25.824-26.071Q39.749,6,44.853,1.753C45.9.883,44.4-.6,43.361.261" transform="matrix(-0.719, -0.695, 0.695, -0.719, 23.659, 69.331)" />
+                    <path id="Path_80" data-name="Path 80" d="M10.5,6.718C20.07,16.8,24.848,21.793,34.01,32.246c2.628,3-.665-.779,1.929,2.25.886,1.032,2.372-.466,1.492-1.492-9.045-10.556-7.8-8.86-17.25-19.052Q16.114,9.565,12,5.226c-.936-.987-2.427.506-1.492,1.492" transform="translate(-19.257 32.497) rotate(-49)" />
+                    </g>
+                </g>
+                
+                </g>
+            </g>
         </svg>
     </button>
+    
     <div class="main-menu">
         <nav class="main-menu-nav" id="main-nav">
             <div class="content-wrapper content-wrapper--small">
@@ -155,15 +177,15 @@
                 </ul>
             </div>
         </nav>
-        <button class="main-menu-close">
+        <button class="main-menu-close main-menu-trigger">
             <span class="sr-only">Close main menu</span>
+              <svg class="main-menu-trigger__cirlce" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
+                <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
+            </svg>
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.782" height="97.944" viewBox="0 0 91.782 97.944">
                 <defs>
                     <clipPath id="menu-close-clip-path">
                         <rect width="45.207" height="45.465" transform="translate(0 0)" fill="none"/>
-                    </clipPath>
-                    <clipPath id="menu-close-clip-path-2">
-                        <rect width="91.782" height="97.944" fill="none"/>
                     </clipPath>
                 </defs>
                 <g transform="translate(-1773.891 -11.693)">
@@ -172,12 +194,7 @@
                             <path d="M43.361.261A402.586,402.586,0,0,0,9.269,32.169Q4.693,36.98.279,41.94c-.9,1.011.587,2.509,1.492,1.492A402.909,402.909,0,0,1,34.789,10.414Q39.749,6,44.853,1.753C45.9.883,44.4-.6,43.361.261" transform="translate(0 0)" />
                             <path d="M10.5,6.718Q24.853,21.847,38.6,37.529q3.943,4.5,7.834,9.042c.886,1.032,2.372-.466,1.492-1.492Q34.361,29.246,20.181,13.952,16.114,9.565,12,5.226c-.936-.987-2.427.506-1.492,1.492" transform="translate(-3.028 -1.455)" />
                         </g>
-                    </g>
-                    <g transform="translate(1773.891 11.693)">
-                        <g clip-path="url(#menu-close-clip-path-2)">
-                            <path pathLength="1" d="M52.786.72A40.006,40.006,0,0,0,23.75,6.471C15.145,11.9,8.781,20.279,4.859,29.587A60.047,60.047,0,0,0,.664,61.9c1.574,10,6.423,19.611,14.251,26.156C23.1,94.9,34.1,97.46,44.571,97.893c10.058.416,20.557-1.659,28.669-7.911,8.413-6.484,14.089-16.649,16.788-26.8a48.4,48.4,0,0,0-1.495-30.438A42.647,42.647,0,0,0,70.155,11.331a37.916,37.916,0,0,0-29.3-3.145,33.978,33.978,0,0,0-6.792,2.97,1.056,1.056,0,0,0,1.065,1.822A34.717,34.717,0,0,1,63.019,10.5,38.246,38.246,0,0,1,83.774,27.785a44.684,44.684,0,0,1,5.585,27.76,52.2,52.2,0,0,1-12.1,27.724,34.65,34.65,0,0,1-11.817,8.948,41.707,41.707,0,0,1-13.871,3.437,60.25,60.25,0,0,1-14.515-.636A47.643,47.643,0,0,1,21.7,90.162C13.551,85.7,7.572,77.834,4.6,69.107c-3.484-10.243-3.119-21.541-.2-31.873A52.436,52.436,0,0,1,18.968,12.767,39.982,39.982,0,0,1,45.24,2.087a33.517,33.517,0,0,1,6.986.667c1.326.269,1.893-1.764.561-2.035" transform="translate(0 0)" />
-                        </g>
-                    </g>
+                    </g>                   
                 </g>
             </svg>
         </button>
