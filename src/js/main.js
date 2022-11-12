@@ -130,18 +130,18 @@ function initPointermoveStrength() {
   );
 
   Array.from(allAnimations).map((container) => {
-    const targetClientRect = container.getBoundingClientRect();
     const resetValue = {
       x: getCSSCustomProp("--x-offset-strength", container) || 1,
-
       y: getCSSCustomProp("--y-offset-strength", container) || 1,
     };
 
     container.addEventListener("pointermove", (event) => {
-      const normalizedX = (event.offsetX / targetClientRect.width) * 2 - 1;
-      const normalizedY = (event.offsetY / targetClientRect.height) * 2 - 1;
-      container.style.setProperty("--x-offset-strength", 1 - normalizedX / 20);
-      container.style.setProperty("--y-offset-strength", 1 - normalizedY / 50);
+      const bounds = container.getBoundingClientRect();
+
+      const ratioX = (event.offsetX / bounds.width) * 2 - 1;
+      const ratioY = (event.offsetY / bounds.height) * 2 - 1;
+      container.style.setProperty("--x-offset-strength", 1 - ratioX / 20);
+      container.style.setProperty("--y-offset-strength", 1 - ratioY / 50);
     });
 
     container.addEventListener("pointerleave", () => {
