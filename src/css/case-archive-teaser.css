@@ -62,8 +62,8 @@
   align-items: center;
   opacity: 0.8;
   max-width: 100rem;
-  position: absolute;
-  width: 200%;
+  position: relative;
+  left: 25%;
 }
 
 .case-archive-teaser__list-item {
@@ -100,12 +100,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
+    position: absolute;
     width: auto;
   }
 
   .case-archive-teaser__list {
     position: relative;
-    width: 100%;
+    left: unset;
   }
 
   .case-archive-teaser__list-item:nth-child(1),
