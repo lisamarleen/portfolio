@@ -162,7 +162,7 @@
     left: var(--spacing-l);
     bottom: auto;
     top: calc(50% - 36px);
-    transform: translateX(-110px);
+    transform: translateX(-150px);
   }
 
   .main-menu-open.main-menu-open--show {
