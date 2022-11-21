@@ -22,8 +22,23 @@
 }
 
 .page-intro {
+  opacity: 0;
   padding: var(--spacing-m, 16px);
   background: var(--color-black, #030110);
+}
+
+[data-page-animation-content] {
+  opacity: 0;
+}
+
+.no-js .page-intro {
+  transition: opacity 300ms 500ms;
+  opacity: 1;
+}
+
+.no-js [data-page-animation-content] {
+  transition: opacity 300ms 500ms;
+  opacity: 1;
 }
 
 .page-intro__title {
@@ -54,10 +69,6 @@
   display: inline-block;
   opacity: 0;
   transform-origin: top left;
-}
-
-.no-js .page-intro__title .char {
-  animation: fadeIn 300ms 500ms;
 }
 
 .page-intro__background {

@@ -52,6 +52,7 @@ function initPageAnimations() {
   const sequence = [];
 
   container.style.opacity = 1;
+  content.style.opacity = 1;
 
   if (title) {
     sequence.push([
