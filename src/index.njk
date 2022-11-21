@@ -164,14 +164,3 @@ pageDescription: "I’m Lisa Marleen (she/her), multidisciplinary designer, art 
     </div>
 </section>
 
-<nav class="exit-nav">
-    <div class="content-wrapper">
-        <ul class="exit-nav-list" data-page-animation-fade-in-view>
-        {% for navigationItem in home.exitNavigation %}
-            <li class="exit-nav-list__item">
-                <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
-            </li>
-        {% endfor %}
-        </ul>
-    </div>
-</nav>
