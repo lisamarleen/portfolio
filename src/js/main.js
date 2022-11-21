@@ -51,6 +51,8 @@ function initPageAnimations() {
   const { chars } = Splitting({ target: title, by: "chars" })[0];
   const sequence = [];
 
+  container.style.opacity = 1;
+
   if (title) {
     sequence.push([
       shuffle(chars),
@@ -305,6 +307,15 @@ function initMainMenu() {
   const closeTrigger = document.querySelectorAll(".main-menu-close")[0];
   const openTrigger = document.querySelectorAll(".main-menu-open")[0];
   const mainMenuDialog = document.querySelectorAll(".main-menu")[0];
+  const links = document.querySelectorAll(".main-menu-nav-link");
+
+  Array.from(links).map((link) =>
+    link.addEventListener("click", () =>
+      setTimeout(() => {
+        openTrigger.setAttribute("aria-expanded", false);
+      }, 300)
+    )
+  );
 
   mainMenuDialog.addEventListener("keyup", (e) => {
     if (e.code === "Escape") {
