@@ -6,6 +6,11 @@
       "link": "/cases"
     },
     {
+      "label": "Archive",
+      "subLabel": "Projects from the past years",
+      "link": "/archive"
+    },
+    {
       "label": "Off the grid",
       "subLabel": "visual playground",
       "link": "/off-the-grid"
