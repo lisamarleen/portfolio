@@ -8,27 +8,6 @@ import {
 } from "motion";
 import Splitting from "splitting";
 
-function getCSSCustomProp(propKey, element = document.body, castAs = "string") {
-  let response = getComputedStyle(element).getPropertyValue(propKey);
-
-  if (response.length) {
-    response = response.replace(/\'|"/g, "").trim();
-  }
-
-  switch (castAs) {
-    case "number":
-    case "int":
-      return parseInt(response, 10);
-    case "float":
-      return parseFloat(response, 10);
-    case "boolean":
-    case "bool":
-      return response === "true" || response === "1";
-  }
-
-  return response;
-}
-
 const EaseIn = getCSSCustomProp("--ease-in");
 const EaseOut = getCSSCustomProp("--ease-out");
 const EaseInOut = getCSSCustomProp("--ease-in-out");
@@ -36,26 +15,7 @@ const EaseInSmooth = getCSSCustomProp("--ease-in-smooth");
 const EaseOutSmooth = getCSSCustomProp("--ease-out-smooth");
 const EaseInOutSmooth = getCSSCustomProp("--ease-in-out-smooth");
 
-function setCssCustomProp(propKey, element, value) {
-  element.style.setProperty(propKey, value);
-}
-
-function shuffle(arr) {
-  let currentIndex = arr.length,
-    randomIndex;
-
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [arr[currentIndex], arr[randomIndex]] = [
-      arr[randomIndex],
-      arr[currentIndex],
-    ];
-  }
-
-  return arr;
-}
+let lastScrollOffet = window.pageYOffset || document.documentElement.scrollTop;
 
 function initNav() {
   const navigations = document.querySelectorAll("nav a");
@@ -90,6 +50,9 @@ function initPageAnimations() {
   const title = document.querySelector("[data-page-animation-title]");
   const { chars } = Splitting({ target: title, by: "chars" })[0];
   const sequence = [];
+
+  container.style.opacity = 1;
+  content.style.opacity = 1;
 
   if (title) {
     sequence.push([
@@ -164,24 +127,29 @@ function initScrollProgressAnimations() {
   });
 }
 
-function initMousemoveStrength() {
+function initPointermoveStrength() {
   const allAnimations = document.querySelectorAll(
-    "[data-page-animation-mousemove-strength]"
+    "[data-page-animation-pointermove-strength]"
   );
 
   Array.from(allAnimations).map((container) => {
-    const targetClientRect = container.getBoundingClientRect();
+    const resetValue = {
+      x: getCSSCustomProp("--x-offset-strength", container) || 1,
+      y: getCSSCustomProp("--y-offset-strength", container) || 1,
+    };
 
-    container.addEventListener("mousemove", (event) => {
-      const normalizedX = (event.offsetX / targetClientRect.width) * 2 - 1;
-      const normalizedY = (event.offsetY / targetClientRect.height) * 2 - 1;
-      container.style.setProperty("--x-offset-strength", 1 - normalizedX / 20);
-      container.style.setProperty("--y-offset-strength", 1 - normalizedY / 50);
+    container.addEventListener("pointermove", (event) => {
+      const bounds = container.getBoundingClientRect();
+
+      const ratioX = (event.offsetX / bounds.width) * 2 - 1;
+      const ratioY = (event.offsetY / bounds.height) * 2 - 1;
+      container.style.setProperty("--x-offset-strength", 1 - ratioX / 20);
+      container.style.setProperty("--y-offset-strength", 1 - ratioY / 50);
     });
 
-    container.addEventListener("mouseleave", () => {
-      container.style.setProperty("--x-offset-strength", 1);
-      container.style.setProperty("--y-offset-strength", 0.5);
+    container.addEventListener("pointerleave", () => {
+      container.style.setProperty("--x-offset-strength", resetValue.x);
+      container.style.setProperty("--y-offset-strength", resetValue.y);
     });
   });
 }
@@ -336,18 +304,83 @@ function initLazyVideo(videoElem) {
   videoElem.load();
 }
 
+function initMainMenu() {
+  const closeTrigger = document.querySelectorAll(".main-menu-close")[0];
+  const openTrigger = document.querySelectorAll(".main-menu-open")[0];
+  const mainMenuDialog = document.querySelectorAll(".main-menu")[0];
+  const links = document.querySelectorAll(".main-menu-nav-link");
+
+  Array.from(links).map((link) =>
+    link.addEventListener("click", () =>
+      setTimeout(() => {
+        openTrigger.setAttribute("aria-expanded", false);
+      }, 300)
+    )
+  );
+
+  mainMenuDialog.addEventListener("keyup", (e) => {
+    if (e.code === "Escape") {
+      openTrigger.setAttribute("aria-expanded", false);
+    }
+  });
+
+  openTrigger.addEventListener("click", () => {
+    const isOpen = openTrigger.getAttribute("aria-expanded") === "false";
+    openTrigger.setAttribute("aria-expanded", isOpen);
+  });
+
+  closeTrigger.addEventListener("click", () => {
+    openTrigger.setAttribute("aria-expanded", false);
+  });
+
+  window.addEventListener("scroll", () => {
+    const currentPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (lastScrollOffet > currentPosition) {
+      openTrigger.classList.add("main-menu-open--show");
+    } else {
+      openTrigger.classList.remove("main-menu-open--show");
+    }
+
+    lastScrollOffet = currentPosition;
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
+  initMainMenu();
   initPageAnimations();
   initScrollTextRevealAnimations();
   initScrollProgressAnimations();
-  initMousemoveStrength();
+  initPointermoveStrength();
   initFadeInViewAnimations();
   initCustomClassAnimations();
   initImageAnimations();
 });
 
 /// HELPER
+function setCssCustomProp(propKey, element, value) {
+  element.style.setProperty(propKey, value);
+}
+
+function shuffle(arr) {
+  let currentIndex = arr.length,
+    randomIndex;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [arr[currentIndex], arr[randomIndex]] = [
+      arr[randomIndex],
+      arr[currentIndex],
+    ];
+  }
+
+  return arr;
+}
+
 function observe(values, onMatching) {
   let unobserve = [];
 
@@ -371,4 +404,19 @@ function observe(values, onMatching) {
 
 function clampNumber(num, a, b) {
   Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));
+}
+
+/* based on https://piccalil.li/tutorial/get-css-custom-property-value-with-javascript/ */
+function getCSSCustomProp(
+  propKey,
+  element = document.documentElement,
+  castAs = "string"
+) {
+  let response = getComputedStyle(element).getPropertyValue(propKey);
+
+  if (response.length) {
+    response = response.replace(/'|"/g, "").trim();
+  }
+
+  return response;
 }

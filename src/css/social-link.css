@@ -1,0 +1,28 @@
+.social-list-link {
+    position: relative;
+    color: var(--color-white);
+  }
+  
+  .social-list-link.social-list-link--email {
+    color: var(--color-highlight);
+  }
+  
+  .social-list-link.social-list-link--email svg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: -14px;
+    top: auto;
+  }
+  
+  .social-list-link.social-list-link--email svg path {
+    opacity: 0;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+  
+  .social-list-link.social-list-link--email:hover svg path {
+    animation: svgStroke 700ms var(--ease-out-smooth) forwards;
+  }
+  

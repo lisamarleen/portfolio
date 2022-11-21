@@ -1,7 +1,7 @@
 .intro {
   position: relative;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -52,7 +52,6 @@
 .intro-title {
   align-self: flex-end;
   text-align: right;
-  /* font-size: clamp(2rem, -0.875rem + 33.333vw, 7.5rem);*/
   max-width: 17ch;
 }
 
