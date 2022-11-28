@@ -78,8 +78,20 @@
     "title": "teaching<br />& talks",
     "items": [
       {
+        "label": "Synthesizing meaning",
+        "subLabel": "Academy of Media Arts Cologne Winterterm 22/23",
+        "meta": "Expert Workshop – AI & Design",
+        "link": ""
+      },
+      {
+        "label": "Synthesizing meaning",
+        "subLabel": "Hochschule RheinMain Winterterm 22/23",
+        "meta": "Expert Workshop – AI & Design",
+        "link": ""
+      },
+      {
         "label": "New Species Interaction Design",
-        "subLabel": "KISD Summerterm 22/23",
+        "subLabel": "KISD Winterterm 22/23",
         "meta": "Collaboration project with the German Aerospace Center",
         "link": ""
       },
@@ -165,6 +177,11 @@
     "title": "publi<br />cations",
     "items": [
       {
+        "label": "States of Motion",
+        "subLabel": "The Motion Experience Lab 2019 – 2022",
+        "meta": "Borrowed Limbs – Making of, Transhumanism vs Posthumanism"
+      },
+      {
         "label": "Page",
         "subLabel": "Edition 08/22",
         "meta": "Borrowed Limbs – experiental short film",
@@ -206,6 +223,10 @@
       },
       {
         "label": "Annual multimedia award digital talent",
+        "count": 1
+      },
+      {
+        "label": "Kölner Design Preis bronze",
         "count": 1
       }
     ]
