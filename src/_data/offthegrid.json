@@ -58,7 +58,7 @@
     },
     {
       "src": "handzero",
-      "formats": ["webm"],
+      "formats": ["webm", "mp4"],
       "alt": "A 3D rendered hand floating over the ground forming an 'o' with thumb and pointing finger. The hand is made of glossy, colorful reflective material.",
       "link": "https://www.instagram.com/p/B8WPLzkombp/",
       "largeView": {
