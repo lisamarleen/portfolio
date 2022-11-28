@@ -52,6 +52,7 @@
 .visual__link {
   display: block;
   position: relative;
+  z-index: 1;
 }
 
 .visual__link {
