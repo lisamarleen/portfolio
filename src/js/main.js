@@ -161,11 +161,12 @@ function initFadeInViewAnimations() {
 
   Array.from(allAnimations).map((container) => {
     const amount = container.getAttribute("data-in-view-amount") || 0.5;
+    const delay = container.getAttribute("data-animation-delay") || 0;
 
     inView(
       container,
       (info) => {
-        animate(info.target, { opacity: [0, 1] }, { duration: 2 });
+        animate(info.target, { opacity: [0, 1] }, { duration: 2, delay });
       },
       { amount }
     );

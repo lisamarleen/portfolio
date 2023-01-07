@@ -22,10 +22,10 @@ pageTitle: "Lisa Marleen – Archive"
         {% endfor %}
     </ul>
     {% for archiveItemByYear in archive.itemsByYear %}
-    <section class="tabs-panel" id="{{ archiveItemByYear.year }}">
+    <section class="tabs-panel" id="{{ archiveItemByYear.year }}" data-page-animation-fade-in-view data-in-view-amount="0.1" data-animation-delay="1">
         <div class="content-wrapper">
         {% for archiveItem in archiveItemByYear.items %}
-            <div class="case-archive-item" data-page-animation-fade-in-view>
+            <div class="case-archive-item">
                 <div class="case-archive-item__image">
                     {% set computedSrc = "./src/assets/images/archive/" + archiveItem.src %}
                     {% set altText = "teaser of" + archiveItem.title %}
