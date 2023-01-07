@@ -157,6 +157,7 @@
 
   .main-menu-nav {
     height: 100%;
+    padding-bottom: var(--spacing-3xl);
   }
 
   .main-menu-close {
