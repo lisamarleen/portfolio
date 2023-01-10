@@ -114,7 +114,7 @@
     </header>
 
     <button class="main-menu-open main-menu-trigger" aria-expanded="false" aria-label="Main Navigation" aria-controls="main-nav">
-        <span class="sr-only">Close main menu</span>
+        <span class="sr-only">Open main menu</span>
         <svg class="main-menu-trigger__cirlce" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.64 139.01">
             <path pathLength="1" d="M75.16,2.14S28.77-6.85,8.67,42.62c-20.11,49.47,5.88,82.67,31.39,90.57s67.82,9.83,85.17-38.14S108.79,23.11,105.67,21.1s-24.82-18.55-55.97-4.28"/>
         </svg>
@@ -145,7 +145,7 @@
             <div class="content-wrapper content-wrapper--small">
                 <ul class="main-menu-nav-page-list" role="list">
                 {% for navigationItem in common.navigation %}
-                    <li class="main-menu-nav-page-list__list-item" style="--animation-delay:{{ loop.index }}">
+                    <li class="main-menu-nav-page-list__list-item" style="--animation-delay:{{ loop.index - 1 }}">
                         <a 
                             href={{navigationItem.link}} 
                             class="main-menu-nav-link">
@@ -156,7 +156,7 @@
                 {% endfor %}
                 </ul>
 
-                <ul class="main-menu-nav-social-list">
+                <ul class="main-menu-nav-social-list" style="--animation-delay:{{ common.navigation.length + 1}}">
                     <li class="main-menu-nav-social-list__list-item">
                         <a 
                             href={{ common.social.email.link }} 
