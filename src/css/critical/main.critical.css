@@ -124,7 +124,7 @@
   .page-header__home-link:hover path,
   .page-header__home-link:hover line,
   .page-header__home-link:hover polyline {
-    animation: svgStroke 700ms var(--ease-out-smooth) forwards;
+    animation: svgStroke 500ms calc(var(--index) * 70ms) var(--ease-out-smooth) forwards;
   }
 }
 
