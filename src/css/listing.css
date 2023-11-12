@@ -107,8 +107,8 @@
 
 .listing-item-current-hint svg:first-child {
   position: absolute;
-  right: 72px;
-  top: 20px;
+  right: -10px;
+  top: 5px;
 }
 
 .listing-item-current-label {
