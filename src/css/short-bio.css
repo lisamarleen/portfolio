@@ -101,6 +101,6 @@ column-gap: var(--spacing-xxl);
     margin-left: calc(124px * -1);
     column-count: 2;
     column-gap: var(--spacing-xxl);
-    max-width: 80ch;
+    max-width: 85ch;
   }
 }
