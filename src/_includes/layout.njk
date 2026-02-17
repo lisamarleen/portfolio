@@ -86,7 +86,7 @@
 <body style="background-color: #030110; margin: 0; padding: 0;">
 
     <header class="page-header">
-        <a class="page-header__home-link" href="/">
+        <a class="page-header__home-link" href="{{ "/" | url }}">
         <span>  
         LM
         </span>
@@ -147,7 +147,7 @@
                 {% for navigationItem in common.navigation %}
                     <li class="main-menu-nav-page-list__list-item" style="--animation-delay:{{ loop.index - 1 }}">
                         <a 
-                            href={{navigationItem.link}} 
+                            href={{navigationItem.link | url}} 
                             class="main-menu-nav-link">
                             <span class="main-menu-nav-link__label">{{navigationItem.label}}</span>
                             <span class="main-menu-nav-link__sub-label">{{navigationItem.subLabel}}</span>
@@ -237,7 +237,7 @@
 
     <footer class="footer">
       <small class="footer__copyright">{{ common.footer.copyright }}</small>
-      <a class="footer__link" href={{ common.footer.imprint.link }} rel="noopener noreferrer" target="_blank">
+      <a class="footer__link" href={{ common.footer.imprint.link | url }} rel="noopener noreferrer" target="_blank">
         {{ common.footer.imprint.label }}
       </a>
     </footer>
