@@ -6,23 +6,23 @@ pageDescription: "Visual playground of fun side projects"
 ---
 
 <div class="page-intro" data-page-animation-container>
-    <h1 class="page-intro__title" data-page-animation-title>{{ offthegrid.title | safe }}</h1>
-    <h2 class="page-intro__subtitle" data-page-animation-content>{{ offthegrid.subtitle | safe }}</h2>
+    <h1 class="page-intro__title" data-page-animation-title>{{ offgrid.title | safe }}</h1>
+    <h2 class="page-intro__subtitle" data-page-animation-content>{{ offgrid.subtitle | safe }}</h2>
 </div>
 
 <section class="page-content off-the-grid-section">
     <div class="off-the-grid-section__content content-wrapper content-wrapper--small">
-        {% for visual in offthegrid.items %}
+        {% for visual in offgrid.items %}
             <div
                 class="off-the-grid__visual visual visual--alignment-{{ visual.largeView.alignment | default('left') }} visual--width-{{ visual.largeView.width | default('1/1') }}"
                 data-page-animation-visual data-in-view-amount="0.2"
                 data-visual-type="{{ 'lazy-video' if visual.srcType === 'video' else 'image' }}"
                 style="--placeholder-color:{{ visual.placeholderColor | default('var(--color-grey1)') }}; --aspect-ratio:{{ visual.width | int | default(16)  }} / {{ visual.height | int | default(9) }}">
                 {% if visual.srcType === "image" %}
-                    {% set computedSrc = "./src/assets/images/offthegrid/" + visual.src %}
+                    {% set computedSrc = "./src/assets/images/offgrid/" + visual.src %}
                     {%  imageWithDetail computedSrc, visual.alt, "(min-width: 768px) 50vw, 100vw" %}
                 {% elseif visual.srcType === "video" %}
-                    {% set filename = "/assets/videos/offthegrid/" + visual.src %}
+                    {% set filename = "/assets/videos/offgrid/" + visual.src %}
                     {%  lazyVideo filename, visual.formats, visual.width, visual.height %}
                 {% endif %}
 
@@ -39,7 +39,7 @@ pageDescription: "Visual playground of fun side projects"
 <nav class="exit-nav">
     <div class="content-wrapper">
         <ul class="exit-nav-list" data-page-animation-fade-in-view>
-        {% for navigationItem in offthegrid.exitNavigation %}
+        {% for navigationItem in offgrid.exitNavigation %}
             <li class="exit-nav-list__item">
                 <a href={{navigationItem.link}}>{{navigationItem.label}}</a>
             </li>
