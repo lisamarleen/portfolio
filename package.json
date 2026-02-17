@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "npx @11ty/eleventy --input=src --output=_site",
+    "build": "npx @11ty/eleventy --input=src --output=_site --pathprefix 'lm2022'",
     "serve": "npx @11ty/eleventy --input=src --output=_site --serve"
   },
   "devDependencies": {
