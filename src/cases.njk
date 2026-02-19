@@ -116,7 +116,7 @@ pageDescription: "My experience derives from 7+ years of working in the field of
                 <ul class="exit-nav-list" data-page-animation-fade-in-view>
                 {% for navigationItem in cases.exitNavigationInCommision %}
                     <li class="exit-nav-list__item">
-                        <a href={{navigationItem.link}}>
+                        <a href={{navigationItem.link | url}}>
                             {{navigationItem.label}}
                             {% if navigationItem.isSkipLink %}{% include "icon-arrow-up-scribbled.njk" %}{% endif %}
                         </a>
